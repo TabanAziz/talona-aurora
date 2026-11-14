@@ -1,0 +1,23 @@
+flowchart TB
+    SETUP["Reviewed project import"]:::workspace --> CONTEXT["Rooms, teams, drawings and tasks"]:::workspace
+    EMAIL["Email revision"]:::channels --> EVENT["Incoming message"]:::channels
+    VOICE["Telegram voice note"]:::channels --> EVENT
+    EVENT --> INTERPRET["Transcribe, confirm and extract"]:::intelligence
+    INTERPRET --> RECORD["Record and source evidence"]:::intelligence
+    CONTEXT --> RECORD
+    RECORD --> DRAWING["Revision comparison"]:::drawings
+    RECORD --> RULES["Drawing, inspection and resource checks"]:::intelligence
+    DRAWING --> RULES
+    RULES --> PROPOSAL["Calculated impact and proposal"]:::intelligence
+    PROPOSAL --> HUMAN["Reviewed decision"]:::interface
+    HUMAN --> RESULT["Updated work state and notices"]:::channels
+    RECORD --> GATE["Task-level start check"]:::intelligence
+    RESULT --> GATE
+    GATE --> EQUIPMENT["Simulated robot or drone"]:::interface
+    RESULT --> VIEWS["Overview, schedule and reports"]:::interface
+    DRAWING --> VIEWS
+    classDef channels fill:#eaf3fc,stroke:#3575ad,color:#17324d
+    classDef intelligence fill:#fff1df,stroke:#b77929,color:#553711
+    classDef drawings fill:#e8f5f0,stroke:#33836d,color:#163f35
+    classDef interface fill:#f0eefb,stroke:#7763b1,color:#32244f
+    classDef workspace fill:#edf4f4,stroke:#397d80,color:#173f42

@@ -1,0 +1,605 @@
+id,name,unit,crew,start,end,status
+delivery-wall-panels,Receive wall panel delivery,,Site logistics,2026-11-16T07:00:00+01:00,2026-11-16T08:00:00+01:00,planned
+delivery-services,Receive electrical and plumbing materials,,Site logistics,2026-11-17T07:00:00+01:00,2026-11-17T08:00:00+01:00,planned
+mobile-crane,Lift roof materials with mobile crane,,Crane team,2026-11-16T08:00:00+01:00,2026-11-16T12:00:00+01:00,planned
+roof-install,Install roof weather protection,,Crane team,2026-11-17T08:00:00+01:00,2026-11-17T16:00:00+01:00,planned
+layout-101,Frame partitions 101,101,layout-robot-1,2026-11-16T08:00:00+01:00,2026-11-16T08:15:00+01:00,planned
+101-frame,Build internal wall frames 101,101,Fit-out team 1,2026-11-16T08:15:00+01:00,2026-11-16T10:15:00+01:00,planned
+101-services,Install electrical and plumbing 101,101,Fit-out team 1,2026-11-17T08:00:00+01:00,2026-11-17T10:00:00+01:00,planned
+101-inspect,Inspect electrical and plumbing 101,101,Inspection team 1,2026-11-17T10:00:00+01:00,2026-11-17T10:30:00+01:00,planned
+101-close,Close internal walls 101,101,Fit-out team 1,2026-11-17T10:30:00+01:00,2026-11-17T12:30:00+01:00,planned
+layout-102,Frame partitions 102,102,layout-robot-1,2026-11-16T08:15:00+01:00,2026-11-16T08:30:00+01:00,planned
+102-frame,Build internal wall frames 102,102,Fit-out team 1,2026-11-17T12:30:00+01:00,2026-11-17T14:30:00+01:00,planned
+102-services,Install electrical and plumbing 102,102,Fit-out team 1,2026-11-18T08:00:00+01:00,2026-11-18T10:00:00+01:00,planned
+102-inspect,Inspect electrical and plumbing 102,102,Inspection team 1,2026-11-18T10:00:00+01:00,2026-11-18T10:30:00+01:00,planned
+102-close,Close internal walls 102,102,Fit-out team 1,2026-11-18T10:30:00+01:00,2026-11-18T12:30:00+01:00,planned
+layout-103,Frame partitions 103,103,layout-robot-1,2026-11-16T08:30:00+01:00,2026-11-16T08:45:00+01:00,planned
+103-frame,Build internal wall frames 103,103,Fit-out team 1,2026-11-18T12:30:00+01:00,2026-11-18T14:30:00+01:00,planned
+103-services,Install electrical and plumbing 103,103,Fit-out team 1,2026-11-19T08:00:00+01:00,2026-11-19T10:00:00+01:00,planned
+103-inspect,Inspect electrical and plumbing 103,103,Inspection team 1,2026-11-19T10:00:00+01:00,2026-11-19T10:30:00+01:00,planned
+103-close,Close internal walls 103,103,Fit-out team 1,2026-11-19T10:30:00+01:00,2026-11-19T12:30:00+01:00,planned
+layout-104,Frame partitions 104,104,layout-robot-1,2026-11-16T08:45:00+01:00,2026-11-16T09:00:00+01:00,planned
+104-frame,Build internal wall frames 104,104,Fit-out team 1,2026-11-19T12:30:00+01:00,2026-11-19T14:30:00+01:00,planned
+104-services,Install electrical and plumbing 104,104,Fit-out team 1,2026-11-20T08:00:00+01:00,2026-11-20T10:00:00+01:00,planned
+104-inspect,Inspect electrical and plumbing 104,104,Inspection team 1,2026-11-20T10:00:00+01:00,2026-11-20T10:30:00+01:00,planned
+104-close,Close internal walls 104,104,Fit-out team 1,2026-11-20T10:30:00+01:00,2026-11-20T12:30:00+01:00,planned
+layout-105,Frame partitions 105,105,layout-robot-1,2026-11-16T09:00:00+01:00,2026-11-16T09:15:00+01:00,planned
+105-frame,Build internal wall frames 105,105,Fit-out team 1,2026-11-20T12:30:00+01:00,2026-11-20T14:30:00+01:00,planned
+105-services,Install electrical and plumbing 105,105,Fit-out team 1,2026-11-23T08:00:00+01:00,2026-11-23T10:00:00+01:00,planned
+105-inspect,Inspect electrical and plumbing 105,105,Inspection team 1,2026-11-23T10:00:00+01:00,2026-11-23T10:30:00+01:00,planned
+105-close,Close internal walls 105,105,Fit-out team 1,2026-11-23T10:30:00+01:00,2026-11-23T12:30:00+01:00,planned
+layout-106,Frame partitions 106,106,layout-robot-1,2026-11-16T09:15:00+01:00,2026-11-16T09:30:00+01:00,planned
+106-frame,Build internal wall frames 106,106,Fit-out team 1,2026-11-23T12:30:00+01:00,2026-11-23T14:30:00+01:00,planned
+106-services,Install electrical and plumbing 106,106,Fit-out team 1,2026-11-24T08:00:00+01:00,2026-11-24T10:00:00+01:00,planned
+106-inspect,Inspect electrical and plumbing 106,106,Inspection team 1,2026-11-24T10:00:00+01:00,2026-11-24T10:30:00+01:00,planned
+106-close,Close internal walls 106,106,Fit-out team 1,2026-11-24T10:30:00+01:00,2026-11-24T12:30:00+01:00,planned
+layout-107,Frame partitions 107,107,layout-robot-1,2026-11-16T09:30:00+01:00,2026-11-16T09:45:00+01:00,planned
+107-frame,Build internal wall frames 107,107,Fit-out team 1,2026-11-24T12:30:00+01:00,2026-11-24T14:30:00+01:00,planned
+107-services,Install electrical and plumbing 107,107,Fit-out team 1,2026-11-25T08:00:00+01:00,2026-11-25T10:00:00+01:00,planned
+107-inspect,Inspect electrical and plumbing 107,107,Inspection team 1,2026-11-25T10:00:00+01:00,2026-11-25T10:30:00+01:00,planned
+107-close,Close internal walls 107,107,Fit-out team 1,2026-11-25T10:30:00+01:00,2026-11-25T12:30:00+01:00,planned
+layout-108,Frame partitions 108,108,layout-robot-1,2026-11-16T09:45:00+01:00,2026-11-16T10:00:00+01:00,planned
+108-frame,Build internal wall frames 108,108,Fit-out team 1,2026-11-25T12:30:00+01:00,2026-11-25T14:30:00+01:00,planned
+108-services,Install electrical and plumbing 108,108,Fit-out team 1,2026-11-26T08:00:00+01:00,2026-11-26T10:00:00+01:00,planned
+108-inspect,Inspect electrical and plumbing 108,108,Inspection team 1,2026-11-26T10:00:00+01:00,2026-11-26T10:30:00+01:00,planned
+108-close,Close internal walls 108,108,Fit-out team 1,2026-11-26T10:30:00+01:00,2026-11-26T12:30:00+01:00,planned
+layout-109,Frame partitions 109,109,layout-robot-1,2026-11-16T10:00:00+01:00,2026-11-16T10:15:00+01:00,planned
+109-frame,Build internal wall frames 109,109,Fit-out team 1,2026-11-26T12:30:00+01:00,2026-11-26T14:30:00+01:00,planned
+109-services,Install electrical and plumbing 109,109,Fit-out team 1,2026-11-27T08:00:00+01:00,2026-11-27T10:00:00+01:00,planned
+109-inspect,Inspect electrical and plumbing 109,109,Inspection team 1,2026-11-27T10:00:00+01:00,2026-11-27T10:30:00+01:00,planned
+109-close,Close internal walls 109,109,Fit-out team 1,2026-11-27T10:30:00+01:00,2026-11-27T12:30:00+01:00,planned
+layout-110,Frame partitions 110,110,layout-robot-1,2026-11-16T10:15:00+01:00,2026-11-16T10:30:00+01:00,planned
+110-frame,Build internal wall frames 110,110,Fit-out team 1,2026-11-27T12:30:00+01:00,2026-11-27T14:30:00+01:00,planned
+110-services,Install electrical and plumbing 110,110,Fit-out team 1,2026-11-30T08:00:00+01:00,2026-11-30T10:00:00+01:00,planned
+110-inspect,Inspect electrical and plumbing 110,110,Inspection team 1,2026-11-30T10:00:00+01:00,2026-11-30T10:30:00+01:00,planned
+110-close,Close internal walls 110,110,Fit-out team 1,2026-11-30T10:30:00+01:00,2026-11-30T12:30:00+01:00,planned
+layout-111,Frame partitions 111,111,layout-robot-1,2026-11-16T10:30:00+01:00,2026-11-16T10:45:00+01:00,planned
+111-frame,Build internal wall frames 111,111,Fit-out team 1,2026-11-30T12:30:00+01:00,2026-11-30T14:30:00+01:00,planned
+111-services,Install electrical and plumbing 111,111,Fit-out team 1,2026-12-01T08:00:00+01:00,2026-12-01T10:00:00+01:00,planned
+111-inspect,Inspect electrical and plumbing 111,111,Inspection team 1,2026-12-01T10:00:00+01:00,2026-12-01T10:30:00+01:00,planned
+111-close,Close internal walls 111,111,Fit-out team 1,2026-12-01T10:30:00+01:00,2026-12-01T12:30:00+01:00,planned
+layout-112,Frame partitions 112,112,layout-robot-1,2026-11-16T10:45:00+01:00,2026-11-16T11:00:00+01:00,planned
+112-frame,Build internal wall frames 112,112,Fit-out team 1,2026-12-01T12:30:00+01:00,2026-12-01T14:30:00+01:00,planned
+112-services,Install electrical and plumbing 112,112,Fit-out team 1,2026-12-02T08:00:00+01:00,2026-12-02T10:00:00+01:00,planned
+112-inspect,Inspect electrical and plumbing 112,112,Inspection team 1,2026-12-02T10:00:00+01:00,2026-12-02T10:30:00+01:00,planned
+112-close,Close internal walls 112,112,Fit-out team 1,2026-12-02T10:30:00+01:00,2026-12-02T12:30:00+01:00,planned
+layout-113,Frame partitions 113,113,layout-robot-1,2026-11-16T11:00:00+01:00,2026-11-16T11:15:00+01:00,planned
+113-frame,Build internal wall frames 113,113,Fit-out team 1,2026-12-02T12:30:00+01:00,2026-12-02T14:30:00+01:00,planned
+113-services,Install electrical and plumbing 113,113,Fit-out team 1,2026-12-03T08:00:00+01:00,2026-12-03T10:00:00+01:00,planned
+113-inspect,Inspect electrical and plumbing 113,113,Inspection team 1,2026-12-03T10:00:00+01:00,2026-12-03T10:30:00+01:00,planned
+113-close,Close internal walls 113,113,Fit-out team 1,2026-12-03T10:30:00+01:00,2026-12-03T12:30:00+01:00,planned
+layout-114,Frame partitions 114,114,layout-robot-1,2026-11-16T11:15:00+01:00,2026-11-16T11:30:00+01:00,planned
+114-frame,Build internal wall frames 114,114,Fit-out team 1,2026-12-03T12:30:00+01:00,2026-12-03T14:30:00+01:00,planned
+114-services,Install electrical and plumbing 114,114,Fit-out team 1,2026-12-04T08:00:00+01:00,2026-12-04T10:00:00+01:00,planned
+114-inspect,Inspect electrical and plumbing 114,114,Inspection team 1,2026-12-04T10:00:00+01:00,2026-12-04T10:30:00+01:00,planned
+114-close,Close internal walls 114,114,Fit-out team 1,2026-12-04T10:30:00+01:00,2026-12-04T12:30:00+01:00,planned
+layout-115,Frame partitions 115,115,layout-robot-1,2026-11-16T11:30:00+01:00,2026-11-16T11:45:00+01:00,planned
+115-frame,Build internal wall frames 115,115,Fit-out team 1,2026-12-04T12:30:00+01:00,2026-12-04T14:30:00+01:00,planned
+115-services,Install electrical and plumbing 115,115,Fit-out team 1,2026-12-07T08:00:00+01:00,2026-12-07T10:00:00+01:00,planned
+115-inspect,Inspect electrical and plumbing 115,115,Inspection team 1,2026-12-07T10:00:00+01:00,2026-12-07T10:30:00+01:00,planned
+115-close,Close internal walls 115,115,Fit-out team 1,2026-12-07T10:30:00+01:00,2026-12-07T12:30:00+01:00,planned
+layout-116,Frame partitions 116,116,layout-robot-1,2026-11-16T11:45:00+01:00,2026-11-16T12:00:00+01:00,planned
+116-frame,Build internal wall frames 116,116,Fit-out team 1,2026-12-07T12:30:00+01:00,2026-12-07T14:30:00+01:00,planned
+116-services,Install electrical and plumbing 116,116,Fit-out team 1,2026-12-08T08:00:00+01:00,2026-12-08T10:00:00+01:00,planned
+116-inspect,Inspect electrical and plumbing 116,116,Inspection team 1,2026-12-08T10:00:00+01:00,2026-12-08T10:30:00+01:00,planned
+116-close,Close internal walls 116,116,Fit-out team 1,2026-12-08T10:30:00+01:00,2026-12-08T12:30:00+01:00,planned
+layout-117,Frame partitions 117,117,layout-robot-1,2026-11-16T12:00:00+01:00,2026-11-16T12:15:00+01:00,planned
+117-frame,Build internal wall frames 117,117,Fit-out team 1,2026-12-08T12:30:00+01:00,2026-12-08T14:30:00+01:00,planned
+117-services,Install electrical and plumbing 117,117,Fit-out team 1,2026-12-09T08:00:00+01:00,2026-12-09T10:00:00+01:00,planned
+117-inspect,Inspect electrical and plumbing 117,117,Inspection team 1,2026-12-09T10:00:00+01:00,2026-12-09T10:30:00+01:00,planned
+117-close,Close internal walls 117,117,Fit-out team 1,2026-12-09T10:30:00+01:00,2026-12-09T12:30:00+01:00,planned
+layout-118,Frame partitions 118,118,layout-robot-1,2026-11-16T12:15:00+01:00,2026-11-16T12:30:00+01:00,planned
+118-frame,Build internal wall frames 118,118,Fit-out team 1,2026-12-09T12:30:00+01:00,2026-12-09T14:30:00+01:00,planned
+118-services,Install electrical and plumbing 118,118,Fit-out team 1,2026-12-10T08:00:00+01:00,2026-12-10T10:00:00+01:00,planned
+118-inspect,Inspect electrical and plumbing 118,118,Inspection team 1,2026-12-10T10:00:00+01:00,2026-12-10T10:30:00+01:00,planned
+118-close,Close internal walls 118,118,Fit-out team 1,2026-12-10T10:30:00+01:00,2026-12-10T12:30:00+01:00,planned
+layout-119,Frame partitions 119,119,layout-robot-1,2026-11-16T12:30:00+01:00,2026-11-16T12:45:00+01:00,planned
+119-frame,Build internal wall frames 119,119,Fit-out team 1,2026-12-10T12:30:00+01:00,2026-12-10T14:30:00+01:00,planned
+119-services,Install electrical and plumbing 119,119,Fit-out team 1,2026-12-11T08:00:00+01:00,2026-12-11T10:00:00+01:00,planned
+119-inspect,Inspect electrical and plumbing 119,119,Inspection team 1,2026-12-11T10:00:00+01:00,2026-12-11T10:30:00+01:00,planned
+119-close,Close internal walls 119,119,Fit-out team 1,2026-12-11T10:30:00+01:00,2026-12-11T12:30:00+01:00,planned
+layout-120,Frame partitions 120,120,layout-robot-1,2026-11-16T12:45:00+01:00,2026-11-16T13:00:00+01:00,planned
+120-frame,Build internal wall frames 120,120,Fit-out team 1,2026-12-11T12:30:00+01:00,2026-12-11T14:30:00+01:00,planned
+120-services,Install electrical and plumbing 120,120,Fit-out team 1,2026-12-14T08:00:00+01:00,2026-12-14T10:00:00+01:00,planned
+120-inspect,Inspect electrical and plumbing 120,120,Inspection team 1,2026-12-14T10:00:00+01:00,2026-12-14T10:30:00+01:00,planned
+120-close,Close internal walls 120,120,Fit-out team 1,2026-12-14T10:30:00+01:00,2026-12-14T12:30:00+01:00,planned
+layout-201,Frame partitions 201,201,layout-robot-1,2026-11-16T13:00:00+01:00,2026-11-16T13:15:00+01:00,planned
+201-frame,Build internal wall frames 201,201,Fit-out team 2,2026-11-16T13:15:00+01:00,2026-11-16T15:15:00+01:00,planned
+201-services,Install electrical and plumbing 201,201,Fit-out team 2,2026-11-17T08:00:00+01:00,2026-11-17T10:00:00+01:00,planned
+201-inspect,Inspect electrical and plumbing 201,201,Inspection team 2,2026-11-17T10:00:00+01:00,2026-11-17T10:30:00+01:00,planned
+201-close,Close internal walls 201,201,Fit-out team 2,2026-11-17T10:30:00+01:00,2026-11-17T12:30:00+01:00,planned
+layout-202,Frame partitions 202,202,layout-robot-1,2026-11-16T13:15:00+01:00,2026-11-16T13:30:00+01:00,planned
+202-frame,Build internal wall frames 202,202,Fit-out team 2,2026-11-17T12:30:00+01:00,2026-11-17T14:30:00+01:00,planned
+202-services,Install electrical and plumbing 202,202,Fit-out team 2,2026-11-18T08:00:00+01:00,2026-11-18T10:00:00+01:00,planned
+202-inspect,Inspect electrical and plumbing 202,202,Inspection team 2,2026-11-18T10:00:00+01:00,2026-11-18T10:30:00+01:00,planned
+202-close,Close internal walls 202,202,Fit-out team 2,2026-11-18T10:30:00+01:00,2026-11-18T12:30:00+01:00,planned
+layout-203,Frame partitions 203,203,layout-robot-1,2026-11-16T13:30:00+01:00,2026-11-16T13:45:00+01:00,planned
+203-frame,Build internal wall frames 203,203,Fit-out team 2,2026-11-18T12:30:00+01:00,2026-11-18T14:30:00+01:00,planned
+203-services,Install electrical and plumbing 203,203,Fit-out team 2,2026-11-19T08:00:00+01:00,2026-11-19T10:00:00+01:00,planned
+203-inspect,Inspect electrical and plumbing 203,203,Inspection team 2,2026-11-19T10:00:00+01:00,2026-11-19T10:30:00+01:00,planned
+203-close,Close internal walls 203,203,Fit-out team 2,2026-11-19T10:30:00+01:00,2026-11-19T12:30:00+01:00,planned
+layout-204,Frame partitions 204,204,layout-robot-1,2026-11-16T13:45:00+01:00,2026-11-16T14:00:00+01:00,planned
+204-frame,Build internal wall frames 204,204,Fit-out team 2,2026-11-19T12:30:00+01:00,2026-11-19T14:30:00+01:00,planned
+204-services,Install electrical and plumbing 204,204,Fit-out team 2,2026-11-20T08:00:00+01:00,2026-11-20T10:00:00+01:00,planned
+204-inspect,Inspect electrical and plumbing 204,204,Inspection team 2,2026-11-20T10:00:00+01:00,2026-11-20T10:30:00+01:00,planned
+204-close,Close internal walls 204,204,Fit-out team 2,2026-11-20T10:30:00+01:00,2026-11-20T12:30:00+01:00,planned
+layout-205,Frame partitions 205,205,layout-robot-1,2026-11-16T14:00:00+01:00,2026-11-16T14:15:00+01:00,planned
+205-frame,Build internal wall frames 205,205,Fit-out team 2,2026-11-20T12:30:00+01:00,2026-11-20T14:30:00+01:00,planned
+205-services,Install electrical and plumbing 205,205,Fit-out team 2,2026-11-23T08:00:00+01:00,2026-11-23T10:00:00+01:00,planned
+205-inspect,Inspect electrical and plumbing 205,205,Inspection team 2,2026-11-23T10:00:00+01:00,2026-11-23T10:30:00+01:00,planned
+205-close,Close internal walls 205,205,Fit-out team 2,2026-11-23T10:30:00+01:00,2026-11-23T12:30:00+01:00,planned
+layout-206,Frame partitions 206,206,layout-robot-1,2026-11-16T14:15:00+01:00,2026-11-16T14:30:00+01:00,planned
+206-frame,Build internal wall frames 206,206,Fit-out team 2,2026-11-23T12:30:00+01:00,2026-11-23T14:30:00+01:00,planned
+206-services,Install electrical and plumbing 206,206,Fit-out team 2,2026-11-24T08:00:00+01:00,2026-11-24T10:00:00+01:00,planned
+206-inspect,Inspect electrical and plumbing 206,206,Inspection team 2,2026-11-24T10:00:00+01:00,2026-11-24T10:30:00+01:00,planned
+206-close,Close internal walls 206,206,Fit-out team 2,2026-11-24T10:30:00+01:00,2026-11-24T12:30:00+01:00,planned
+layout-207,Frame partitions 207,207,layout-robot-1,2026-11-16T14:30:00+01:00,2026-11-16T14:45:00+01:00,planned
+207-frame,Build internal wall frames 207,207,Fit-out team 2,2026-11-24T12:30:00+01:00,2026-11-24T14:30:00+01:00,planned
+207-services,Install electrical and plumbing 207,207,Fit-out team 2,2026-11-25T08:00:00+01:00,2026-11-25T10:00:00+01:00,planned
+207-inspect,Inspect electrical and plumbing 207,207,Inspection team 2,2026-11-25T10:00:00+01:00,2026-11-25T10:30:00+01:00,planned
+207-close,Close internal walls 207,207,Fit-out team 2,2026-11-25T10:30:00+01:00,2026-11-25T12:30:00+01:00,planned
+layout-208,Frame partitions 208,208,layout-robot-1,2026-11-16T14:45:00+01:00,2026-11-16T15:00:00+01:00,planned
+208-frame,Build internal wall frames 208,208,Fit-out team 2,2026-11-25T12:30:00+01:00,2026-11-25T14:30:00+01:00,planned
+208-services,Install electrical and plumbing 208,208,Fit-out team 2,2026-11-26T08:00:00+01:00,2026-11-26T10:00:00+01:00,planned
+208-inspect,Inspect electrical and plumbing 208,208,Inspection team 2,2026-11-26T10:00:00+01:00,2026-11-26T10:30:00+01:00,planned
+208-close,Close internal walls 208,208,Fit-out team 2,2026-11-26T10:30:00+01:00,2026-11-26T12:30:00+01:00,planned
+layout-209,Frame partitions 209,209,layout-robot-1,2026-11-16T15:00:00+01:00,2026-11-16T15:15:00+01:00,planned
+209-frame,Build internal wall frames 209,209,Fit-out team 2,2026-11-26T12:30:00+01:00,2026-11-26T14:30:00+01:00,planned
+209-services,Install electrical and plumbing 209,209,Fit-out team 2,2026-11-27T08:00:00+01:00,2026-11-27T10:00:00+01:00,planned
+209-inspect,Inspect electrical and plumbing 209,209,Inspection team 2,2026-11-27T10:00:00+01:00,2026-11-27T10:30:00+01:00,planned
+209-close,Close internal walls 209,209,Fit-out team 2,2026-11-27T10:30:00+01:00,2026-11-27T12:30:00+01:00,planned
+layout-210,Frame partitions 210,210,layout-robot-1,2026-11-16T15:15:00+01:00,2026-11-16T15:30:00+01:00,planned
+210-frame,Build internal wall frames 210,210,Fit-out team 2,2026-11-27T12:30:00+01:00,2026-11-27T14:30:00+01:00,planned
+210-services,Install electrical and plumbing 210,210,Fit-out team 2,2026-11-30T08:00:00+01:00,2026-11-30T10:00:00+01:00,planned
+210-inspect,Inspect electrical and plumbing 210,210,Inspection team 2,2026-11-30T10:00:00+01:00,2026-11-30T10:30:00+01:00,planned
+210-close,Close internal walls 210,210,Fit-out team 2,2026-11-30T10:30:00+01:00,2026-11-30T12:30:00+01:00,planned
+layout-211,Frame partitions 211,211,layout-robot-1,2026-11-16T15:30:00+01:00,2026-11-16T15:45:00+01:00,planned
+211-frame,Build internal wall frames 211,211,Fit-out team 2,2026-11-30T12:30:00+01:00,2026-11-30T14:30:00+01:00,planned
+211-services,Install electrical and plumbing 211,211,Fit-out team 2,2026-12-01T08:00:00+01:00,2026-12-01T10:00:00+01:00,planned
+211-inspect,Inspect electrical and plumbing 211,211,Inspection team 2,2026-12-01T10:00:00+01:00,2026-12-01T10:30:00+01:00,planned
+211-close,Close internal walls 211,211,Fit-out team 2,2026-12-01T10:30:00+01:00,2026-12-01T12:30:00+01:00,planned
+layout-212,Frame partitions 212,212,layout-robot-1,2026-11-16T15:45:00+01:00,2026-11-16T16:00:00+01:00,planned
+212-frame,Build internal wall frames 212,212,Fit-out team 2,2026-12-01T12:30:00+01:00,2026-12-01T14:30:00+01:00,planned
+212-services,Install electrical and plumbing 212,212,Fit-out team 2,2026-12-02T08:00:00+01:00,2026-12-02T10:00:00+01:00,planned
+212-inspect,Inspect electrical and plumbing 212,212,Inspection team 2,2026-12-02T10:00:00+01:00,2026-12-02T10:30:00+01:00,planned
+212-close,Close internal walls 212,212,Fit-out team 2,2026-12-02T10:30:00+01:00,2026-12-02T12:30:00+01:00,planned
+layout-213,Frame partitions 213,213,layout-robot-1,2026-11-17T08:00:00+01:00,2026-11-17T08:15:00+01:00,planned
+213-frame,Build internal wall frames 213,213,Fit-out team 2,2026-12-02T12:30:00+01:00,2026-12-02T14:30:00+01:00,planned
+213-services,Install electrical and plumbing 213,213,Fit-out team 2,2026-12-03T08:00:00+01:00,2026-12-03T10:00:00+01:00,planned
+213-inspect,Inspect electrical and plumbing 213,213,Inspection team 2,2026-12-03T10:00:00+01:00,2026-12-03T10:30:00+01:00,planned
+213-close,Close internal walls 213,213,Fit-out team 2,2026-12-03T10:30:00+01:00,2026-12-03T12:30:00+01:00,planned
+layout-214,Frame partitions 214,214,layout-robot-1,2026-11-17T08:15:00+01:00,2026-11-17T08:30:00+01:00,planned
+214-frame,Build internal wall frames 214,214,Fit-out team 2,2026-12-03T12:30:00+01:00,2026-12-03T14:30:00+01:00,planned
+214-services,Install electrical and plumbing 214,214,Fit-out team 2,2026-12-04T08:00:00+01:00,2026-12-04T10:00:00+01:00,planned
+214-inspect,Inspect electrical and plumbing 214,214,Inspection team 2,2026-12-04T10:00:00+01:00,2026-12-04T10:30:00+01:00,planned
+214-close,Close internal walls 214,214,Fit-out team 2,2026-12-04T10:30:00+01:00,2026-12-04T12:30:00+01:00,planned
+layout-215,Frame partitions 215,215,layout-robot-1,2026-11-17T08:30:00+01:00,2026-11-17T08:45:00+01:00,planned
+215-frame,Build internal wall frames 215,215,Fit-out team 2,2026-12-04T12:30:00+01:00,2026-12-04T14:30:00+01:00,planned
+215-services,Install electrical and plumbing 215,215,Fit-out team 2,2026-12-07T08:00:00+01:00,2026-12-07T10:00:00+01:00,planned
+215-inspect,Inspect electrical and plumbing 215,215,Inspection team 2,2026-12-07T10:00:00+01:00,2026-12-07T10:30:00+01:00,planned
+215-close,Close internal walls 215,215,Fit-out team 2,2026-12-07T10:30:00+01:00,2026-12-07T12:30:00+01:00,planned
+layout-216,Frame partitions 216,216,layout-robot-1,2026-11-17T08:45:00+01:00,2026-11-17T09:00:00+01:00,planned
+216-frame,Build internal wall frames 216,216,Fit-out team 2,2026-12-07T12:30:00+01:00,2026-12-07T14:30:00+01:00,planned
+216-services,Install electrical and plumbing 216,216,Fit-out team 2,2026-12-08T08:00:00+01:00,2026-12-08T10:00:00+01:00,planned
+216-inspect,Inspect electrical and plumbing 216,216,Inspection team 2,2026-12-08T10:00:00+01:00,2026-12-08T10:30:00+01:00,planned
+216-close,Close internal walls 216,216,Fit-out team 2,2026-12-08T10:30:00+01:00,2026-12-08T12:30:00+01:00,planned
+layout-217,Frame partitions 217,217,layout-robot-1,2026-11-17T09:00:00+01:00,2026-11-17T09:15:00+01:00,planned
+217-frame,Build internal wall frames 217,217,Fit-out team 2,2026-12-08T12:30:00+01:00,2026-12-08T14:30:00+01:00,planned
+217-services,Install electrical and plumbing 217,217,Fit-out team 2,2026-12-09T08:00:00+01:00,2026-12-09T10:00:00+01:00,planned
+217-inspect,Inspect electrical and plumbing 217,217,Inspection team 2,2026-12-09T10:00:00+01:00,2026-12-09T10:30:00+01:00,planned
+217-close,Close internal walls 217,217,Fit-out team 2,2026-12-09T10:30:00+01:00,2026-12-09T12:30:00+01:00,planned
+layout-218,Frame partitions 218,218,layout-robot-1,2026-11-17T09:15:00+01:00,2026-11-17T09:30:00+01:00,planned
+218-frame,Build internal wall frames 218,218,Fit-out team 2,2026-12-09T12:30:00+01:00,2026-12-09T14:30:00+01:00,planned
+218-services,Install electrical and plumbing 218,218,Fit-out team 2,2026-12-10T08:00:00+01:00,2026-12-10T10:00:00+01:00,planned
+218-inspect,Inspect electrical and plumbing 218,218,Inspection team 2,2026-12-10T10:00:00+01:00,2026-12-10T10:30:00+01:00,planned
+218-close,Close internal walls 218,218,Fit-out team 2,2026-12-10T10:30:00+01:00,2026-12-10T12:30:00+01:00,planned
+layout-219,Frame partitions 219,219,layout-robot-1,2026-11-17T09:30:00+01:00,2026-11-17T09:45:00+01:00,planned
+219-frame,Build internal wall frames 219,219,Fit-out team 2,2026-12-10T12:30:00+01:00,2026-12-10T14:30:00+01:00,planned
+219-services,Install electrical and plumbing 219,219,Fit-out team 2,2026-12-11T08:00:00+01:00,2026-12-11T10:00:00+01:00,planned
+219-inspect,Inspect electrical and plumbing 219,219,Inspection team 2,2026-12-11T10:00:00+01:00,2026-12-11T10:30:00+01:00,planned
+219-close,Close internal walls 219,219,Fit-out team 2,2026-12-11T10:30:00+01:00,2026-12-11T12:30:00+01:00,planned
+layout-220,Frame partitions 220,220,layout-robot-1,2026-11-17T09:45:00+01:00,2026-11-17T10:00:00+01:00,planned
+220-frame,Build internal wall frames 220,220,Fit-out team 2,2026-12-11T12:30:00+01:00,2026-12-11T14:30:00+01:00,planned
+220-services,Install electrical and plumbing 220,220,Fit-out team 2,2026-12-14T08:00:00+01:00,2026-12-14T10:00:00+01:00,planned
+220-inspect,Inspect electrical and plumbing 220,220,Inspection team 2,2026-12-14T10:00:00+01:00,2026-12-14T10:30:00+01:00,planned
+220-close,Close internal walls 220,220,Fit-out team 2,2026-12-14T10:30:00+01:00,2026-12-14T12:30:00+01:00,planned
+layout-301,Frame partitions 301,301,layout-robot-1,2026-11-17T10:00:00+01:00,2026-11-17T10:15:00+01:00,planned
+301-frame,Build internal wall frames 301,301,Fit-out team 3,2026-11-17T10:15:00+01:00,2026-11-17T12:15:00+01:00,planned
+301-services,Install electrical and plumbing 301,301,Fit-out team 3,2026-11-17T12:15:00+01:00,2026-11-17T14:15:00+01:00,planned
+301-inspect,Inspect electrical and plumbing 301,301,Inspection team 3,2026-11-17T14:15:00+01:00,2026-11-17T14:45:00+01:00,planned
+301-close,Close internal walls 301,301,Fit-out team 3,2026-11-18T08:00:00+01:00,2026-11-18T10:00:00+01:00,planned
+layout-302,Frame partitions 302,302,layout-robot-1,2026-11-17T10:15:00+01:00,2026-11-17T10:30:00+01:00,planned
+302-frame,Build internal wall frames 302,302,Fit-out team 3,2026-11-18T10:00:00+01:00,2026-11-18T12:00:00+01:00,planned
+302-services,Install electrical and plumbing 302,302,Fit-out team 3,2026-11-18T12:00:00+01:00,2026-11-18T14:00:00+01:00,planned
+302-inspect,Inspect electrical and plumbing 302,302,Inspection team 3,2026-11-18T14:00:00+01:00,2026-11-18T14:30:00+01:00,planned
+302-close,Close internal walls 302,302,Fit-out team 3,2026-11-19T08:00:00+01:00,2026-11-19T10:00:00+01:00,planned
+layout-303,Frame partitions 303,303,layout-robot-1,2026-11-17T10:30:00+01:00,2026-11-17T10:45:00+01:00,planned
+303-frame,Build internal wall frames 303,303,Fit-out team 3,2026-11-19T10:00:00+01:00,2026-11-19T12:00:00+01:00,planned
+303-services,Install electrical and plumbing 303,303,Fit-out team 3,2026-11-19T12:00:00+01:00,2026-11-19T14:00:00+01:00,planned
+303-inspect,Inspect electrical and plumbing 303,303,Inspection team 3,2026-11-19T14:00:00+01:00,2026-11-19T14:30:00+01:00,planned
+303-close,Close internal walls 303,303,Fit-out team 3,2026-11-20T08:00:00+01:00,2026-11-20T10:00:00+01:00,planned
+layout-304,Frame partitions 304,304,layout-robot-1,2026-11-17T10:45:00+01:00,2026-11-17T11:00:00+01:00,planned
+304-frame,Build internal wall frames 304,304,Fit-out team 3,2026-11-20T10:00:00+01:00,2026-11-20T12:00:00+01:00,planned
+304-services,Install electrical and plumbing 304,304,Fit-out team 3,2026-11-20T12:00:00+01:00,2026-11-20T14:00:00+01:00,planned
+304-inspect,Inspect electrical and plumbing 304,304,Inspection team 3,2026-11-20T14:00:00+01:00,2026-11-20T14:30:00+01:00,planned
+304-close,Close internal walls 304,304,Fit-out team 3,2026-11-23T08:00:00+01:00,2026-11-23T10:00:00+01:00,planned
+layout-305,Frame partitions 305,305,layout-robot-1,2026-11-17T11:00:00+01:00,2026-11-17T11:15:00+01:00,planned
+305-frame,Build internal wall frames 305,305,Fit-out team 3,2026-11-23T10:00:00+01:00,2026-11-23T12:00:00+01:00,planned
+305-services,Install electrical and plumbing 305,305,Fit-out team 3,2026-11-23T12:00:00+01:00,2026-11-23T14:00:00+01:00,planned
+305-inspect,Inspect electrical and plumbing 305,305,Inspection team 3,2026-11-23T14:00:00+01:00,2026-11-23T14:30:00+01:00,planned
+305-close,Close internal walls 305,305,Fit-out team 3,2026-11-24T08:00:00+01:00,2026-11-24T10:00:00+01:00,planned
+layout-306,Frame partitions 306,306,layout-robot-1,2026-11-17T11:15:00+01:00,2026-11-17T11:30:00+01:00,planned
+306-frame,Build internal wall frames 306,306,Fit-out team 3,2026-11-24T10:00:00+01:00,2026-11-24T12:00:00+01:00,planned
+306-services,Install electrical and plumbing 306,306,Fit-out team 3,2026-11-24T12:00:00+01:00,2026-11-24T14:00:00+01:00,planned
+306-inspect,Inspect electrical and plumbing 306,306,Inspection team 3,2026-11-24T14:00:00+01:00,2026-11-24T14:30:00+01:00,planned
+306-close,Close internal walls 306,306,Fit-out team 3,2026-11-25T08:00:00+01:00,2026-11-25T10:00:00+01:00,planned
+layout-307,Frame partitions 307,307,layout-robot-1,2026-11-17T11:30:00+01:00,2026-11-17T11:45:00+01:00,planned
+307-frame,Build internal wall frames 307,307,Fit-out team 3,2026-11-25T10:00:00+01:00,2026-11-25T12:00:00+01:00,planned
+307-services,Install electrical and plumbing 307,307,Fit-out team 3,2026-11-25T12:00:00+01:00,2026-11-25T14:00:00+01:00,planned
+307-inspect,Inspect electrical and plumbing 307,307,Inspection team 3,2026-11-25T14:00:00+01:00,2026-11-25T14:30:00+01:00,planned
+307-close,Close internal walls 307,307,Fit-out team 3,2026-11-26T08:00:00+01:00,2026-11-26T10:00:00+01:00,planned
+layout-308,Frame partitions 308,308,layout-robot-1,2026-11-17T11:45:00+01:00,2026-11-17T12:00:00+01:00,planned
+308-frame,Build internal wall frames 308,308,Fit-out team 3,2026-11-26T10:00:00+01:00,2026-11-26T12:00:00+01:00,planned
+308-services,Install electrical and plumbing 308,308,Fit-out team 3,2026-11-26T12:00:00+01:00,2026-11-26T14:00:00+01:00,planned
+308-inspect,Inspect electrical and plumbing 308,308,Inspection team 3,2026-11-26T14:00:00+01:00,2026-11-26T14:30:00+01:00,planned
+308-close,Close internal walls 308,308,Fit-out team 3,2026-11-27T08:00:00+01:00,2026-11-27T10:00:00+01:00,planned
+layout-309,Frame partitions 309,309,layout-robot-1,2026-11-17T12:00:00+01:00,2026-11-17T12:15:00+01:00,planned
+309-frame,Build internal wall frames 309,309,Fit-out team 3,2026-11-27T10:00:00+01:00,2026-11-27T12:00:00+01:00,planned
+309-services,Install electrical and plumbing 309,309,Fit-out team 3,2026-11-27T12:00:00+01:00,2026-11-27T14:00:00+01:00,planned
+309-inspect,Inspect electrical and plumbing 309,309,Inspection team 3,2026-11-27T14:00:00+01:00,2026-11-27T14:30:00+01:00,planned
+309-close,Close internal walls 309,309,Fit-out team 3,2026-11-30T08:00:00+01:00,2026-11-30T10:00:00+01:00,planned
+layout-310,Frame partitions 310,310,layout-robot-1,2026-11-17T12:15:00+01:00,2026-11-17T12:30:00+01:00,planned
+310-frame,Build internal wall frames 310,310,Fit-out team 3,2026-11-30T10:00:00+01:00,2026-11-30T12:00:00+01:00,planned
+310-services,Install electrical and plumbing 310,310,Fit-out team 3,2026-11-30T12:00:00+01:00,2026-11-30T14:00:00+01:00,planned
+310-inspect,Inspect electrical and plumbing 310,310,Inspection team 3,2026-11-30T14:00:00+01:00,2026-11-30T14:30:00+01:00,planned
+310-close,Close internal walls 310,310,Fit-out team 3,2026-12-01T08:00:00+01:00,2026-12-01T10:00:00+01:00,planned
+layout-311,Frame partitions 311,311,layout-robot-1,2026-11-17T12:30:00+01:00,2026-11-17T12:45:00+01:00,planned
+311-frame,Build internal wall frames 311,311,Fit-out team 3,2026-12-01T10:00:00+01:00,2026-12-01T12:00:00+01:00,planned
+311-services,Install electrical and plumbing 311,311,Fit-out team 3,2026-12-01T12:00:00+01:00,2026-12-01T14:00:00+01:00,planned
+311-inspect,Inspect electrical and plumbing 311,311,Inspection team 3,2026-12-01T14:00:00+01:00,2026-12-01T14:30:00+01:00,planned
+311-close,Close internal walls 311,311,Fit-out team 3,2026-12-02T08:00:00+01:00,2026-12-02T10:00:00+01:00,planned
+layout-312,Frame partitions 312,312,layout-robot-1,2026-11-17T12:45:00+01:00,2026-11-17T13:00:00+01:00,planned
+312-frame,Build internal wall frames 312,312,Fit-out team 3,2026-12-02T10:00:00+01:00,2026-12-02T12:00:00+01:00,planned
+312-services,Install electrical and plumbing 312,312,Fit-out team 3,2026-12-02T12:00:00+01:00,2026-12-02T14:00:00+01:00,planned
+312-inspect,Inspect electrical and plumbing 312,312,Inspection team 3,2026-12-02T14:00:00+01:00,2026-12-02T14:30:00+01:00,planned
+312-close,Close internal walls 312,312,Fit-out team 3,2026-12-03T08:00:00+01:00,2026-12-03T10:00:00+01:00,planned
+layout-313,Frame partitions 313,313,layout-robot-1,2026-11-17T13:00:00+01:00,2026-11-17T13:15:00+01:00,planned
+313-frame,Build internal wall frames 313,313,Fit-out team 3,2026-12-03T10:00:00+01:00,2026-12-03T12:00:00+01:00,planned
+313-services,Install electrical and plumbing 313,313,Fit-out team 3,2026-12-03T12:00:00+01:00,2026-12-03T14:00:00+01:00,planned
+313-inspect,Inspect electrical and plumbing 313,313,Inspection team 3,2026-12-03T14:00:00+01:00,2026-12-03T14:30:00+01:00,planned
+313-close,Close internal walls 313,313,Fit-out team 3,2026-12-04T08:00:00+01:00,2026-12-04T10:00:00+01:00,planned
+layout-314,Frame partitions 314,314,layout-robot-1,2026-11-17T13:15:00+01:00,2026-11-17T13:30:00+01:00,planned
+314-frame,Build internal wall frames 314,314,Fit-out team 3,2026-12-04T10:00:00+01:00,2026-12-04T12:00:00+01:00,planned
+314-services,Install electrical and plumbing 314,314,Fit-out team 3,2026-12-04T12:00:00+01:00,2026-12-04T14:00:00+01:00,planned
+314-inspect,Inspect electrical and plumbing 314,314,Inspection team 3,2026-12-04T14:00:00+01:00,2026-12-04T14:30:00+01:00,planned
+314-close,Close internal walls 314,314,Fit-out team 3,2026-12-07T08:00:00+01:00,2026-12-07T10:00:00+01:00,planned
+layout-315,Frame partitions 315,315,layout-robot-1,2026-11-17T13:30:00+01:00,2026-11-17T13:45:00+01:00,planned
+315-frame,Build internal wall frames 315,315,Fit-out team 3,2026-12-07T10:00:00+01:00,2026-12-07T12:00:00+01:00,planned
+315-services,Install electrical and plumbing 315,315,Fit-out team 3,2026-12-07T12:00:00+01:00,2026-12-07T14:00:00+01:00,planned
+315-inspect,Inspect electrical and plumbing 315,315,Inspection team 3,2026-12-07T14:00:00+01:00,2026-12-07T14:30:00+01:00,planned
+315-close,Close internal walls 315,315,Fit-out team 3,2026-12-08T08:00:00+01:00,2026-12-08T10:00:00+01:00,planned
+layout-316,Frame partitions 316,316,layout-robot-1,2026-11-17T13:45:00+01:00,2026-11-17T14:00:00+01:00,planned
+316-frame,Build internal wall frames 316,316,Fit-out team 3,2026-12-08T10:00:00+01:00,2026-12-08T12:00:00+01:00,planned
+316-services,Install electrical and plumbing 316,316,Fit-out team 3,2026-12-08T12:00:00+01:00,2026-12-08T14:00:00+01:00,planned
+316-inspect,Inspect electrical and plumbing 316,316,Inspection team 3,2026-12-08T14:00:00+01:00,2026-12-08T14:30:00+01:00,planned
+316-close,Close internal walls 316,316,Fit-out team 3,2026-12-09T08:00:00+01:00,2026-12-09T10:00:00+01:00,planned
+layout-317,Frame partitions 317,317,layout-robot-1,2026-11-17T14:00:00+01:00,2026-11-17T14:15:00+01:00,planned
+317-frame,Build internal wall frames 317,317,Fit-out team 3,2026-12-09T10:00:00+01:00,2026-12-09T12:00:00+01:00,planned
+317-services,Install electrical and plumbing 317,317,Fit-out team 3,2026-12-09T12:00:00+01:00,2026-12-09T14:00:00+01:00,planned
+317-inspect,Inspect electrical and plumbing 317,317,Inspection team 3,2026-12-09T14:00:00+01:00,2026-12-09T14:30:00+01:00,planned
+317-close,Close internal walls 317,317,Fit-out team 3,2026-12-10T08:00:00+01:00,2026-12-10T10:00:00+01:00,planned
+layout-318,Frame partitions 318,318,layout-robot-1,2026-11-17T14:15:00+01:00,2026-11-17T14:30:00+01:00,planned
+318-frame,Build internal wall frames 318,318,Fit-out team 3,2026-12-10T10:00:00+01:00,2026-12-10T12:00:00+01:00,planned
+318-services,Install electrical and plumbing 318,318,Fit-out team 3,2026-12-10T12:00:00+01:00,2026-12-10T14:00:00+01:00,planned
+318-inspect,Inspect electrical and plumbing 318,318,Inspection team 3,2026-12-10T14:00:00+01:00,2026-12-10T14:30:00+01:00,planned
+318-close,Close internal walls 318,318,Fit-out team 3,2026-12-11T08:00:00+01:00,2026-12-11T10:00:00+01:00,planned
+layout-319,Frame partitions 319,319,layout-robot-1,2026-11-17T14:30:00+01:00,2026-11-17T14:45:00+01:00,planned
+319-frame,Build internal wall frames 319,319,Fit-out team 3,2026-12-11T10:00:00+01:00,2026-12-11T12:00:00+01:00,planned
+319-services,Install electrical and plumbing 319,319,Fit-out team 3,2026-12-11T12:00:00+01:00,2026-12-11T14:00:00+01:00,planned
+319-inspect,Inspect electrical and plumbing 319,319,Inspection team 3,2026-12-11T14:00:00+01:00,2026-12-11T14:30:00+01:00,planned
+319-close,Close internal walls 319,319,Fit-out team 3,2026-12-14T08:00:00+01:00,2026-12-14T10:00:00+01:00,planned
+layout-320,Frame partitions 320,320,layout-robot-1,2026-11-17T14:45:00+01:00,2026-11-17T15:00:00+01:00,planned
+320-frame,Build internal wall frames 320,320,Fit-out team 3,2026-12-14T10:00:00+01:00,2026-12-14T12:00:00+01:00,planned
+320-services,Install electrical and plumbing 320,320,Fit-out team 3,2026-12-14T12:00:00+01:00,2026-12-14T14:00:00+01:00,planned
+320-inspect,Inspect electrical and plumbing 320,320,Inspection team 3,2026-12-14T14:00:00+01:00,2026-12-14T14:30:00+01:00,planned
+320-close,Close internal walls 320,320,Fit-out team 3,2026-12-15T08:00:00+01:00,2026-12-15T10:00:00+01:00,planned
+layout-401,Frame partitions 401,401,layout-robot-1,2026-11-17T15:00:00+01:00,2026-11-17T15:15:00+01:00,planned
+401-frame,Build internal wall frames 401,401,Fit-out team 4,2026-11-18T08:00:00+01:00,2026-11-18T10:00:00+01:00,planned
+401-services,Install electrical and plumbing 401,401,Fit-out team 4,2026-11-18T10:00:00+01:00,2026-11-18T12:00:00+01:00,planned
+401-inspect,Inspect electrical and plumbing 401,401,Inspection team 4,2026-11-18T12:00:00+01:00,2026-11-18T12:30:00+01:00,planned
+401-close,Close internal walls 401,401,Fit-out team 4,2026-11-18T12:30:00+01:00,2026-11-18T14:30:00+01:00,planned
+layout-402,Frame partitions 402,402,layout-robot-1,2026-11-17T15:15:00+01:00,2026-11-17T15:30:00+01:00,planned
+402-frame,Build internal wall frames 402,402,Fit-out team 4,2026-11-19T08:00:00+01:00,2026-11-19T10:00:00+01:00,planned
+402-services,Install electrical and plumbing 402,402,Fit-out team 4,2026-11-19T10:00:00+01:00,2026-11-19T12:00:00+01:00,planned
+402-inspect,Inspect electrical and plumbing 402,402,Inspection team 4,2026-11-19T12:00:00+01:00,2026-11-19T12:30:00+01:00,planned
+402-close,Close internal walls 402,402,Fit-out team 4,2026-11-19T12:30:00+01:00,2026-11-19T14:30:00+01:00,planned
+layout-403,Frame partitions 403,403,layout-robot-1,2026-11-17T15:30:00+01:00,2026-11-17T15:45:00+01:00,planned
+403-frame,Build internal wall frames 403,403,Fit-out team 4,2026-11-20T08:00:00+01:00,2026-11-20T10:00:00+01:00,planned
+403-services,Install electrical and plumbing 403,403,Fit-out team 4,2026-11-20T10:00:00+01:00,2026-11-20T12:00:00+01:00,planned
+403-inspect,Inspect electrical and plumbing 403,403,Inspection team 4,2026-11-20T12:00:00+01:00,2026-11-20T12:30:00+01:00,planned
+403-close,Close internal walls 403,403,Fit-out team 4,2026-11-20T12:30:00+01:00,2026-11-20T14:30:00+01:00,planned
+layout-404,Frame partitions 404,404,layout-robot-1,2026-11-17T15:45:00+01:00,2026-11-17T16:00:00+01:00,planned
+404-frame,Build internal wall frames 404,404,Fit-out team 4,2026-11-23T08:00:00+01:00,2026-11-23T10:00:00+01:00,planned
+404-services,Install electrical and plumbing 404,404,Fit-out team 4,2026-11-23T10:00:00+01:00,2026-11-23T12:00:00+01:00,planned
+404-inspect,Inspect electrical and plumbing 404,404,Inspection team 4,2026-11-23T12:00:00+01:00,2026-11-23T12:30:00+01:00,planned
+404-close,Close internal walls 404,404,Fit-out team 4,2026-11-23T12:30:00+01:00,2026-11-23T14:30:00+01:00,planned
+layout-405,Frame partitions 405,405,layout-robot-1,2026-11-18T08:00:00+01:00,2026-11-18T08:15:00+01:00,planned
+405-frame,Build internal wall frames 405,405,Fit-out team 4,2026-11-24T08:00:00+01:00,2026-11-24T10:00:00+01:00,planned
+405-services,Install electrical and plumbing 405,405,Fit-out team 4,2026-11-24T10:00:00+01:00,2026-11-24T12:00:00+01:00,planned
+405-inspect,Inspect electrical and plumbing 405,405,Inspection team 4,2026-11-24T12:00:00+01:00,2026-11-24T12:30:00+01:00,planned
+405-close,Close internal walls 405,405,Fit-out team 4,2026-11-24T12:30:00+01:00,2026-11-24T14:30:00+01:00,planned
+layout-406,Frame partitions 406,406,layout-robot-1,2026-11-18T08:15:00+01:00,2026-11-18T08:30:00+01:00,planned
+406-frame,Build internal wall frames 406,406,Fit-out team 4,2026-11-25T08:00:00+01:00,2026-11-25T10:00:00+01:00,planned
+406-services,Install electrical and plumbing 406,406,Fit-out team 4,2026-11-25T10:00:00+01:00,2026-11-25T12:00:00+01:00,planned
+406-inspect,Inspect electrical and plumbing 406,406,Inspection team 4,2026-11-25T12:00:00+01:00,2026-11-25T12:30:00+01:00,planned
+406-close,Close internal walls 406,406,Fit-out team 4,2026-11-25T12:30:00+01:00,2026-11-25T14:30:00+01:00,planned
+layout-407,Frame partitions 407,407,layout-robot-1,2026-11-18T08:30:00+01:00,2026-11-18T08:45:00+01:00,planned
+407-frame,Build internal wall frames 407,407,Fit-out team 4,2026-11-26T08:00:00+01:00,2026-11-26T10:00:00+01:00,planned
+407-services,Install electrical and plumbing 407,407,Fit-out team 4,2026-11-26T10:00:00+01:00,2026-11-26T12:00:00+01:00,planned
+407-inspect,Inspect electrical and plumbing 407,407,Inspection team 4,2026-11-26T12:00:00+01:00,2026-11-26T12:30:00+01:00,planned
+407-close,Close internal walls 407,407,Fit-out team 4,2026-11-26T12:30:00+01:00,2026-11-26T14:30:00+01:00,planned
+layout-408,Frame partitions 408,408,layout-robot-1,2026-11-18T08:45:00+01:00,2026-11-18T09:00:00+01:00,planned
+408-frame,Build internal wall frames 408,408,Fit-out team 4,2026-11-27T08:00:00+01:00,2026-11-27T10:00:00+01:00,planned
+408-services,Install electrical and plumbing 408,408,Fit-out team 4,2026-11-27T10:00:00+01:00,2026-11-27T12:00:00+01:00,planned
+408-inspect,Inspect electrical and plumbing 408,408,Inspection team 4,2026-11-27T12:00:00+01:00,2026-11-27T12:30:00+01:00,planned
+408-close,Close internal walls 408,408,Fit-out team 4,2026-11-27T12:30:00+01:00,2026-11-27T14:30:00+01:00,planned
+layout-409,Frame partitions 409,409,layout-robot-1,2026-11-18T09:00:00+01:00,2026-11-18T09:15:00+01:00,planned
+409-frame,Build internal wall frames 409,409,Fit-out team 4,2026-11-30T08:00:00+01:00,2026-11-30T10:00:00+01:00,planned
+409-services,Install electrical and plumbing 409,409,Fit-out team 4,2026-11-30T10:00:00+01:00,2026-11-30T12:00:00+01:00,planned
+409-inspect,Inspect electrical and plumbing 409,409,Inspection team 4,2026-11-30T12:00:00+01:00,2026-11-30T12:30:00+01:00,planned
+409-close,Close internal walls 409,409,Fit-out team 4,2026-11-30T12:30:00+01:00,2026-11-30T14:30:00+01:00,planned
+layout-410,Frame partitions 410,410,layout-robot-1,2026-11-18T09:15:00+01:00,2026-11-18T09:30:00+01:00,planned
+410-frame,Build internal wall frames 410,410,Fit-out team 4,2026-12-01T08:00:00+01:00,2026-12-01T10:00:00+01:00,planned
+410-services,Install electrical and plumbing 410,410,Fit-out team 4,2026-12-01T10:00:00+01:00,2026-12-01T12:00:00+01:00,planned
+410-inspect,Inspect electrical and plumbing 410,410,Inspection team 4,2026-12-01T12:00:00+01:00,2026-12-01T12:30:00+01:00,planned
+410-close,Close internal walls 410,410,Fit-out team 4,2026-12-01T12:30:00+01:00,2026-12-01T14:30:00+01:00,planned
+layout-411,Frame partitions 411,411,layout-robot-1,2026-11-18T09:30:00+01:00,2026-11-18T09:45:00+01:00,planned
+411-frame,Build internal wall frames 411,411,Fit-out team 4,2026-12-02T08:00:00+01:00,2026-12-02T10:00:00+01:00,planned
+411-services,Install electrical and plumbing 411,411,Fit-out team 4,2026-12-02T10:00:00+01:00,2026-12-02T12:00:00+01:00,planned
+411-inspect,Inspect electrical and plumbing 411,411,Inspection team 4,2026-12-02T12:00:00+01:00,2026-12-02T12:30:00+01:00,planned
+411-close,Close internal walls 411,411,Fit-out team 4,2026-12-02T12:30:00+01:00,2026-12-02T14:30:00+01:00,planned
+layout-412,Frame partitions 412,412,layout-robot-1,2026-11-18T09:45:00+01:00,2026-11-18T10:00:00+01:00,planned
+412-frame,Build internal wall frames 412,412,Fit-out team 4,2026-12-03T08:00:00+01:00,2026-12-03T10:00:00+01:00,planned
+412-services,Install electrical and plumbing 412,412,Fit-out team 4,2026-12-03T10:00:00+01:00,2026-12-03T12:00:00+01:00,planned
+412-inspect,Inspect electrical and plumbing 412,412,Inspection team 4,2026-12-03T12:00:00+01:00,2026-12-03T12:30:00+01:00,planned
+412-close,Close internal walls 412,412,Fit-out team 4,2026-12-03T12:30:00+01:00,2026-12-03T14:30:00+01:00,planned
+layout-413,Frame partitions 413,413,layout-robot-1,2026-11-18T10:00:00+01:00,2026-11-18T10:15:00+01:00,planned
+413-frame,Build internal wall frames 413,413,Fit-out team 4,2026-12-04T08:00:00+01:00,2026-12-04T10:00:00+01:00,planned
+413-services,Install electrical and plumbing 413,413,Fit-out team 4,2026-12-04T10:00:00+01:00,2026-12-04T12:00:00+01:00,planned
+413-inspect,Inspect electrical and plumbing 413,413,Inspection team 4,2026-12-04T12:00:00+01:00,2026-12-04T12:30:00+01:00,planned
+413-close,Close internal walls 413,413,Fit-out team 4,2026-12-04T12:30:00+01:00,2026-12-04T14:30:00+01:00,planned
+layout-414,Frame partitions 414,414,layout-robot-1,2026-11-18T10:15:00+01:00,2026-11-18T10:30:00+01:00,planned
+414-frame,Build internal wall frames 414,414,Fit-out team 4,2026-12-07T08:00:00+01:00,2026-12-07T10:00:00+01:00,planned
+414-services,Install electrical and plumbing 414,414,Fit-out team 4,2026-12-07T10:00:00+01:00,2026-12-07T12:00:00+01:00,planned
+414-inspect,Inspect electrical and plumbing 414,414,Inspection team 4,2026-12-07T12:00:00+01:00,2026-12-07T12:30:00+01:00,planned
+414-close,Close internal walls 414,414,Fit-out team 4,2026-12-07T12:30:00+01:00,2026-12-07T14:30:00+01:00,planned
+layout-415,Frame partitions 415,415,layout-robot-1,2026-11-18T10:30:00+01:00,2026-11-18T10:45:00+01:00,planned
+415-frame,Build internal wall frames 415,415,Fit-out team 4,2026-12-08T08:00:00+01:00,2026-12-08T10:00:00+01:00,planned
+415-services,Install electrical and plumbing 415,415,Fit-out team 4,2026-12-08T10:00:00+01:00,2026-12-08T12:00:00+01:00,planned
+415-inspect,Inspect electrical and plumbing 415,415,Inspection team 4,2026-12-08T12:00:00+01:00,2026-12-08T12:30:00+01:00,planned
+415-close,Close internal walls 415,415,Fit-out team 4,2026-12-08T12:30:00+01:00,2026-12-08T14:30:00+01:00,planned
+layout-416,Frame partitions 416,416,layout-robot-1,2026-11-18T10:45:00+01:00,2026-11-18T11:00:00+01:00,planned
+416-frame,Build internal wall frames 416,416,Fit-out team 4,2026-12-09T08:00:00+01:00,2026-12-09T10:00:00+01:00,planned
+416-services,Install electrical and plumbing 416,416,Fit-out team 4,2026-12-09T10:00:00+01:00,2026-12-09T12:00:00+01:00,planned
+416-inspect,Inspect electrical and plumbing 416,416,Inspection team 4,2026-12-09T12:00:00+01:00,2026-12-09T12:30:00+01:00,planned
+416-close,Close internal walls 416,416,Fit-out team 4,2026-12-09T12:30:00+01:00,2026-12-09T14:30:00+01:00,planned
+layout-417,Frame partitions 417,417,layout-robot-1,2026-11-18T11:00:00+01:00,2026-11-18T11:15:00+01:00,planned
+417-frame,Build internal wall frames 417,417,Fit-out team 4,2026-12-10T08:00:00+01:00,2026-12-10T10:00:00+01:00,planned
+417-services,Install electrical and plumbing 417,417,Fit-out team 4,2026-12-10T10:00:00+01:00,2026-12-10T12:00:00+01:00,planned
+417-inspect,Inspect electrical and plumbing 417,417,Inspection team 4,2026-12-10T12:00:00+01:00,2026-12-10T12:30:00+01:00,planned
+417-close,Close internal walls 417,417,Fit-out team 4,2026-12-10T12:30:00+01:00,2026-12-10T14:30:00+01:00,planned
+layout-418,Frame partitions 418,418,layout-robot-1,2026-11-18T11:15:00+01:00,2026-11-18T11:30:00+01:00,planned
+418-frame,Build internal wall frames 418,418,Fit-out team 4,2026-12-11T08:00:00+01:00,2026-12-11T10:00:00+01:00,planned
+418-services,Install electrical and plumbing 418,418,Fit-out team 4,2026-12-11T10:00:00+01:00,2026-12-11T12:00:00+01:00,planned
+418-inspect,Inspect electrical and plumbing 418,418,Inspection team 4,2026-12-11T12:00:00+01:00,2026-12-11T12:30:00+01:00,planned
+418-close,Close internal walls 418,418,Fit-out team 4,2026-12-11T12:30:00+01:00,2026-12-11T14:30:00+01:00,planned
+layout-419,Frame partitions 419,419,layout-robot-1,2026-11-18T11:30:00+01:00,2026-11-18T11:45:00+01:00,planned
+419-frame,Build internal wall frames 419,419,Fit-out team 4,2026-12-14T08:00:00+01:00,2026-12-14T10:00:00+01:00,planned
+419-services,Install electrical and plumbing 419,419,Fit-out team 4,2026-12-14T10:00:00+01:00,2026-12-14T12:00:00+01:00,planned
+419-inspect,Inspect electrical and plumbing 419,419,Inspection team 4,2026-12-14T12:00:00+01:00,2026-12-14T12:30:00+01:00,planned
+419-close,Close internal walls 419,419,Fit-out team 4,2026-12-14T12:30:00+01:00,2026-12-14T14:30:00+01:00,planned
+layout-420,Frame partitions 420,420,layout-robot-1,2026-11-18T11:45:00+01:00,2026-11-18T12:00:00+01:00,planned
+420-frame,Build internal wall frames 420,420,Fit-out team 4,2026-12-15T08:00:00+01:00,2026-12-15T10:00:00+01:00,planned
+420-services,Install electrical and plumbing 420,420,Fit-out team 4,2026-12-15T10:00:00+01:00,2026-12-15T12:00:00+01:00,planned
+420-inspect,Inspect electrical and plumbing 420,420,Inspection team 4,2026-12-15T12:00:00+01:00,2026-12-15T12:30:00+01:00,planned
+420-close,Close internal walls 420,420,Fit-out team 4,2026-12-15T12:30:00+01:00,2026-12-15T14:30:00+01:00,planned
+layout-501,Frame partitions 501,501,layout-robot-1,2026-11-18T12:00:00+01:00,2026-11-18T12:15:00+01:00,planned
+501-frame,Build internal wall frames 501,501,Fit-out team 5,2026-11-18T12:15:00+01:00,2026-11-18T14:15:00+01:00,planned
+501-services,Install electrical and plumbing 501,501,Fit-out team 5,2026-11-19T08:00:00+01:00,2026-11-19T10:00:00+01:00,planned
+501-inspect,Inspect electrical and plumbing 501,501,Inspection team 5,2026-11-19T10:00:00+01:00,2026-11-19T10:30:00+01:00,planned
+501-close,Close internal walls 501,501,Fit-out team 5,2026-11-19T10:30:00+01:00,2026-11-19T12:30:00+01:00,planned
+layout-502,Frame partitions 502,502,layout-robot-1,2026-11-18T12:15:00+01:00,2026-11-18T12:30:00+01:00,planned
+502-frame,Build internal wall frames 502,502,Fit-out team 5,2026-11-19T12:30:00+01:00,2026-11-19T14:30:00+01:00,planned
+502-services,Install electrical and plumbing 502,502,Fit-out team 5,2026-11-20T08:00:00+01:00,2026-11-20T10:00:00+01:00,planned
+502-inspect,Inspect electrical and plumbing 502,502,Inspection team 5,2026-11-20T10:00:00+01:00,2026-11-20T10:30:00+01:00,planned
+502-close,Close internal walls 502,502,Fit-out team 5,2026-11-20T10:30:00+01:00,2026-11-20T12:30:00+01:00,planned
+layout-503,Frame partitions 503,503,layout-robot-1,2026-11-18T12:30:00+01:00,2026-11-18T12:45:00+01:00,planned
+503-frame,Build internal wall frames 503,503,Fit-out team 5,2026-11-20T12:30:00+01:00,2026-11-20T14:30:00+01:00,planned
+503-services,Install electrical and plumbing 503,503,Fit-out team 5,2026-11-23T08:00:00+01:00,2026-11-23T10:00:00+01:00,planned
+503-inspect,Inspect electrical and plumbing 503,503,Inspection team 5,2026-11-23T10:00:00+01:00,2026-11-23T10:30:00+01:00,planned
+503-close,Close internal walls 503,503,Fit-out team 5,2026-11-23T10:30:00+01:00,2026-11-23T12:30:00+01:00,planned
+layout-504,Frame partitions 504,504,layout-robot-1,2026-11-18T12:45:00+01:00,2026-11-18T13:00:00+01:00,planned
+504-frame,Build internal wall frames 504,504,Fit-out team 5,2026-11-23T12:30:00+01:00,2026-11-23T14:30:00+01:00,planned
+504-services,Install electrical and plumbing 504,504,Fit-out team 5,2026-11-24T08:00:00+01:00,2026-11-24T10:00:00+01:00,planned
+504-inspect,Inspect electrical and plumbing 504,504,Inspection team 5,2026-11-24T10:00:00+01:00,2026-11-24T10:30:00+01:00,planned
+504-close,Close internal walls 504,504,Fit-out team 5,2026-11-24T10:30:00+01:00,2026-11-24T12:30:00+01:00,planned
+layout-505,Frame partitions 505,505,layout-robot-1,2026-11-18T13:00:00+01:00,2026-11-18T13:15:00+01:00,planned
+505-frame,Build internal wall frames 505,505,Fit-out team 5,2026-11-24T12:30:00+01:00,2026-11-24T14:30:00+01:00,planned
+505-services,Install electrical and plumbing 505,505,Fit-out team 5,2026-11-25T08:00:00+01:00,2026-11-25T10:00:00+01:00,planned
+505-inspect,Inspect electrical and plumbing 505,505,Inspection team 5,2026-11-25T10:00:00+01:00,2026-11-25T10:30:00+01:00,planned
+505-close,Close internal walls 505,505,Fit-out team 5,2026-11-25T10:30:00+01:00,2026-11-25T12:30:00+01:00,planned
+layout-506,Frame partitions 506,506,layout-robot-1,2026-11-18T13:15:00+01:00,2026-11-18T13:30:00+01:00,planned
+506-frame,Build internal wall frames 506,506,Fit-out team 5,2026-11-25T12:30:00+01:00,2026-11-25T14:30:00+01:00,planned
+506-services,Install electrical and plumbing 506,506,Fit-out team 5,2026-11-26T08:00:00+01:00,2026-11-26T10:00:00+01:00,planned
+506-inspect,Inspect electrical and plumbing 506,506,Inspection team 5,2026-11-26T10:00:00+01:00,2026-11-26T10:30:00+01:00,planned
+506-close,Close internal walls 506,506,Fit-out team 5,2026-11-26T10:30:00+01:00,2026-11-26T12:30:00+01:00,planned
+layout-507,Frame partitions 507,507,layout-robot-1,2026-11-18T13:30:00+01:00,2026-11-18T13:45:00+01:00,planned
+507-frame,Build internal wall frames 507,507,Fit-out team 5,2026-11-26T12:30:00+01:00,2026-11-26T14:30:00+01:00,planned
+507-services,Install electrical and plumbing 507,507,Fit-out team 5,2026-11-27T08:00:00+01:00,2026-11-27T10:00:00+01:00,planned
+507-inspect,Inspect electrical and plumbing 507,507,Inspection team 5,2026-11-27T10:00:00+01:00,2026-11-27T10:30:00+01:00,planned
+507-close,Close internal walls 507,507,Fit-out team 5,2026-11-27T10:30:00+01:00,2026-11-27T12:30:00+01:00,planned
+layout-508,Frame partitions 508,508,layout-robot-1,2026-11-18T13:45:00+01:00,2026-11-18T14:00:00+01:00,planned
+508-frame,Build internal wall frames 508,508,Fit-out team 5,2026-11-27T12:30:00+01:00,2026-11-27T14:30:00+01:00,planned
+508-services,Install electrical and plumbing 508,508,Fit-out team 5,2026-11-30T08:00:00+01:00,2026-11-30T10:00:00+01:00,planned
+508-inspect,Inspect electrical and plumbing 508,508,Inspection team 5,2026-11-30T10:00:00+01:00,2026-11-30T10:30:00+01:00,planned
+508-close,Close internal walls 508,508,Fit-out team 5,2026-11-30T10:30:00+01:00,2026-11-30T12:30:00+01:00,planned
+layout-509,Frame partitions 509,509,layout-robot-1,2026-11-18T14:00:00+01:00,2026-11-18T14:15:00+01:00,planned
+509-frame,Build internal wall frames 509,509,Fit-out team 5,2026-11-30T12:30:00+01:00,2026-11-30T14:30:00+01:00,planned
+509-services,Install electrical and plumbing 509,509,Fit-out team 5,2026-12-01T08:00:00+01:00,2026-12-01T10:00:00+01:00,planned
+509-inspect,Inspect electrical and plumbing 509,509,Inspection team 5,2026-12-01T10:00:00+01:00,2026-12-01T10:30:00+01:00,planned
+509-close,Close internal walls 509,509,Fit-out team 5,2026-12-01T10:30:00+01:00,2026-12-01T12:30:00+01:00,planned
+layout-510,Frame partitions 510,510,layout-robot-1,2026-11-18T14:15:00+01:00,2026-11-18T14:30:00+01:00,planned
+510-frame,Build internal wall frames 510,510,Fit-out team 5,2026-12-01T12:30:00+01:00,2026-12-01T14:30:00+01:00,planned
+510-services,Install electrical and plumbing 510,510,Fit-out team 5,2026-12-02T08:00:00+01:00,2026-12-02T10:00:00+01:00,planned
+510-inspect,Inspect electrical and plumbing 510,510,Inspection team 5,2026-12-02T10:00:00+01:00,2026-12-02T10:30:00+01:00,planned
+510-close,Close internal walls 510,510,Fit-out team 5,2026-12-02T10:30:00+01:00,2026-12-02T12:30:00+01:00,planned
+layout-511,Frame partitions 511,511,layout-robot-1,2026-11-18T14:30:00+01:00,2026-11-18T14:45:00+01:00,planned
+511-frame,Build internal wall frames 511,511,Fit-out team 5,2026-12-02T12:30:00+01:00,2026-12-02T14:30:00+01:00,planned
+511-services,Install electrical and plumbing 511,511,Fit-out team 5,2026-12-03T08:00:00+01:00,2026-12-03T10:00:00+01:00,planned
+511-inspect,Inspect electrical and plumbing 511,511,Inspection team 5,2026-12-03T10:00:00+01:00,2026-12-03T10:30:00+01:00,planned
+511-close,Close internal walls 511,511,Fit-out team 5,2026-12-03T10:30:00+01:00,2026-12-03T12:30:00+01:00,planned
+layout-512,Frame partitions 512,512,layout-robot-1,2026-11-18T14:45:00+01:00,2026-11-18T15:00:00+01:00,planned
+512-frame,Build internal wall frames 512,512,Fit-out team 5,2026-12-03T12:30:00+01:00,2026-12-03T14:30:00+01:00,planned
+512-services,Install electrical and plumbing 512,512,Fit-out team 5,2026-12-04T08:00:00+01:00,2026-12-04T10:00:00+01:00,planned
+512-inspect,Inspect electrical and plumbing 512,512,Inspection team 5,2026-12-04T10:00:00+01:00,2026-12-04T10:30:00+01:00,planned
+512-close,Close internal walls 512,512,Fit-out team 5,2026-12-04T10:30:00+01:00,2026-12-04T12:30:00+01:00,planned
+layout-513,Frame partitions 513,513,layout-robot-1,2026-11-18T15:00:00+01:00,2026-11-18T15:15:00+01:00,planned
+513-frame,Build internal wall frames 513,513,Fit-out team 5,2026-12-04T12:30:00+01:00,2026-12-04T14:30:00+01:00,planned
+513-services,Install electrical and plumbing 513,513,Fit-out team 5,2026-12-07T08:00:00+01:00,2026-12-07T10:00:00+01:00,planned
+513-inspect,Inspect electrical and plumbing 513,513,Inspection team 5,2026-12-07T10:00:00+01:00,2026-12-07T10:30:00+01:00,planned
+513-close,Close internal walls 513,513,Fit-out team 5,2026-12-07T10:30:00+01:00,2026-12-07T12:30:00+01:00,planned
+layout-514,Frame partitions 514,514,layout-robot-1,2026-11-18T15:15:00+01:00,2026-11-18T15:30:00+01:00,planned
+514-frame,Build internal wall frames 514,514,Fit-out team 5,2026-12-07T12:30:00+01:00,2026-12-07T14:30:00+01:00,planned
+514-services,Install electrical and plumbing 514,514,Fit-out team 5,2026-12-08T08:00:00+01:00,2026-12-08T10:00:00+01:00,planned
+514-inspect,Inspect electrical and plumbing 514,514,Inspection team 5,2026-12-08T10:00:00+01:00,2026-12-08T10:30:00+01:00,planned
+514-close,Close internal walls 514,514,Fit-out team 5,2026-12-08T10:30:00+01:00,2026-12-08T12:30:00+01:00,planned
+layout-515,Frame partitions 515,515,layout-robot-1,2026-11-18T15:30:00+01:00,2026-11-18T15:45:00+01:00,planned
+515-frame,Build internal wall frames 515,515,Fit-out team 5,2026-12-08T12:30:00+01:00,2026-12-08T14:30:00+01:00,planned
+515-services,Install electrical and plumbing 515,515,Fit-out team 5,2026-12-09T08:00:00+01:00,2026-12-09T10:00:00+01:00,planned
+515-inspect,Inspect electrical and plumbing 515,515,Inspection team 5,2026-12-09T10:00:00+01:00,2026-12-09T10:30:00+01:00,planned
+515-close,Close internal walls 515,515,Fit-out team 5,2026-12-09T10:30:00+01:00,2026-12-09T12:30:00+01:00,planned
+layout-516,Frame partitions 516,516,layout-robot-1,2026-11-18T15:45:00+01:00,2026-11-18T16:00:00+01:00,planned
+516-frame,Build internal wall frames 516,516,Fit-out team 5,2026-12-09T12:30:00+01:00,2026-12-09T14:30:00+01:00,planned
+516-services,Install electrical and plumbing 516,516,Fit-out team 5,2026-12-10T08:00:00+01:00,2026-12-10T10:00:00+01:00,planned
+516-inspect,Inspect electrical and plumbing 516,516,Inspection team 5,2026-12-10T10:00:00+01:00,2026-12-10T10:30:00+01:00,planned
+516-close,Close internal walls 516,516,Fit-out team 5,2026-12-10T10:30:00+01:00,2026-12-10T12:30:00+01:00,planned
+layout-517,Frame partitions 517,517,layout-robot-1,2026-11-19T08:00:00+01:00,2026-11-19T08:15:00+01:00,planned
+517-frame,Build internal wall frames 517,517,Fit-out team 5,2026-12-10T12:30:00+01:00,2026-12-10T14:30:00+01:00,planned
+517-services,Install electrical and plumbing 517,517,Fit-out team 5,2026-12-11T08:00:00+01:00,2026-12-11T10:00:00+01:00,planned
+517-inspect,Inspect electrical and plumbing 517,517,Inspection team 5,2026-12-11T10:00:00+01:00,2026-12-11T10:30:00+01:00,planned
+517-close,Close internal walls 517,517,Fit-out team 5,2026-12-11T10:30:00+01:00,2026-12-11T12:30:00+01:00,planned
+layout-518,Frame partitions 518,518,layout-robot-1,2026-11-19T08:15:00+01:00,2026-11-19T08:30:00+01:00,planned
+518-frame,Build internal wall frames 518,518,Fit-out team 5,2026-12-11T12:30:00+01:00,2026-12-11T14:30:00+01:00,planned
+518-services,Install electrical and plumbing 518,518,Fit-out team 5,2026-12-14T08:00:00+01:00,2026-12-14T10:00:00+01:00,planned
+518-inspect,Inspect electrical and plumbing 518,518,Inspection team 5,2026-12-14T10:00:00+01:00,2026-12-14T10:30:00+01:00,planned
+518-close,Close internal walls 518,518,Fit-out team 5,2026-12-14T10:30:00+01:00,2026-12-14T12:30:00+01:00,planned
+layout-519,Frame partitions 519,519,layout-robot-1,2026-11-19T08:30:00+01:00,2026-11-19T08:45:00+01:00,planned
+519-frame,Build internal wall frames 519,519,Fit-out team 5,2026-12-14T12:30:00+01:00,2026-12-14T14:30:00+01:00,planned
+519-services,Install electrical and plumbing 519,519,Fit-out team 5,2026-12-15T08:00:00+01:00,2026-12-15T10:00:00+01:00,planned
+519-inspect,Inspect electrical and plumbing 519,519,Inspection team 5,2026-12-15T10:00:00+01:00,2026-12-15T10:30:00+01:00,planned
+519-close,Close internal walls 519,519,Fit-out team 5,2026-12-15T10:30:00+01:00,2026-12-15T12:30:00+01:00,planned
+layout-520,Frame partitions 520,520,layout-robot-1,2026-11-19T08:45:00+01:00,2026-11-19T09:00:00+01:00,planned
+520-frame,Build internal wall frames 520,520,Fit-out team 5,2026-12-15T12:30:00+01:00,2026-12-15T14:30:00+01:00,planned
+520-services,Install electrical and plumbing 520,520,Fit-out team 5,2026-12-16T08:00:00+01:00,2026-12-16T10:00:00+01:00,planned
+520-inspect,Inspect electrical and plumbing 520,520,Inspection team 5,2026-12-16T10:00:00+01:00,2026-12-16T10:30:00+01:00,planned
+520-close,Close internal walls 520,520,Fit-out team 5,2026-12-16T10:30:00+01:00,2026-12-16T12:30:00+01:00,planned
+layout-601,Frame partitions 601,601,layout-robot-1,2026-11-19T09:00:00+01:00,2026-11-19T09:15:00+01:00,planned
+601-frame,Build internal wall frames 601,601,Fit-out team 6,2026-11-19T09:15:00+01:00,2026-11-19T11:15:00+01:00,planned
+601-services,Install electrical and plumbing 601,601,Fit-out team 6,2026-11-19T11:15:00+01:00,2026-11-19T13:15:00+01:00,planned
+601-inspect,Inspect electrical and plumbing 601,601,Inspection team 6,2026-11-19T13:15:00+01:00,2026-11-19T13:45:00+01:00,planned
+601-close,Close internal walls 601,601,Fit-out team 6,2026-11-19T13:45:00+01:00,2026-11-19T15:45:00+01:00,planned
+layout-602,Frame partitions 602,602,layout-robot-1,2026-11-19T09:15:00+01:00,2026-11-19T09:30:00+01:00,planned
+602-frame,Build internal wall frames 602,602,Fit-out team 6,2026-11-20T08:00:00+01:00,2026-11-20T10:00:00+01:00,planned
+602-services,Install electrical and plumbing 602,602,Fit-out team 6,2026-11-20T10:00:00+01:00,2026-11-20T12:00:00+01:00,planned
+602-inspect,Inspect electrical and plumbing 602,602,Inspection team 6,2026-11-20T12:00:00+01:00,2026-11-20T12:30:00+01:00,planned
+602-close,Close internal walls 602,602,Fit-out team 6,2026-11-20T12:30:00+01:00,2026-11-20T14:30:00+01:00,planned
+layout-603,Frame partitions 603,603,layout-robot-1,2026-11-19T09:30:00+01:00,2026-11-19T09:45:00+01:00,planned
+603-frame,Build internal wall frames 603,603,Fit-out team 6,2026-11-23T08:00:00+01:00,2026-11-23T10:00:00+01:00,planned
+603-services,Install electrical and plumbing 603,603,Fit-out team 6,2026-11-23T10:00:00+01:00,2026-11-23T12:00:00+01:00,planned
+603-inspect,Inspect electrical and plumbing 603,603,Inspection team 6,2026-11-23T12:00:00+01:00,2026-11-23T12:30:00+01:00,planned
+603-close,Close internal walls 603,603,Fit-out team 6,2026-11-23T12:30:00+01:00,2026-11-23T14:30:00+01:00,planned
+layout-604,Frame partitions 604,604,layout-robot-1,2026-11-19T09:45:00+01:00,2026-11-19T10:00:00+01:00,planned
+604-frame,Build internal wall frames 604,604,Fit-out team 6,2026-11-24T08:00:00+01:00,2026-11-24T10:00:00+01:00,planned
+604-services,Install electrical and plumbing 604,604,Fit-out team 6,2026-11-24T10:00:00+01:00,2026-11-24T12:00:00+01:00,planned
+604-inspect,Inspect electrical and plumbing 604,604,Inspection team 6,2026-11-24T12:00:00+01:00,2026-11-24T12:30:00+01:00,planned
+604-close,Close internal walls 604,604,Fit-out team 6,2026-11-24T12:30:00+01:00,2026-11-24T14:30:00+01:00,planned
+layout-605,Frame partitions 605,605,layout-robot-1,2026-11-19T10:00:00+01:00,2026-11-19T10:15:00+01:00,planned
+605-frame,Build internal wall frames 605,605,Fit-out team 6,2026-11-25T08:00:00+01:00,2026-11-25T10:00:00+01:00,planned
+605-services,Install electrical and plumbing 605,605,Fit-out team 6,2026-11-25T10:00:00+01:00,2026-11-25T12:00:00+01:00,planned
+605-inspect,Inspect electrical and plumbing 605,605,Inspection team 6,2026-11-25T12:00:00+01:00,2026-11-25T12:30:00+01:00,planned
+605-close,Close internal walls 605,605,Fit-out team 6,2026-11-25T12:30:00+01:00,2026-11-25T14:30:00+01:00,planned
+layout-606,Frame partitions 606,606,layout-robot-1,2026-11-19T10:15:00+01:00,2026-11-19T10:30:00+01:00,planned
+606-frame,Build internal wall frames 606,606,Fit-out team 6,2026-11-26T08:00:00+01:00,2026-11-26T10:00:00+01:00,planned
+606-services,Install electrical and plumbing 606,606,Fit-out team 6,2026-11-26T10:00:00+01:00,2026-11-26T12:00:00+01:00,planned
+606-inspect,Inspect electrical and plumbing 606,606,Inspection team 6,2026-11-26T12:00:00+01:00,2026-11-26T12:30:00+01:00,planned
+606-close,Close internal walls 606,606,Fit-out team 6,2026-11-26T12:30:00+01:00,2026-11-26T14:30:00+01:00,planned
+layout-607,Frame partitions 607,607,layout-robot-1,2026-11-19T10:30:00+01:00,2026-11-19T10:45:00+01:00,planned
+607-frame,Build internal wall frames 607,607,Fit-out team 6,2026-11-27T08:00:00+01:00,2026-11-27T10:00:00+01:00,planned
+607-services,Install electrical and plumbing 607,607,Fit-out team 6,2026-11-27T10:00:00+01:00,2026-11-27T12:00:00+01:00,planned
+607-inspect,Inspect electrical and plumbing 607,607,Inspection team 6,2026-11-27T12:00:00+01:00,2026-11-27T12:30:00+01:00,planned
+607-close,Close internal walls 607,607,Fit-out team 6,2026-11-27T12:30:00+01:00,2026-11-27T14:30:00+01:00,planned
+layout-608,Frame partitions 608,608,layout-robot-1,2026-11-19T10:45:00+01:00,2026-11-19T11:00:00+01:00,planned
+608-frame,Build internal wall frames 608,608,Fit-out team 6,2026-11-30T08:00:00+01:00,2026-11-30T10:00:00+01:00,planned
+608-services,Install electrical and plumbing 608,608,Fit-out team 6,2026-11-30T10:00:00+01:00,2026-11-30T12:00:00+01:00,planned
+608-inspect,Inspect electrical and plumbing 608,608,Inspection team 6,2026-11-30T12:00:00+01:00,2026-11-30T12:30:00+01:00,planned
+608-close,Close internal walls 608,608,Fit-out team 6,2026-11-30T12:30:00+01:00,2026-11-30T14:30:00+01:00,planned
+layout-609,Frame partitions 609,609,layout-robot-1,2026-11-19T11:00:00+01:00,2026-11-19T11:15:00+01:00,planned
+609-frame,Build internal wall frames 609,609,Fit-out team 6,2026-12-01T08:00:00+01:00,2026-12-01T10:00:00+01:00,planned
+609-services,Install electrical and plumbing 609,609,Fit-out team 6,2026-12-01T10:00:00+01:00,2026-12-01T12:00:00+01:00,planned
+609-inspect,Inspect electrical and plumbing 609,609,Inspection team 6,2026-12-01T12:00:00+01:00,2026-12-01T12:30:00+01:00,planned
+609-close,Close internal walls 609,609,Fit-out team 6,2026-12-01T12:30:00+01:00,2026-12-01T14:30:00+01:00,planned
+layout-610,Frame partitions 610,610,layout-robot-1,2026-11-19T11:15:00+01:00,2026-11-19T11:30:00+01:00,planned
+610-frame,Build internal wall frames 610,610,Fit-out team 6,2026-12-02T08:00:00+01:00,2026-12-02T10:00:00+01:00,planned
+610-services,Install electrical and plumbing 610,610,Fit-out team 6,2026-12-02T10:00:00+01:00,2026-12-02T12:00:00+01:00,planned
+610-inspect,Inspect electrical and plumbing 610,610,Inspection team 6,2026-12-02T12:00:00+01:00,2026-12-02T12:30:00+01:00,planned
+610-close,Close internal walls 610,610,Fit-out team 6,2026-12-02T12:30:00+01:00,2026-12-02T14:30:00+01:00,planned
+layout-611,Frame partitions 611,611,layout-robot-1,2026-11-19T11:30:00+01:00,2026-11-19T11:45:00+01:00,planned
+611-frame,Build internal wall frames 611,611,Fit-out team 6,2026-12-03T08:00:00+01:00,2026-12-03T10:00:00+01:00,planned
+611-services,Install electrical and plumbing 611,611,Fit-out team 6,2026-12-03T10:00:00+01:00,2026-12-03T12:00:00+01:00,planned
+611-inspect,Inspect electrical and plumbing 611,611,Inspection team 6,2026-12-03T12:00:00+01:00,2026-12-03T12:30:00+01:00,planned
+611-close,Close internal walls 611,611,Fit-out team 6,2026-12-03T12:30:00+01:00,2026-12-03T14:30:00+01:00,planned
+layout-612,Frame partitions 612,612,layout-robot-1,2026-11-19T11:45:00+01:00,2026-11-19T12:00:00+01:00,planned
+612-frame,Build internal wall frames 612,612,Fit-out team 6,2026-12-04T08:00:00+01:00,2026-12-04T10:00:00+01:00,planned
+612-services,Install electrical and plumbing 612,612,Fit-out team 6,2026-12-04T10:00:00+01:00,2026-12-04T12:00:00+01:00,planned
+612-inspect,Inspect electrical and plumbing 612,612,Inspection team 6,2026-12-04T12:00:00+01:00,2026-12-04T12:30:00+01:00,planned
+612-close,Close internal walls 612,612,Fit-out team 6,2026-12-04T12:30:00+01:00,2026-12-04T14:30:00+01:00,planned
+layout-613,Frame partitions 613,613,layout-robot-1,2026-11-19T12:00:00+01:00,2026-11-19T12:15:00+01:00,planned
+613-frame,Build internal wall frames 613,613,Fit-out team 6,2026-12-07T08:00:00+01:00,2026-12-07T10:00:00+01:00,planned
+613-services,Install electrical and plumbing 613,613,Fit-out team 6,2026-12-07T10:00:00+01:00,2026-12-07T12:00:00+01:00,planned
+613-inspect,Inspect electrical and plumbing 613,613,Inspection team 6,2026-12-07T12:00:00+01:00,2026-12-07T12:30:00+01:00,planned
+613-close,Close internal walls 613,613,Fit-out team 6,2026-12-07T12:30:00+01:00,2026-12-07T14:30:00+01:00,planned
+layout-614,Frame partitions 614,614,layout-robot-1,2026-11-19T12:15:00+01:00,2026-11-19T12:30:00+01:00,planned
+614-frame,Build internal wall frames 614,614,Fit-out team 6,2026-12-08T08:00:00+01:00,2026-12-08T10:00:00+01:00,planned
+614-services,Install electrical and plumbing 614,614,Fit-out team 6,2026-12-08T10:00:00+01:00,2026-12-08T12:00:00+01:00,planned
+614-inspect,Inspect electrical and plumbing 614,614,Inspection team 6,2026-12-08T12:00:00+01:00,2026-12-08T12:30:00+01:00,planned
+614-close,Close internal walls 614,614,Fit-out team 6,2026-12-08T12:30:00+01:00,2026-12-08T14:30:00+01:00,planned
+layout-615,Frame partitions 615,615,layout-robot-1,2026-11-19T12:30:00+01:00,2026-11-19T12:45:00+01:00,planned
+615-frame,Build internal wall frames 615,615,Fit-out team 6,2026-12-09T08:00:00+01:00,2026-12-09T10:00:00+01:00,planned
+615-services,Install electrical and plumbing 615,615,Fit-out team 6,2026-12-09T10:00:00+01:00,2026-12-09T12:00:00+01:00,planned
+615-inspect,Inspect electrical and plumbing 615,615,Inspection team 6,2026-12-09T12:00:00+01:00,2026-12-09T12:30:00+01:00,planned
+615-close,Close internal walls 615,615,Fit-out team 6,2026-12-09T12:30:00+01:00,2026-12-09T14:30:00+01:00,planned
+layout-616,Frame partitions 616,616,layout-robot-1,2026-11-19T12:45:00+01:00,2026-11-19T13:00:00+01:00,planned
+616-frame,Build internal wall frames 616,616,Fit-out team 6,2026-12-10T08:00:00+01:00,2026-12-10T10:00:00+01:00,planned
+616-services,Install electrical and plumbing 616,616,Fit-out team 6,2026-12-10T10:00:00+01:00,2026-12-10T12:00:00+01:00,planned
+616-inspect,Inspect electrical and plumbing 616,616,Inspection team 6,2026-12-10T12:00:00+01:00,2026-12-10T12:30:00+01:00,planned
+616-close,Close internal walls 616,616,Fit-out team 6,2026-12-10T12:30:00+01:00,2026-12-10T14:30:00+01:00,planned
+layout-617,Frame partitions 617,617,layout-robot-1,2026-11-19T13:00:00+01:00,2026-11-19T13:15:00+01:00,planned
+617-frame,Build internal wall frames 617,617,Fit-out team 6,2026-12-11T08:00:00+01:00,2026-12-11T10:00:00+01:00,planned
+617-services,Install electrical and plumbing 617,617,Fit-out team 6,2026-12-11T10:00:00+01:00,2026-12-11T12:00:00+01:00,planned
+617-inspect,Inspect electrical and plumbing 617,617,Inspection team 6,2026-12-11T12:00:00+01:00,2026-12-11T12:30:00+01:00,planned
+617-close,Close internal walls 617,617,Fit-out team 6,2026-12-11T12:30:00+01:00,2026-12-11T14:30:00+01:00,planned
+layout-618,Frame partitions 618,618,layout-robot-1,2026-11-19T13:15:00+01:00,2026-11-19T13:30:00+01:00,planned
+618-frame,Build internal wall frames 618,618,Fit-out team 6,2026-12-14T08:00:00+01:00,2026-12-14T10:00:00+01:00,planned
+618-services,Install electrical and plumbing 618,618,Fit-out team 6,2026-12-14T10:00:00+01:00,2026-12-14T12:00:00+01:00,planned
+618-inspect,Inspect electrical and plumbing 618,618,Inspection team 6,2026-12-14T12:00:00+01:00,2026-12-14T12:30:00+01:00,planned
+618-close,Close internal walls 618,618,Fit-out team 6,2026-12-14T12:30:00+01:00,2026-12-14T14:30:00+01:00,planned
+layout-619,Frame partitions 619,619,layout-robot-1,2026-11-19T13:30:00+01:00,2026-11-19T13:45:00+01:00,planned
+619-frame,Build internal wall frames 619,619,Fit-out team 6,2026-12-15T08:00:00+01:00,2026-12-15T10:00:00+01:00,planned
+619-services,Install electrical and plumbing 619,619,Fit-out team 6,2026-12-15T10:00:00+01:00,2026-12-15T12:00:00+01:00,planned
+619-inspect,Inspect electrical and plumbing 619,619,Inspection team 6,2026-12-15T12:00:00+01:00,2026-12-15T12:30:00+01:00,planned
+619-close,Close internal walls 619,619,Fit-out team 6,2026-12-15T12:30:00+01:00,2026-12-15T14:30:00+01:00,planned
+layout-620,Frame partitions 620,620,layout-robot-1,2026-11-19T13:45:00+01:00,2026-11-19T14:00:00+01:00,planned
+620-frame,Build internal wall frames 620,620,Fit-out team 6,2026-12-16T08:00:00+01:00,2026-12-16T10:00:00+01:00,planned
+620-services,Install electrical and plumbing 620,620,Fit-out team 6,2026-12-16T10:00:00+01:00,2026-12-16T12:00:00+01:00,planned
+620-inspect,Inspect electrical and plumbing 620,620,Inspection team 6,2026-12-16T12:00:00+01:00,2026-12-16T12:30:00+01:00,planned
+620-close,Close internal walls 620,620,Fit-out team 6,2026-12-16T12:30:00+01:00,2026-12-16T14:30:00+01:00,planned
