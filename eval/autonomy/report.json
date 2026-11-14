@@ -1,0 +1,1565 @@
+{
+  "meta": {
+    "when": "2026-11-14 01:20",
+    "mode": "replay of recorded model answers",
+    "model": "deepseek-v4-1-flash-1017",
+    "day0": "2026-11-12",
+    "history": "adaption/history.json",
+    "real_areas": [
+      "replay",
+      "voice",
+      "extract",
+      "record",
+      "rules_drawings",
+      "rules_sequence",
+      "rules_resources",
+      "drawings",
+      "crosscheck",
+      "schedule",
+      "decisions",
+      "outbox",
+      "qa",
+      "gate",
+      "readiness",
+      "insights",
+      "command",
+      "learning",
+      "followup",
+      "names",
+      "telegram",
+      "email",
+      "whatsapp"
+    ],
+    "mock_areas": [
+      "autonomy"
+    ],
+    "estimate": null
+  },
+  "summary": {
+    "events": 72,
+    "events_handled_without_a_human": 72,
+    "events_passed_to_a_human": 0,
+    "dates": 5,
+    "messages_not_understood": 0,
+    "events_with_an_error": 0,
+    "error_events": [],
+    "not_understood_events": [],
+    "facts_total": 78,
+    "facts_by_type": {
+      "other": 48,
+      "work_planned": 10,
+      "work_started": 20
+    },
+    "actions_taken_by_aurora": 7,
+    "actions_by_kind": {
+      "start_check": 7
+    },
+    "cases_passed_to_a_human_by_kind": {},
+    "human_decisions_required": 0,
+    "share_events_without_a_human": "72 of 72",
+    "share_actions_without_a_human": "7 of 7",
+    "start_checks_by_day": [
+      {
+        "day": "2026-10-29",
+        "checked": 2,
+        "statuses": {
+          "ready": 1,
+          "blocked": 1
+        }
+      },
+      {
+        "day": "2026-10-30",
+        "checked": 2,
+        "statuses": {
+          "ready": 2
+        }
+      },
+      {
+        "day": "2026-10-31",
+        "checked": 0,
+        "statuses": {}
+      },
+      {
+        "day": "2026-11-01",
+        "checked": 0,
+        "statuses": {}
+      },
+      {
+        "day": "2026-11-02",
+        "checked": 3,
+        "statuses": {
+          "ready": 2,
+          "blocked": 1
+        }
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "event": "h01",
+      "day": "2026-10-29",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 108,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h02",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 66,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h03",
+      "day": "2026-10-29",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 47,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h04",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Marco Ruiz",
+      "text_chars": 70,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h05",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 61,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h06",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Superintendent",
+      "text_chars": 37,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h07",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 91,
+      "facts": 2,
+      "fact_types": [
+        "work_started",
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h08",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 105,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h09",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 75,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h10",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 62,
+      "facts": 1,
+      "fact_types": [
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h11",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 44,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h12",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Jonas Meyer",
+      "text_chars": 49,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h13",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 70,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h14",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Jonas Meyer",
+      "text_chars": 111,
+      "facts": 2,
+      "fact_types": [
+        "work_started",
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h15",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Lena Ortiz",
+      "text_chars": 55,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h16",
+      "day": "2026-10-29",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 71,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h17",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 55,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h18",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Marco Ruiz",
+      "text_chars": 62,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h19",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 50,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h20",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 40,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h21",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 53,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h22",
+      "day": "2026-10-29",
+      "channel": "telegram",
+      "sender": "Hannah Kowalski",
+      "text_chars": 45,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h23",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 83,
+      "facts": 1,
+      "fact_types": [
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h24",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 92,
+      "facts": 2,
+      "fact_types": [
+        "work_planned",
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h25",
+      "day": "2026-10-29",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 104,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h26",
+      "day": "2026-10-29",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 27,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h27",
+      "day": "2026-10-29",
+      "channel": "email",
+      "sender": "Superintendent",
+      "text_chars": 51,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h28",
+      "day": "2026-10-29",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 61,
+      "facts": 0,
+      "fact_types": [],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h29",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 49,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h30",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Sam Okafor",
+      "text_chars": 124,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h31",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Hannah Kowalski",
+      "text_chars": 52,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h32",
+      "day": "2026-10-30",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 44,
+      "facts": 1,
+      "fact_types": [
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h33",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 50,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h34",
+      "day": "2026-10-30",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 67,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h35",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 50,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h36",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 90,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h37",
+      "day": "2026-10-30",
+      "channel": "telegram",
+      "sender": "Marco Ruiz",
+      "text_chars": 49,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h38",
+      "day": "2026-10-30",
+      "channel": "email",
+      "sender": "Superintendent",
+      "text_chars": 47,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h39",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 47,
+      "facts": 1,
+      "fact_types": [
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h40",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 55,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h41",
+      "day": "2026-10-31",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 51,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h42",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Jonas Meyer",
+      "text_chars": 118,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h43",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 121,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h44",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Hannah Kowalski",
+      "text_chars": 56,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h45",
+      "day": "2026-10-31",
+      "channel": "email",
+      "sender": "Plumbing inspector",
+      "text_chars": 61,
+      "facts": 1,
+      "fact_types": [
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h46",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 70,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h47",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 64,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h48",
+      "day": "2026-10-31",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 29,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h49",
+      "day": "2026-10-31",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 75,
+      "facts": 2,
+      "fact_types": [
+        "other",
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h50",
+      "day": "2026-10-31",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 77,
+      "facts": 2,
+      "fact_types": [
+        "work_planned",
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h51",
+      "day": "2026-10-31",
+      "channel": "email",
+      "sender": "Superintendent",
+      "text_chars": 69,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h52",
+      "day": "2026-10-31",
+      "channel": "telegram",
+      "sender": "Jonas Meyer",
+      "text_chars": 69,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h53",
+      "day": "2026-10-31",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 34,
+      "facts": 1,
+      "fact_types": [
+        "work_planned"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h54",
+      "day": "2026-11-01",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 112,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h55",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 81,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h56",
+      "day": "2026-11-01",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 51,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h57",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 89,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h58",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 110,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h59",
+      "day": "2026-11-01",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 58,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h60",
+      "day": "2026-11-01",
+      "channel": "email",
+      "sender": "Dana Whitfield",
+      "text_chars": 46,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h61",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Priya Shah",
+      "text_chars": 92,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h62",
+      "day": "2026-11-01",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 104,
+      "facts": 2,
+      "fact_types": [
+        "other",
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h63",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Marco Ruiz",
+      "text_chars": 91,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h64",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Hannah Kowalski",
+      "text_chars": 58,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h65",
+      "day": "2026-11-01",
+      "channel": "email",
+      "sender": "Lena Ortiz",
+      "text_chars": 44,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h66",
+      "day": "2026-11-01",
+      "channel": "telegram",
+      "sender": "Sam Okafor",
+      "text_chars": 49,
+      "facts": 2,
+      "fact_types": [
+        "work_planned",
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h67",
+      "day": "2026-11-02",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 99,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h68",
+      "day": "2026-11-02",
+      "channel": "telegram",
+      "sender": "Dmitri Volkov",
+      "text_chars": 94,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h69",
+      "day": "2026-11-02",
+      "channel": "telegram",
+      "sender": "Sam Okafor",
+      "text_chars": 58,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h70",
+      "day": "2026-11-02",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 52,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h71",
+      "day": "2026-11-02",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 62,
+      "facts": 1,
+      "fact_types": [
+        "work_started"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    },
+    {
+      "event": "h72",
+      "day": "2026-11-02",
+      "channel": "schedule",
+      "sender": "Schedule update",
+      "text_chars": 54,
+      "facts": 1,
+      "fact_types": [
+        "other"
+      ],
+      "not_understood": false,
+      "flags": [],
+      "messages": [],
+      "answer": null,
+      "error": null
+    }
+  ],
+  "demo": {
+    "summary": {
+      "events": 10,
+      "events_handled_without_a_human": 5,
+      "events_passed_to_a_human": 5,
+      "dates": 3,
+      "messages_not_understood": 0,
+      "events_with_an_error": 0,
+      "error_events": [],
+      "not_understood_events": [],
+      "facts_total": 8,
+      "facts_by_type": {
+        "delivery_actual": 1,
+        "drawing_revision": 1,
+        "equipment_actual": 1,
+        "inspection_moved": 1,
+        "question": 3,
+        "work_planned": 1
+      },
+      "actions_taken_by_aurora": 24,
+      "actions_by_kind": {
+        "answer_from_record": 3,
+        "notice": 5,
+        "reminder": 1,
+        "start_check": 15
+      },
+      "cases_passed_to_a_human_by_kind": {
+        "flag_out_of_sequence": 2,
+        "flag_plan_deviation": 2,
+        "flag_stale_drawing": 1
+      },
+      "human_decisions_required": 5,
+      "share_events_without_a_human": "5 of 10",
+      "share_actions_without_a_human": "24 of 29",
+      "start_checks_by_day": [
+        {
+          "day": "2026-11-10",
+          "checked": 3,
+          "statuses": {
+            "ready": 3
+          }
+        },
+        {
+          "day": "2026-11-12",
+          "checked": 4,
+          "statuses": {
+            "ready": 3,
+            "blocked": 1
+          }
+        },
+        {
+          "day": "2026-11-13",
+          "checked": 8,
+          "statuses": {
+            "blocked": 2,
+            "at_risk": 2,
+            "ready": 4
+          }
+        }
+      ]
+    },
+    "ledger": [
+      {
+        "event": "e01",
+        "day": "2026-11-10",
+        "channel": "email",
+        "sender": "Dana Whitfield",
+        "text_chars": 116,
+        "facts": 1,
+        "fact_types": [
+          "drawing_revision"
+        ],
+        "not_understood": false,
+        "flags": [],
+        "messages": [
+          {
+            "id": "o-revision-af9068cadd7fa18a20077438",
+            "kind": "notice",
+            "status": "simulated"
+          },
+          {
+            "id": "o-revision-165566e503f41b871a214468",
+            "kind": "notice",
+            "status": "simulated"
+          },
+          {
+            "id": "o-revision-3d7a5e07f92ede5493c4e876",
+            "kind": "notice",
+            "status": "simulated"
+          }
+        ],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e02",
+        "day": "2026-11-12",
+        "channel": "telegram",
+        "sender": "Marco Ruiz",
+        "text_chars": 0,
+        "facts": 0,
+        "fact_types": [],
+        "not_understood": false,
+        "flags": [],
+        "messages": [
+          {
+            "id": "o-voicecheck-8e8578abe44c09f0dfcbada5",
+            "kind": "notice",
+            "status": "simulated"
+          }
+        ],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e02-confirm",
+        "day": "2026-11-12",
+        "channel": "telegram",
+        "sender": "Marco Ruiz",
+        "text_chars": 7,
+        "facts": 1,
+        "fact_types": [
+          "work_planned"
+        ],
+        "not_understood": false,
+        "flags": [
+          {
+            "id": "f-stale-3b",
+            "type": "stale_drawing"
+          }
+        ],
+        "messages": [
+          {
+            "id": "o-reminder-af9068cadd7fa18a20077438",
+            "kind": "reminder",
+            "status": "simulated"
+          }
+        ],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e03",
+        "day": "2026-11-12",
+        "channel": "email",
+        "sender": "Ridgeline Concrete dispatch",
+        "text_chars": 132,
+        "facts": 1,
+        "fact_types": [
+          "delivery_actual"
+        ],
+        "not_understood": false,
+        "flags": [
+          {
+            "id": "f-trucks",
+            "type": "plan_deviation"
+          }
+        ],
+        "messages": [],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e04",
+        "day": "2026-11-12",
+        "channel": "telegram",
+        "sender": "Lena Ortiz",
+        "text_chars": 89,
+        "facts": 1,
+        "fact_types": [
+          "equipment_actual"
+        ],
+        "not_understood": false,
+        "flags": [
+          {
+            "id": "f-crane",
+            "type": "plan_deviation"
+          }
+        ],
+        "messages": [],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e05",
+        "day": "2026-11-12",
+        "channel": "schedule",
+        "sender": "Schedule update",
+        "text_chars": 70,
+        "facts": 1,
+        "fact_types": [
+          "inspection_moved"
+        ],
+        "not_understood": false,
+        "flags": [],
+        "messages": [],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e06",
+        "day": "2026-11-13",
+        "channel": "telegram",
+        "sender": "Priya Shah",
+        "text_chars": 0,
+        "facts": 0,
+        "fact_types": [],
+        "not_understood": false,
+        "flags": [],
+        "messages": [
+          {
+            "id": "o-voicecheck-a032853281cf7802ab79e6f8",
+            "kind": "notice",
+            "status": "simulated"
+          }
+        ],
+        "answer": null,
+        "error": null
+      },
+      {
+        "event": "e06-confirm",
+        "day": "2026-11-13",
+        "channel": "telegram",
+        "sender": "Priya Shah",
+        "text_chars": 7,
+        "facts": 1,
+        "fact_types": [
+          "question"
+        ],
+        "not_understood": false,
+        "flags": [
+          {
+            "id": "f-seq-2a",
+            "type": "out_of_sequence"
+          }
+        ],
+        "messages": [
+          {
+            "id": "o-answer-d766c0fa3d90cbf2ae570b22",
+            "kind": "answer_message",
+            "status": "simulated"
+          }
+        ],
+        "answer": {
+          "id": "a-e06",
+          "basis": "record",
+          "escalated": true
+        },
+        "error": null
+      },
+      {
+        "event": "e07",
+        "day": "2026-11-13",
+        "channel": "telegram",
+        "sender": "Priya Shah",
+        "text_chars": 40,
+        "facts": 1,
+        "fact_types": [
+          "question"
+        ],
+        "not_understood": false,
+        "flags": [
+          {
+            "id": "f-seq-2b",
+            "type": "out_of_sequence"
+          }
+        ],
+        "messages": [
+          {
+            "id": "o-answer-223a76a581c4a3392b141f4b",
+            "kind": "answer_message",
+            "status": "simulated"
+          }
+        ],
+        "answer": {
+          "id": "a-e07",
+          "basis": "record",
+          "escalated": true
+        },
+        "error": null
+      },
+      {
+        "event": "e08",
+        "day": "2026-11-13",
+        "channel": "telegram",
+        "sender": "Priya Shah",
+        "text_chars": 37,
+        "facts": 1,
+        "fact_types": [
+          "question"
+        ],
+        "not_understood": false,
+        "flags": [],
+        "messages": [
+          {
+            "id": "o-answer-426b346b0e1f35cf981ca025",
+            "kind": "answer_message",
+            "status": "simulated"
+          }
+        ],
+        "answer": {
+          "id": "a-e08",
+          "basis": "record",
+          "escalated": false
+        },
+        "error": null
+      }
+    ]
+  }
+}

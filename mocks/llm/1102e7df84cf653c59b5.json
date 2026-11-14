@@ -1,0 +1,12 @@
+{
+  "answer": {
+    "confidence": 1,
+    "is_title_block": true,
+    "read_text": "E-201 REV B",
+    "revision": "B",
+    "sheet": "E-201"
+  },
+  "model": "mistral-small-2603",
+  "system": "You read the identification block of a construction drawing sheet from a photograph. Report only what is printed in the image.\n\nThe identification block is the block that names the sheet: project name, sheet number and revision mark. On a drawn sheet it is usually the header band or the block in the lower right corner.\n\n- sheet: the sheet number exactly as printed, for example A-201.\n- revision: the revision mark exactly as printed, for example B or C.\n- confidence: how sure you are that sheet and revision are both read correctly, from 0 to 1. Use a value below 0.9 when any character is partly covered, cut off, out of focus or lit badly, when the photo shows more than one sheet or more than one identification block, and whenever you would be completing a partly visible number or letter from what it probably is.\n- read_text: the characters you read for the sheet number and the revision, on one line, exactly as printed.\n- is_title_block: true only when the image shows a drawing sheet identification block with a sheet number and a revision mark in it. False for any other subject, including a plan without its identification block.\n\nNever complete a partly visible number or letter. A missing digit is a missing digit. An empty string is the honest answer when a field is not printed or not visible.",
+  "user": "Read the identification block in this photo."
+}

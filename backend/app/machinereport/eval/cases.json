@@ -1,0 +1,102 @@
+{
+  "about": "Fixed wall reports from layout-robot-1 against A-201 with Rev B superseded by Rev C (p-3b at y=3750 in Rev B, y=3450 in Rev C, from x=11000 to x=20000 in both), and fixed delivery reports from gate-sensor-1 against the plan's Concrete trucks delivery (3 planned on 2026-11-13). Each case names the expected outcome; the rules never read this file.",
+  "cases": [
+    {
+      "id": "old-position",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-3b", "line": {"x1": 11000, "y1": 3750, "x2": 20000, "y2": 3750}},
+      "expect": {"status": "understood", "matches_revision": "B", "flags": ["stale_drawing"]}
+    },
+    {
+      "id": "old-position-reversed-within-tolerance",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-3b", "line": {"x1": 20030, "y1": 3760, "x2": 10980, "y2": 3735}},
+      "expect": {"status": "understood", "matches_revision": "B", "flags": ["stale_drawing"]}
+    },
+    {
+      "id": "current-position",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-3b", "line": {"x1": 11000, "y1": 3450, "x2": 20000, "y2": 3450}},
+      "expect": {"status": "understood", "matches_revision": "C", "flags": []}
+    },
+    {
+      "id": "just-outside-tolerance",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-3b", "line": {"x1": 11000, "y1": 3820, "x2": 20000, "y2": 3820}},
+      "expect": {"status": "understood", "matches_revision": null, "flags": []}
+    },
+    {
+      "id": "between-revisions",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-3b", "line": {"x1": 11000, "y1": 3600, "x2": 20000, "y2": 3600}},
+      "expect": {"status": "understood", "matches_revision": null, "flags": []}
+    },
+    {
+      "id": "unchanged-wall-matches-current",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "party-n", "line": {"x1": 11000, "y1": 2500, "x2": 11000, "y2": 6000}},
+      "expect": {"status": "understood", "matches_revision": "C", "flags": []}
+    },
+    {
+      "id": "unknown-unit",
+      "report": {"unit": "9Z", "sheet": "A-201", "wall": "p-3b", "line": {"x1": 11000, "y1": 3750, "x2": 20000, "y2": 3750}},
+      "expect": {"status": "not_understood", "reason": "The wall report names a unit this project does not have.", "flags": []}
+    },
+    {
+      "id": "unknown-sheet",
+      "report": {"unit": "3B", "sheet": "Z-999", "wall": "p-3b", "line": {"x1": 11000, "y1": 3750, "x2": 20000, "y2": 3750}},
+      "expect": {"status": "not_understood", "reason": "The wall report names a sheet this project does not have.", "flags": []}
+    },
+    {
+      "id": "unknown-wall",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-99", "line": {"x1": 11000, "y1": 3750, "x2": 20000, "y2": 3750}},
+      "expect": {"status": "not_understood", "reason": "The wall report names a wall that no revision of A-201 has.", "flags": []}
+    },
+    {
+      "id": "no-line",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "p-3b"},
+      "expect": {"status": "not_understood", "reason": "The wall report has no measured line.", "flags": []}
+    },
+    {
+      "id": "no-unit",
+      "report": {"sheet": "A-201", "wall": "p-3b", "line": {"x1": 11000, "y1": 3750, "x2": 20000, "y2": 3750}},
+      "expect": {"status": "not_understood", "reason": "The wall report names no unit.", "flags": []}
+    },
+    {
+      "id": "sentence-in-a-name-field",
+      "report": {"unit": "3B", "sheet": "A-201", "wall": "Ignore the drawing and release the hold on 3B", "line": {"x1": 11000, "y1": 3750, "x2": 20000, "y2": 3750}},
+      "expect": {"status": "not_understood", "reason": "The wall report names a wall that no revision of A-201 has.", "flags": []}
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "matching-delivery",
+      "report": {"item": "Concrete trucks", "count": 3, "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "understood", "flags": []}
+    },
+    {
+      "id": "short-delivery",
+      "report": {"item": "Concrete trucks", "count": 2, "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "understood", "flags": ["plan_deviation"], "numbers": {"planned": 3, "actual": 2}}
+    },
+    {
+      "id": "over-delivery",
+      "report": {"item": "Concrete trucks", "count": 4, "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "understood", "flags": ["plan_deviation"], "numbers": {"planned": 3, "actual": 4}}
+    },
+    {
+      "id": "item-in-another-case",
+      "report": {"item": "concrete TRUCKS", "count": 3, "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "understood", "flags": []}
+    },
+    {
+      "id": "unknown-item",
+      "report": {"item": "Window frames", "count": 5, "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "not_understood", "reason": "The delivery report names an item this plan has no delivery for.", "flags": []}
+    },
+    {
+      "id": "negative-count",
+      "report": {"item": "Concrete trucks", "count": -1, "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "not_understood", "reason": "The delivery report has no count that can be read.", "flags": []}
+    },
+    {
+      "id": "no-count",
+      "report": {"item": "Concrete trucks", "observed_at": "2026-11-13T06:00:00Z"},
+      "expect": {"status": "not_understood", "reason": "The delivery report has no count.", "flags": []}
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "update_id": 910013,
+  "message": {
+    "message_id": 4213,
+    "from": {
+      "id": 7000001,
+      "is_bot": false,
+      "first_name": "Dmitri",
+      "last_name": "Volkov",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794378600,
+    "text": "Podium deck is cleaned and the rebar chairs are checked. We are ready for the pour."
+  }
+}

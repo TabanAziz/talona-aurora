@@ -1,0 +1,20 @@
+{
+  "update_id": 910015,
+  "message": {
+    "message_id": 4215,
+    "from": {
+      "id": 7000009,
+      "is_bot": false,
+      "first_name": "Sam",
+      "last_name": "Okafor",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794404400,
+    "text": "Water and power for the curing heaters are connected on the podium."
+  }
+}

@@ -1,0 +1,94 @@
+.compare { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s5); align-items: start; min-width: 0; }
+/* media queries can not read custom properties, so the breakpoint is a literal */
+@media (min-width: 1000px) {
+  .compare { grid-template-columns: minmax(0, 1fr) var(--w-side); }
+}
+
+.compare-work { display: flex; flex-direction: column; gap: var(--s3); min-width: 0; }
+.compare-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); color: var(--text-muted); }
+.compare-crumbs a { display: inline-flex; align-items: center; min-height: var(--h-bar); }
+.compare-crumbs > :last-child { color: var(--text); font-weight: var(--w-medium); }
+
+.compare-bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3); }
+.compare-bar .segmented { border-color: var(--text); }
+.compare-bar .segmented button + button { border-left-color: var(--text); }
+.compare-dim button { font-family: var(--font-mono); }
+.compare-dim button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); }
+.compare-dim button:disabled { cursor: default; }
+
+.compare-legend { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s4); color: var(--text-muted); }
+.compare-legend li { display: inline-flex; align-items: center; gap: var(--s2); }
+.compare-swatch { display: inline-block; width: var(--s4); height: var(--s2); }
+.compare-swatch-old {
+  background: repeating-linear-gradient(135deg, var(--danger) 0 var(--ring), var(--surface) var(--ring) var(--s1));
+  outline: 1px dashed var(--danger);
+  outline-offset: -1px;
+}
+.compare-swatch-new { background: var(--success); }
+
+.compare-zoom { display: inline-flex; align-items: stretch; margin-left: auto; min-height: var(--h-control); border: 1px solid var(--text); background: var(--surface); }
+.compare-zoom button {
+  min-width: var(--h-control);
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font: inherit;
+  font-size: var(--t-lg);
+  cursor: pointer;
+}
+.compare-zoom button:hover { background: var(--surface-2); }
+.compare-zoom button:disabled { color: var(--text-faint); cursor: default; background: transparent; }
+.compare-zoom span { display: grid; place-items: center; min-width: var(--s8); border-left: 1px solid var(--text); border-right: 1px solid var(--text); }
+
+/* The sheet is always shown on white: drawings are black line work, in the dark theme too.
+   The stage scrolls on its own when zoomed in, so the page never scrolls sideways. */
+.compare-stage { overflow: auto; padding: var(--s4); background: var(--sheet); border: var(--border); }
+.compare-sheet { position: relative; margin: 0; }
+.compare-sheet img { width: 100%; height: auto; }
+
+/* The one allowed absolute positioning: a region is a fraction of the image it marks. */
+.compare-region {
+  position: absolute;
+  border: var(--ring) solid var(--region);
+  background: var(--region-fill);
+  pointer-events: none;
+}
+.compare-region-label {
+  position: absolute;
+  bottom: 100%;
+  right: calc(-1 * var(--ring));
+  margin-bottom: var(--s1);
+  padding: 0 var(--s2);
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: var(--t-xs);
+  font-weight: var(--w-bold);
+  line-height: var(--h-bar);
+  white-space: nowrap;
+}
+.compare-region-label-start { right: auto; left: calc(-1 * var(--ring)); }
+.compare-region-label-below {top: 100%; bottom: auto; margin-top: var(--s1); margin-bottom: 0; }
+
+.compare-side { gap: var(--s5); overflow-wrap: anywhere; }
+.compare-head { gap: var(--s1); }
+.compare-side h2 { font-size: var(--t-sm); }
+
+.compare-rows { border: var(--border); }
+.compare-rows li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s1) var(--s3); padding: var(--s2) var(--s3); }
+.compare-rows li + li { border-top: var(--border); }
+
+.compare-crews li { display: flex; flex-direction: column; gap: var(--s1); padding: var(--s3) 0; border-top: var(--border); }
+.compare-crews li:last-child { border-bottom: var(--border); }
+.compare-bad { color: var(--danger); font-weight: var(--w-strong); }
+.compare-ok { color: var(--success); font-weight: var(--w-strong); }
+
+.compare-outdated li { display: flex; flex-direction: column; gap: var(--s1); padding: var(--s3) 0; border-top: var(--border); overflow-wrap: anywhere; }
+.compare-outdated li:last-child { border-bottom: var(--border); }
+.compare-outdated-link { display: inline-flex; align-items: center; align-self: flex-start; min-height: var(--h-bar); }
+
+.compare-revs { border: var(--border); }
+.compare-revs li { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto auto; align-items: center; gap: var(--s3); min-height: var(--s6); padding: var(--s1) var(--s3); }
+.compare-revs li + li { border-top: var(--border); }
+.compare-label { display: inline-flex; align-items: center; min-height: var(--h-bar); padding-inline: var(--s1); }
+.compare-tag { padding: 0 var(--s2); font-size: var(--t-xs); font-weight: var(--w-strong); line-height: var(--h-bar); }
+.compare-tag-current { background: var(--accent); color: var(--accent-text); }

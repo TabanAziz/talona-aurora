@@ -1,0 +1,52 @@
+/* The stage is white like the 2D sheet, in the dark theme too: the drawing is ink on paper. */
+.compare-3d { background: var(--sheet); border: var(--border); }
+.compare-3d-stack { position: relative; }
+.compare-3d-stage { position: relative; }
+.compare-3d-host { width: 100%; aspect-ratio: 16 / 10; min-height: calc(var(--w-card) * 1.2); touch-action: none; cursor: grab; }
+.compare-3d-host:active { cursor: grabbing; }
+.compare-3d-host canvas { display: block; }
+@media (max-width: 760px) {
+  .compare-3d-host { aspect-ratio: 1; }
+}
+
+/* The callouts: a column beside the stack, each with a hairline leader line to the point it describes. */
+.compare-3d-callouts { pointer-events: none; }
+.compare-3d-callouts-column { position: absolute; inset: 0; }
+.compare-3d-leaders { position: absolute; inset: 0; overflow: visible; }
+.compare-3d-leaders line { stroke: var(--line); stroke-width: 1; }
+.compare-3d-leaders .compare-3d-leader-primary { stroke: var(--accent); stroke-width: 2; }
+
+.compare-3d-plaques { list-style: none; margin: 0; padding: 0; }
+.compare-3d-callouts:not(.compare-3d-callouts-column) .compare-3d-plaques {
+  display: grid; gap: var(--s2); padding: 0 var(--s3) var(--s3);
+}
+.compare-3d-plaque {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: var(--s2) var(--s3);
+  background: var(--surface); border: var(--border); border-left: 3px solid var(--line);
+}
+.compare-3d-callouts-column .compare-3d-plaque {
+  position: absolute; right: var(--s3); width: 216px;
+}
+.compare-3d-plaque-primary { border-left-color: var(--accent); background: var(--accent-soft); }
+.compare-3d-plaque-title { font-size: var(--t-sm); font-weight: var(--w-strong); color: var(--text); }
+.compare-3d-plaque-fact { font-size: var(--t-xs); color: var(--text-muted); }
+
+.compare-3d-hint { position: absolute; right: var(--s4); bottom: var(--s3); color: var(--ink-muted); pointer-events: none; }
+
+/* The directory under the stack: two columns, a strong name over a small uppercase meta line. */
+.compare-3d-directory {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--s5);
+  padding: var(--s4); border-top: var(--border); background: var(--surface);
+}
+@media (max-width: 760px) {
+  .compare-3d-directory { grid-template-columns: 1fr; gap: var(--s4); }
+}
+.compare-3d-directory h3 {
+  margin: 0 0 var(--s2); font-size: var(--t-xs); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-muted); font-weight: var(--w-medium);
+}
+.compare-3d-directory ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s2); }
+.compare-3d-directory li { display: flex; flex-direction: column; gap: 2px; }
+.compare-3d-directory strong { font-size: var(--t-md); font-weight: var(--w-strong); color: var(--text); }
+.compare-3d-meta { font-size: var(--t-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }

@@ -1,0 +1,70 @@
+.robot { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; }
+.robot-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: var(--s3) var(--s5); }
+.robot-head > div:first-child { min-width: 0; flex: 1 1 36ch; }
+.robot-head p { margin-top: var(--s1); max-width: var(--w-read); }
+.robot-state { display: inline-flex; align-items: center; min-height: var(--h-badge); padding: 0 var(--s2); border: 1px solid var(--text); font-size: var(--t-xs); font-weight: var(--w-strong); }
+.robot-state-running { background: var(--accent-soft); }
+/* A stopped robot is the one thing to look at, so it carries the danger color and a border that shows. */
+.robot-state-stopped { background: var(--danger-soft); border-color: var(--danger); color: var(--danger); }
+.robot-state-done { background: var(--success-soft); border-color: var(--success); color: var(--success); }
+
+.robot-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s4); align-items: start; }
+/* Breakpoints cannot read custom properties. */
+@media (min-width: 1100px) {
+  .robot-grid { grid-template-columns: minmax(0, 1fr) var(--w-side); }
+}
+.robot-stage { display: flex; flex-direction: column; gap: var(--s2); min-width: 0; padding: var(--s3); background: var(--surface); border: var(--border); }
+.robot-stage-heading { font-size: var(--t-sm); color: var(--text-muted); font-weight: var(--w-medium); }
+.robot-3d { position: relative; width: 100%; height: clamp(320px, 46vh, 560px); }
+.robot-3d canvas { display: block; }
+.robot-fallback { display: flex; align-items: center; min-height: 220px; padding: var(--s4); background: var(--surface-2); border: var(--border); }
+.robot-fallback p { max-width: var(--w-read); }
+.robot-stage-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--s1) var(--s4); }
+.robot-stage-foot p { margin: 0; overflow-wrap: anywhere; }
+.robot-switched { color: var(--text); font-weight: var(--w-strong); }
+.robot-hint { margin-left: auto; }
+
+.robot-side { display: flex; flex-direction: column; gap: var(--s3); min-width: 0; }
+.robot-card { gap: var(--s2); }
+.robot-summary { margin: 0; }
+.robot-reasons { display: flex; flex-direction: column; gap: var(--s3); margin: 0; padding: 0; list-style: none; }
+.robot-reason { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; padding-block-start: var(--s2); border-top: var(--border); overflow-wrap: anywhere; }
+.robot-reason:first-child { border-top: 0; padding-block-start: 0; }
+.robot-reason p { margin: 0; }
+.robot-source { display: flex; flex-direction: column; min-height: var(--h-bar); padding-inline-start: var(--s2); border-inline-start: 2px solid var(--danger); overflow-wrap: anywhere; }
+.robot-failure { margin: 0; color: var(--danger); overflow-wrap: anywhere; }
+.robot-json {
+  margin: 0;
+  max-width: 100%;
+  max-height: 240px;
+  overflow: auto;
+  padding: var(--s2);
+  background: var(--surface-2);
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  line-height: 1.4;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.robot-log { display: flex; flex-direction: column; gap: var(--s1); margin: 0; padding: 0; list-style: none; }
+.robot-log li { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); align-items: baseline; }
+.robot-log-time { color: var(--text-muted); }
+.robot-log-allowed { margin-left: auto; font-weight: var(--w-strong); }
+.robot-log-yes { color: var(--success); }
+.robot-log-no, .robot-log-unavailable { color: var(--danger); }
+.robot-log-unknown { color: var(--warning); }
+.robot-state-waiting { background: var(--danger-soft); border-color: var(--danger); color: var(--danger); }
+
+.robot-worklist { display: flex; flex-direction: column; gap: var(--s1); margin: 0; padding: 0; list-style: none; }
+.robot-worklist li { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3); padding-block: var(--s1); border-bottom: var(--border); }
+.robot-worklist li:last-child { border-bottom: 0; }
+.robot-unit-order { color: var(--text-muted); }
+.robot-unit-state { margin-left: auto; font-size: var(--t-sm); font-weight: var(--w-strong); }
+.robot-unit-chalked { color: var(--success); }
+.robot-unit-waiting, .robot-unit-error { color: var(--danger); }
+.robot-unit-todo { color: var(--text-muted); }
+
+.robot-skipped-list { display: flex; flex-direction: column; gap: var(--s3); margin: 0; padding: 0; list-style: none; }
+.robot-skipped-list li { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; padding-block-start: var(--s2); border-top: var(--border); overflow-wrap: anywhere; }
+.robot-skipped-list li:first-child { border-top: 0; padding-block-start: 0; }
+.robot-skipped-list p { margin: 0; }

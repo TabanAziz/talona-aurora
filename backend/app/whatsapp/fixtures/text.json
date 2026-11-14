@@ -1,0 +1,16 @@
+{
+  "SmsMessageSid": "SM00000000000000000000000000000001",
+  "NumMedia": "0",
+  "ProfileName": "Priya Shah",
+  "MessageType": "text",
+  "SmsStatus": "received",
+  "Body": "Can we close the walls in 2A this morning?",
+  "To": "whatsapp:+14155238886",
+  "NumSegments": "1",
+  "ReferralNumMedia": "0",
+  "MessageSid": "SM00000000000000000000000000000001",
+  "AccountSid": "ACtest000000000000000000000000000",
+  "From": "whatsapp:+4915550000001",
+  "WaId": "4915550000001",
+  "ApiVersion": "2010-04-01"
+}

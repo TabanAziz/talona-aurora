@@ -1,0 +1,110 @@
+{
+  "seed": 20261113,
+  "demo_data": true,
+  "comparison_bounds_mm": {
+    "x": 0,
+    "y": 1800,
+    "w": 22000,
+    "h": 9600
+  },
+  "pairs": [
+    {
+      "sheet": "A-201",
+      "from_rev": "B",
+      "to_rev": "C",
+      "before": "A-201/B",
+      "after": "A-201/C",
+      "regions": [
+        {
+          "wall_ids": [
+            "p-3b"
+          ],
+          "unit": "3B",
+          "description": "Unit 3B partition moved 300 mm north",
+          "bbox_mm": {
+            "x": 9900,
+            "y": 2350,
+            "w": 11200,
+            "h": 2500
+          },
+          "bbox": {
+            "x": 0.45,
+            "y": 0.18076923076923077,
+            "w": 0.509090909090909,
+            "h": 0.19230769230769232
+          },
+          "kind": "moved"
+        }
+      ]
+    },
+    {
+      "sheet": "E-201",
+      "from_rev": "A",
+      "to_rev": "B",
+      "before": "E-201/A",
+      "after": "E-201/B",
+      "regions": [
+        {
+          "wall_ids": [
+            "p-3a"
+          ],
+          "unit": "3A",
+          "description": "Unit 3A partition moved 250 mm east",
+          "bbox_mm": {
+            "x": 5800,
+            "y": 2300,
+            "w": 650,
+            "h": 2600
+          },
+          "bbox": {
+            "x": 0.2636363636363636,
+            "y": 0.17692307692307693,
+            "w": 0.029545454545454545,
+            "h": 0.2
+          },
+          "kind": "moved"
+        },
+        {
+          "wall_ids": [
+            "p-3c"
+          ],
+          "unit": "3C",
+          "description": "Unit 3C partition moved 250 mm south",
+          "bbox_mm": {
+            "x": 5800,
+            "y": 8100,
+            "w": 1900,
+            "h": 650
+          },
+          "bbox": {
+            "x": 0.2636363636363636,
+            "y": 0.6230769230769231,
+            "w": 0.08636363636363636,
+            "h": 0.05
+          },
+          "kind": "moved"
+        },
+        {
+          "wall_ids": [
+            "p-3d"
+          ],
+          "unit": "3D",
+          "description": "Unit 3D partition moved 250 mm south",
+          "bbox_mm": {
+            "x": 15800,
+            "y": 8800,
+            "w": 1900,
+            "h": 650
+          },
+          "bbox": {
+            "x": 0.7181818181818181,
+            "y": 0.676923076923077,
+            "w": 0.08636363636363636,
+            "h": 0.05
+          },
+          "kind": "moved"
+        }
+      ]
+    }
+  ]
+}

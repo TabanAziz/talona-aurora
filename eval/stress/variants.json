@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-11-13 21:01",
+  "model": "deepseek-v4-1-flash-1017",
+  "styles": {
+    "site_slang": "the way crew members talk on site: slang, abbreviations and short sentences",
+    "typos": "with realistic typos and missing letters in the same language as the original (English), as a foreman types fast on a phone",
+    "mixed_language": "mixing German and English in the same message, as a bilingual foreman writes it",
+    "asr": "as a speech-to-text transcript: no punctuation at all, all lowercase, as the transcription would deliver it",
+    "long": "as a long message with small talk around the fact: greetings, the weather, thanks, the weekend"
+  },
+  "calls": 110,
+  "messages": {
+    "rev_c": {
+      "site_slang": "Got A-201 Rev C attached. In 3B, the partition between bedroom and living room moves 300 mm north. Rev C replaces Rev B.",
+      "typos": "Attached A-201 Rev C. The partiton between bedroom and living room in 3B shifts 300 mm north. Rev C replaces Rev B.",
+      "mixed_language": "Anbei A-201 Rev C. Die Trennwand zwischen Schlafzimmer und Wohnzimmer in 3B verschiebt sich 300 mm nach Norden. Rev C ersetzt Rev B.",
+      "long": "Hey there, hope you're doing well! The weather's been pretty nice around here lately, so I can't complain. Anyway, thanks for your patience on this one — I've attached A-201 Rev C for you. Just so it's clear, the partition between bedroom and living room in 3B shifts 300 mm north. Also, Rev C replaces Rev B. Hope you have a great weekend!"
+    },
+    "work_3b_rev_b": {
+      "site_slang": "Kickin' off 3B partitions tomorrow at seven, per A-201 rev B.",
+      "typos": "Startin the 3B partitions tomorow at seven, per A-201 rev B.",
+      "mixed_language": "Starting tomorrow at seven with the 3B partitions, per A-201 rev B, los geht's.",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, just wanted to give you a quick heads-up — we're starting the 3B partitions tomorrow at seven, per A-201 rev B. Thanks for staying on top of things, and hope you have a great weekend!"
+    },
+    "work_3b_plain": {
+      "site_slang": "Kickin' off 3B partitions tomorrow at seven.",
+      "typos": "Startin the 3B partitions tomorow at seven.",
+      "mixed_language": "Starting tomorrow at seven mit den 3B partitions.",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, just wanted to give you a quick heads-up — we'll be starting the 3B partitions tomorrow at seven. Thanks so much for your help with everything, and hope you have a great weekend!"
+    },
+    "work_3b_rev_c": {
+      "site_slang": "Kicking off 3B partitions tomorrow at seven, per A-201 rev C.",
+      "typos": "Startin the 3B partitions tomorow at seven, per A-201 rev C.",
+      "mixed_language": "Starting tomorrow at seven with the 3B partitions, per A-201 rev C, los geht's.",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, just wanted to give you a quick heads-up — we're starting the 3B partitions tomorrow at seven, per A-201 rev C. Thanks for staying on top of things, and hope you have a great weekend!"
+    },
+    "work_2a_plain": {
+      "site_slang": "Kickin' off the 2A partitions tomorrow at seven.",
+      "typos": "Startin the 2A partitions tomorow at seven.",
+      "mixed_language": "Starting the 2A partitions tomorrow at sieben.",
+      "long": "Hey, hope you're doing well! The weather's been pretty nice around here lately, and I'm definitely looking forward to the weekend. Thanks for all your help with everything. Anyway, just wanted to let you know that we're starting the 2A partitions tomorrow at seven."
+    },
+    "ack_c": {
+      "site_slang": "Got A-201 Rev C, thanks. Framing crew's got it now.",
+      "typos": "Got A-201 Rev C, thnks. The framin crew has it now.",
+      "mixed_language": "A-201 Rev C bekommen, danke. Die Framing-Crew hat es jetzt.",
+      "long": "Hey there! Hope you're doing well. The weather's been pretty nice around here lately, though I hear it might turn this weekend — fingers crossed it holds up. Anyway, just wanted to say thanks, I got A-201 Rev C. The framing crew has it now. Appreciate it, and hope you have a great weekend!"
+    },
+    "trucks_4": {
+      "site_slang": "Confirming Friday's podium topping pour. Sending 4 trucks not 3, mix volume got revised. First truck on site 7:00.",
+      "typos": "Confirming Fridays podium topping pour. We are sendin 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00.",
+      "asr": "confirming fridays podium topping pour we are sending 4 trucks instead of 3 the mix volume was revised first truck on site 7 00",
+      "long": "Hey there, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, I just wanted to reach out and confirm Friday's podium topping pour. Quick update on that: we are sending 4 trucks instead of 3, since the mix volume was revised. Also, the first truck will be on site 7:00. Thanks so much for your help with all of this, and I hope you have a great weekend!"
+    },
+    "trucks_3": {
+      "site_slang": "Yeah, Friday podium topping pour is a go: 3 trucks like planned. First truck hits site 7:00.",
+      "typos": "Confirming Fridays podium topping pour: 3 trucks as planed. First truck on site 7:00.",
+      "asr": "confirming fridays podium topping pour 3 trucks as planned first truck on site 7 00",
+      "long": "Hey there, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, I just wanted to reach out and thank you for all your help this week — it really makes a difference. So, looking ahead to Friday, I'm confirming the podium topping pour: 3 trucks as planned. First truck on site 7:00. Hope you have a great weekend coming up, and thanks again!"
+    },
+    "trucks_2": {
+      "site_slang": "Confirming Friday's podium topping pour. Only 2 trucks we can send, the rest are booked elsewhere. First truck on site 7:00.",
+      "typos": "Confirming Fridays podium topping pour. We can only send 2 trucks, the others r booked elsewere. First truck on site 7:00.",
+      "asr": "confirming fridays podium topping pour we can only send 2 trucks the others are booked elsewhere first truck on site 7 00",
+      "long": "Hey there, hope you're doing well! Just wanted to check in and say thanks for all the coordination lately — it's been a busy stretch, and the weather's been all over the place, hasn't it? Anyway, I'm getting back to you about Friday's podium topping pour. Just to confirm, we can only send 2 trucks, since the others are booked elsewhere. The first truck will be on site at 7:00. Hope you have a great weekend, and talk soon!"
+    },
+    "crane_mon": {
+      "site_slang": "Heads up — mobile crane's comin' Monday, not Friday. Transport permit slipped.",
+      "typos": "Heads up, the moble crane gets to site Monday, not Friday. The transport permitt slipped.",
+      "asr": "heads up the mobile crane gets to site monday not friday the transport permit slipped",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, just wanted to give you a quick heads up about the mobile crane — it gets to site Monday, not Friday. The transport permit slipped. Thanks for bearing with me on this, and hope you have a great weekend!"
+    },
+    "crane_tue": {
+      "site_slang": "Heads up — mobile crane's only on site Tuesday, not Friday. Transport permit slipped.",
+      "typos": "Heads up, the mobil crane will only be on site Tuesdy, not Friday. The transport permit sliped.",
+      "asr": "heads up the mobile crane will only be on site tuesday not friday the transport permit slipped",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, though I hear it might turn a bit cooler by the weekend. Anyway, just wanted to give you a quick heads up about the mobile crane — it will only be on site Tuesday, not Friday. The transport permit slipped. Thanks for bearing with me on this, and hope you have a good weekend!"
+    },
+    "crane_ok": {
+      "site_slang": "Mobile crane's on site Friday morning, like we planned.",
+      "typos": "The moble crane is on site Friday mornin as planed.",
+      "mixed_language": "Der Mobilkran ist Friday morning on site, wie geplant.",
+      "asr": "the mobile crane is on site friday morning as planned",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, just wanted to say thanks for all your help this week, and I hope you've got a nice weekend lined up. Quick update on things: the mobile crane is on site Friday morning as planned."
+    },
+    "insp_moved_2a": {
+      "site_slang": "Unit 2A rough plumbing inspection, Thursday's off, now Friday 14:00.",
+      "mixed_language": "Unit 2A rough plumbing inspection wurde von Thursday auf Friday 14:00 verschoben.",
+      "long": "Hey there, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, I wanted to give you a quick heads-up about the schedule. Thanks for your patience while we sorted this out. So, Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00. Hope that works for everyone, and enjoy your weekend!"
+    },
+    "insp_passed_2a": {
+      "site_slang": "Rough plumbing in unit 2A passed. Signed off today at 13:40.",
+      "mixed_language": "Rough plumbing in Einheit 2A passed. Signed off today at 13:40.",
+      "long": "Hey there! Hope you're doing well and having a good week. The weather's been pretty decent around here lately, hasn't it? Anyway, I wanted to give you a quick update on things at the site. Rough plumbing in unit 2A passed. Signed off today at 13:40. Thanks for keeping up with all of this, and I hope you have a great weekend!"
+    },
+    "q_close_2a": {
+      "site_slang": "Can we get the walls closed in 2A this morning?",
+      "typos": "Cn we close the walls in 2A this mornin?",
+      "mixed_language": "Können wir die Wände in 2A this morning schließen?",
+      "long": "Hey, good morning! Hope you're doing well. The weather's been pretty decent out here today, not too bad at all. Listen, I wanted to check something with you — can we close the walls in 2A this morning? Thanks a lot, and hope you have a great weekend coming up!"
+    },
+    "q_close_2a_now": {
+      "site_slang": "Can we close up the walls in 2A now?",
+      "typos": "Cn we close the walls in 2A now?",
+      "mixed_language": "Können wir die Wände in 2A jetzt schließen, can we close the walls in 2A now?",
+      "long": "Hey, good morning! Hope you're doing well. The weather's been pretty decent out here today, not too cold, so work's been going smoothly. Anyway, I wanted to check in with you — can we close the walls in 2A now? Thanks a lot, and hope you have a great weekend!"
+    },
+    "plan_close_2a": {
+      "site_slang": "We're closin' the walls in 2A at seven tomorrow mornin'.",
+      "typos": "We'll close the walls in 2A at sevn tomorow mornin.",
+      "mixed_language": "Wir werden die walls in 2A at seven tomorrow morning schließen.",
+      "long": "Hey, hope you're doing well! The weather's been pretty decent around here lately, hasn't it? Anyway, just wanted to give you a quick heads-up — we will close the walls in 2A at seven tomorrow morning. Thanks so much for your help with everything, and hope you have a great weekend!"
+    },
+    "q_close_1c": {
+      "site_slang": "And 1C, can we close the walls there?",
+      "typos": "And 1C, can we clos the walls ther?",
+      "mixed_language": "Und 1C, können wir die Wände dort schließen?",
+      "long": "Hey there, hope you're doing well! The weather's been pretty decent today, hasn't it? Anyway, I wanted to ask you something about 1C — can we close the walls there? Thanks a lot, and hope you have a great weekend!"
+    },
+    "chat_thanks": {
+      "site_slang": "Cheers everyone, solid week. Catch you Monday.",
+      "typos": "Thnks evryone, good week. See u Monday.",
+      "mixed_language": "Danke everyone, gute Woche. See you Montag.",
+      "asr": "thanks everyone good week see you monday",
+      "long": "Hey everyone, hope you're all doing well! The weather's been pretty nice this week, hasn't it? Just wanted to say thanks everyone, good week. Hope you all have a great weekend, and see you Monday."
+    },
+    "chat_ok": {
+      "site_slang": "Got it, thanks",
+      "typos": "Ok thnks",
+      "mixed_language": "Ok danke",
+      "asr": "ok thanks",
+      "long": "Hey there! Hope you're doing well. The weather's been pretty nice around here lately, and I'm definitely looking forward to the weekend. Anyway, just wanted to say ok thanks."
+    },
+    "chat_weather": {
+      "site_slang": "Cold one this morning, get your gloves on.",
+      "typos": "Cold one this mornin, wear ur gloves.",
+      "mixed_language": "Kalt heute Morgen, wear your gloves.",
+      "asr": "cold one this morning wear your gloves",
+      "long": "Hey, good morning! Hope you're doing okay. It's a cold one this morning, so bundle up and wear your gloves before you head out. Thanks for everything, and have a great weekend!"
+    },
+    "q_truck_time": {
+      "site_slang": "When's the first truck rollin' in Friday?",
+      "asr": "what time does the first truck get here on friday",
+      "long": "Hey there, hope you're doing well! The weather's been pretty nice around here lately, hasn't it? Anyway, I was just thinking ahead to the end of the week and wanted to check something with you. What time does the first truck get here on Friday? Thanks so much, and hope you have a great weekend!"
+    }
+  },
+  "dropped": [
+    {
+      "message": "rev_c",
+      "style": "asr",
+      "reason": "lost unit 3B, sheet A-201"
+    },
+    {
+      "message": "work_3b_rev_b",
+      "style": "asr",
+      "reason": "lost unit 3B, sheet A-201"
+    },
+    {
+      "message": "work_3b_plain",
+      "style": "asr",
+      "reason": "lost unit 3B"
+    },
+    {
+      "message": "work_3b_rev_c",
+      "style": "asr",
+      "reason": "lost unit 3B, sheet A-201"
+    },
+    {
+      "message": "work_2a_plain",
+      "style": "asr",
+      "reason": "lost unit 2A"
+    },
+    {
+      "message": "ack_c",
+      "style": "asr",
+      "reason": "lost sheet A-201"
+    },
+    {
+      "message": "trucks_4",
+      "style": "mixed_language",
+      "reason": "lost day friday"
+    },
+    {
+      "message": "trucks_3",
+      "style": "mixed_language",
+      "reason": "lost day friday"
+    },
+    {
+      "message": "trucks_2",
+      "style": "mixed_language",
+      "reason": "lost day friday"
+    },
+    {
+      "message": "crane_mon",
+      "style": "mixed_language",
+      "reason": "lost day friday"
+    },
+    {
+      "message": "crane_tue",
+      "style": "mixed_language",
+      "reason": "lost day friday, day tuesday"
+    },
+    {
+      "message": "insp_moved_2a",
+      "style": "typos",
+      "reason": "lost day friday"
+    },
+    {
+      "message": "insp_moved_2a",
+      "style": "asr",
+      "reason": "lost unit 2A"
+    },
+    {
+      "message": "insp_passed_2a",
+      "style": "typos",
+      "reason": "lost day today"
+    },
+    {
+      "message": "insp_passed_2a",
+      "style": "asr",
+      "reason": "lost unit 2A"
+    },
+    {
+      "message": "q_close_2a",
+      "style": "asr",
+      "reason": "lost unit 2A"
+    },
+    {
+      "message": "q_close_2a_now",
+      "style": "asr",
+      "reason": "lost unit 2A"
+    },
+    {
+      "message": "plan_close_2a",
+      "style": "asr",
+      "reason": "lost unit 2A"
+    },
+    {
+      "message": "q_close_1c",
+      "style": "asr",
+      "reason": "lost unit 1C"
+    },
+    {
+      "message": "q_truck_time",
+      "style": "typos",
+      "reason": "lost day friday"
+    },
+    {
+      "message": "q_truck_time",
+      "style": "mixed_language",
+      "reason": "lost day friday"
+    }
+  ]
+}

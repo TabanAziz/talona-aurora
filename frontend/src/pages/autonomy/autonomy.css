@@ -1,0 +1,20 @@
+.autonomy { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; }
+.autonomy-intro { margin: 0; max-width: 78ch; }
+.autonomy-card { gap: var(--s3); }
+.autonomy-list { display: flex; flex-direction: column; gap: var(--s4); margin: 0; padding: 0; list-style: none; }
+.autonomy-item { display: flex; flex-direction: column; gap: var(--s2); min-width: 0; padding: var(--s3); background: var(--surface-2); border: var(--border); }
+.autonomy-item-ended { background: transparent; }
+.autonomy-item-ended .autonomy-statement { color: var(--text-muted); }
+.autonomy-item-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: var(--s2) var(--s4); }
+.autonomy-statement { margin: 0; flex: 1 1 28ch; min-width: 0; overflow-wrap: anywhere; }
+.autonomy-item p { margin: 0; overflow-wrap: anywhere; }
+.autonomy-decisions { display: flex; flex-direction: column; gap: var(--s1); margin: 0; padding: 0; list-style: none; }
+.autonomy-decisions a { overflow-wrap: anywhere; }
+.autonomy-applications { display: flex; flex-direction: column; gap: var(--s1); margin: 0; padding: 0; list-style: none; }
+.autonomy-applications li { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); align-items: baseline; }
+.autonomy-applications a { overflow-wrap: anywhere; }
+.autonomy-action { align-self: flex-start; }
+.autonomy-confirm { display: flex; flex-direction: column; gap: var(--s2); padding: var(--s2); border: 1px solid var(--accent); background: var(--accent-soft); }
+.autonomy-confirm p { margin: 0; }
+.autonomy-failure { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s4); border-color: var(--danger); background: var(--danger-soft); }
+.autonomy-failure p { margin: 0; flex: 1 1 30ch; color: var(--danger); }

@@ -1,0 +1,49 @@
+{
+  "about": "Synthetic messages for the fictional Maple Court project. Each case is a non-English twin of an English case of eval/extract/cases.json: same sender, same time, same facts. `expect` is the twin's expected specific facts; a case passes when extraction of the non-English text gives the same fact types and key data.",
+  "cases": [
+    {
+      "id": "pl-work-on-old-revision",
+      "language": "pl",
+      "twin": "g02-voice-plan",
+      "event": {
+        "id": "x-pl1", "channel": "telegram", "sent_at": "2026-11-12T16:05:00Z", "received_at": "2026-11-12T16:05:04Z",
+        "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site",
+        "text": "Jutro o siódmej zaczynamy ścianki działowe w 3B, według A-201 rev B."
+      },
+      "expect": [{"type": "work_planned", "data": {"unit": "3B", "crew": "Framing crew", "task": "T-031", "sheet": "A-201", "revision": "B", "start": "2026-11-13T06:00:00Z"}}]
+    },
+    {
+      "id": "es-may-we-close",
+      "language": "es",
+      "twin": "g07-question-2b",
+      "event": {
+        "id": "x-es1", "channel": "telegram", "sent_at": "2026-11-13T07:15:00Z", "received_at": "2026-11-13T07:15:02Z",
+        "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site",
+        "text": "¿Y la 2B? ¿Podemos cerrar esas paredes?"
+      },
+      "expect": [{"type": "question", "data": {"unit": "2B"}}]
+    },
+    {
+      "id": "tr-delivery-count",
+      "language": "tr",
+      "twin": "g03-trucks",
+      "event": {
+        "id": "x-tr1", "channel": "email", "sent_at": "2026-11-12T16:40:00Z", "received_at": "2026-11-12T16:40:30Z",
+        "sender": "Ridgeline Concrete dispatch", "sender_role": "Supplier", "subject": "Cuma dökümü: 4 kamyon",
+        "text": "Cuma günkü podyum üst tabaka dökümünü teyit ediyoruz. Karışım hacmi revize edildiği için 3 yerine 4 kamyon gönderiyoruz. İlk kamyon 7:00'de şantiyede."
+      },
+      "expect": [{"type": "delivery_actual", "data": {"item": "Concrete trucks", "planned": 3, "actual": 4, "date": "2026-11-13"}}]
+    },
+    {
+      "id": "de-confirmation",
+      "language": "de",
+      "twin": "g09-acknowledgement",
+      "event": {
+        "id": "x-de1", "channel": "telegram", "sent_at": "2026-11-12T16:30:00Z", "received_at": "2026-11-12T16:30:02Z",
+        "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site",
+        "text": "A-201 Rev C ist angekommen, danke. Die Zimmerer-Kolonne hat sie jetzt."
+      },
+      "expect": [{"type": "acknowledgement", "data": {"crew": "Framing crew", "sheet": "A-201", "revision": "C"}}]
+    }
+  ]
+}

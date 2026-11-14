@@ -1,0 +1,19 @@
+{
+  "update_id": 910020,
+  "message": {
+    "message_id": 4220,
+    "from": {
+      "id": 7000011,
+      "is_bot": false,
+      "first_name": "Superintendent",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794495600,
+    "text": "Toolbox talk tomorrow at 6:30 at the gate, topic is fall protection. Everyone on site please."
+  }
+}

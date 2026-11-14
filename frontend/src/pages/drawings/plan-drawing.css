@@ -1,0 +1,50 @@
+.technical-plan-view { height:100%; display:flex; flex-direction:column; min-height:0; }
+.technical-plan-toolbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:var(--s3); padding:var(--s2) var(--s3); color:var(--ink-muted); background:var(--sheet); font-size:var(--t-sm); }
+.technical-plan-toolbar label { display:flex; align-items:center; gap:var(--s2); }
+.technical-plan-toolbar select { min-height:var(--h-control); padding:var(--s2); border:var(--border); border-radius:var(--r-sm); font:inherit; color:var(--ink); background:var(--sheet); }
+.technical-plan-workspace { flex:1; min-height:0; min-width:0; display:grid; grid-template-columns:minmax(0,1fr) minmax(12rem,15rem); }
+.technical-plan-workspace:has(>.technical-plan-scroll:only-child) { grid-template-columns:minmax(0,1fr); }
+.technical-plan-scroll { flex:1; min-height:0; overflow:auto; background:var(--sheet-shade); }
+.plan-room-index { display:flex; flex-direction:column; min-height:0; min-width:0; border-left:var(--border); background:var(--sheet); color:var(--ink); font-size:var(--t-sm); }
+.plan-room-index-heading { padding:var(--s3); border-bottom:var(--border); }
+.plan-room-index-heading strong,.plan-room-index-heading span { display:block; }
+.plan-room-index-heading span,.plan-room-index-heading p { color:var(--ink-muted); }
+.plan-room-index-heading p { margin:var(--s2) 0 0; }
+.plan-room-index ol { list-style:none; margin:0; padding:var(--s2); overflow:auto; min-height:0; }
+.plan-room-index li+li { margin-top:var(--s1); }
+.plan-room-index button { width:100%; display:flex; align-items:center; gap:var(--s2); padding:var(--s2); text-align:left; font:inherit; color:var(--ink); background:var(--sheet); border:1px solid transparent; border-radius:var(--r-sm); cursor:pointer; overflow-wrap:anywhere; }
+.plan-room-index button:hover { background:var(--sheet-shade); }
+.plan-room-index button[aria-pressed="true"] { color:var(--accent); border-color:var(--accent); background:var(--sheet-shade); }
+.plan-room-index button:focus-visible { outline:2px solid var(--accent); outline-offset:1px; }
+.plan-room-index-number { flex:none; min-width:var(--s5); font-variant-numeric:tabular-nums; color:var(--ink-muted); }
+.technical-plan-sheet { display:block; max-width:none; height:auto; color:var(--ink); font-family:var(--font); }
+.plan-paper { fill:var(--sheet); stroke:var(--ink-muted); stroke-width:1; }
+.plan-brand { fill:var(--ink); font-size:24px; font-weight:700; letter-spacing:3px; }
+.plan-subtitle { fill:var(--ink-muted); font-size:18px; }
+.plan-grid { stroke:var(--sheet-shade); stroke-width:1; stroke-dasharray:9 7; }
+.plan-coordinate,.plan-footnote { fill:var(--ink-muted); font-size:16px; }
+.plan-dimension { stroke:var(--ink-muted); fill:var(--ink-muted); stroke-width:1; }
+.plan-dimension text { stroke:none; font-size:17px; }
+.plan-wall { stroke:var(--ink); stroke-linecap:square; }
+.plan-wall-changed { stroke:var(--accent); }
+.plan-opening { stroke:var(--sheet); }
+.plan-window { fill:none; stroke:var(--model-partition-top); stroke-width:1.4; }
+.plan-door { fill:none; stroke:var(--ink-muted); stroke-width:1.2; }
+.plan-room-label-bg { fill:var(--sheet); fill-opacity:.94; stroke:var(--sheet-shade); stroke-width:.7; }
+.plan-room-label { fill:var(--ink); font-weight:600; }
+.plan-room-marker { fill:var(--ink); }
+.plan-room-selection { fill:none; stroke:var(--accent); stroke-width:2; }
+.plan-room-selected .plan-room-label-bg { stroke:var(--accent); stroke-width:2; }
+.plan-room-selected .plan-room-marker { fill:var(--accent); }
+.plan-title-box { fill:var(--sheet); stroke:var(--ink); stroke-width:2; }
+.plan-title-box~line { stroke:var(--ink-muted); stroke-width:1; }
+.plan-title-small { fill:var(--ink-muted); font-size:14px; letter-spacing:1px; }
+.plan-title-name { fill:var(--ink); font-size:17px; font-weight:600; }
+.plan-title-code { fill:var(--ink); font-size:25px; font-weight:700; }
+.plan-scale-dark { fill:var(--ink); }
+.plan-scale-light { fill:var(--sheet); stroke:var(--ink); stroke-width:1; }
+@media (max-width:760px) {
+  .technical-plan-workspace { grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1fr) auto; }
+  .plan-room-index { max-height:12rem; border-left:0; border-top:var(--border); }
+  .plan-room-index-heading p { display:none; }
+}

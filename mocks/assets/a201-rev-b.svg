@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-label="A-201 Level 3 floor plan, Rev B, DEMO DATA">
+<rect x="0" y="0" width="1000" height="700" fill="#ffffff"/>
+<g fill="none" stroke="#1c1c1a" stroke-width="6">
+<rect x="60" y="80" width="880" height="520"/>
+<line x1="60" y1="340" x2="940" y2="340"/><line x1="60" y1="400" x2="940" y2="400"/>
+<line x1="280" y1="80" x2="280" y2="340"/><line x1="500" y1="80" x2="500" y2="340"/>
+<line x1="720" y1="80" x2="720" y2="340"/>
+<line x1="280" y1="400" x2="280" y2="600"/><line x1="500" y1="400" x2="500" y2="600"/>
+<line x1="720" y1="400" x2="720" y2="600"/>
+</g>
+<g fill="none" stroke="#1c1c1a" stroke-width="3">
+<line x1="60" y1="210" x2="200" y2="210"/><line x1="280" y1="230" x2="420" y2="230"/>
+<line x1="720" y1="250" x2="860" y2="250"/><line x1="610" y1="80" x2="610" y2="180"/>
+</g>
+<line x1="500" y1="260" x2="720" y2="260" stroke="#1c1c1a" stroke-width="3"/>
+<g font-family="Inter, Arial, sans-serif" font-size="26" fill="#5f5f5a">
+<text x="150" y="150">3A</text><text x="590" y="320">3B</text>
+<text x="800" y="150">3C</text><text x="150" y="520">3D</text><text x="440" y="378">Corridor</text>
+</g>
+<text x="60" y="660" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1c1c1a">A-201 Level 3 floor plan, Rev B, DEMO DATA</text>
+</svg>

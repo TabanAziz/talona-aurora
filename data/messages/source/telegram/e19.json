@@ -1,0 +1,20 @@
+{
+  "update_id": 910006,
+  "message": {
+    "message_id": 4206,
+    "from": {
+      "id": 7000004,
+      "is_bot": false,
+      "first_name": "Lena",
+      "last_name": "Ortiz",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1793973600,
+    "text": "The mobile crane is booked for the truss lift a week from today at seven. Please keep the access road clear."
+  }
+}

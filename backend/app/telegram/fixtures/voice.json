@@ -1,0 +1,26 @@
+{
+  "update_id": 731400102,
+  "message": {
+    "message_id": 413,
+    "from": {
+      "id": 5550102,
+      "is_bot": false,
+      "first_name": "Priya",
+      "last_name": "Shah",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1002233445566,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794552000,
+    "voice": {
+      "duration": 1,
+      "mime_type": "audio/ogg",
+      "file_id": "AwACAgIAAxkBAAIBnWc3voice01",
+      "file_unique_id": "AgADvoice01",
+      "file_size": 112
+    }
+  }
+}

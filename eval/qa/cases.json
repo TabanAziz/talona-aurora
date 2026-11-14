@@ -1,0 +1,61 @@
+{
+  "about": "Ten fixed crew questions for the fictional Maple Court project, asked in order while the demo scenario plays. Steps either ingest a scenario event, apply a decision, or ask a question (a scenario event or a synthetic one). Each question runs through the same pipeline as live messages: extraction, rules, then the answer.",
+  "steps": [
+    {"ingest": "e01"},
+    {"ingest": "e02"},
+    {"ingest": "e03"},
+    {"ingest": "e04"},
+    {"ingest": "e05"},
+    {
+      "id": "q01-close-walls-2a-open-inspection",
+      "scenario_event": "e06",
+      "expect": {"prefix": "Not yet", "basis": "record", "escalated": true, "sources_include": ["e05"]}
+    },
+    {
+      "id": "q02-inspection-day",
+      "event": {"id": "q02", "channel": "telegram", "sent_at": "2026-11-13T06:45:00Z", "sender": "Priya Shah", "sender_role": "Drywall foreman", "text": "Is the 2A plumbing inspection still on Thursday?"},
+      "expect": {"contains_any": ["Friday", "14:00", "today"], "basis": "record", "sources_include": ["e05"]}
+    },
+    {
+      "id": "q03-start-3b-partitions-flagged",
+      "event": {"id": "q03", "channel": "telegram", "sent_at": "2026-11-13T06:50:00Z", "sender": "Marco Ruiz", "sender_role": "Framing foreman", "text": "Can we start the partitions in 3B today?"},
+      "expect": {"prefix": "Not yet", "basis": "record", "escalated": true}
+    },
+    {
+      "id": "q04-truck-count",
+      "event": {"id": "q04", "channel": "telegram", "sent_at": "2026-11-13T06:52:00Z", "sender": "Site labor lead", "text": "How many concrete trucks are coming for the pour today?"},
+      "expect": {"contains_any": ["4", "four"], "basis": "record", "sources_include": ["e03"]}
+    },
+    {
+      "id": "q05-crane-day",
+      "event": {"id": "q05", "channel": "telegram", "sent_at": "2026-11-13T06:55:00Z", "sender": "Roofing foreman", "text": "When does the mobile crane get to site?"},
+      "expect": {"contains_any": ["Monday"], "basis": "record", "sources_include": ["e04"]}
+    },
+    {
+      "id": "q06-unknown-wifi",
+      "event": {"id": "q06", "channel": "telegram", "sent_at": "2026-11-13T06:58:00Z", "sender": "Priya Shah", "text": "What is the wifi password for the site office?"},
+      "expect": {"prefix": "Not in the record", "basis": "unknown", "escalated": false}
+    },
+    {
+      "id": "q07-unknown-off-topic",
+      "event": {"id": "q07", "channel": "telegram", "sent_at": "2026-11-13T07:00:00Z", "sender": "Marco Ruiz", "text": "Who won the game last night?"},
+      "expect": {"prefix": "Not in the record", "basis": "unknown", "escalated": false}
+    },
+    {"decide": {"flag_id": "f-seq-2a", "action": "hold_work", "standing_rule": true, "reason": "No wall closing before the inspection sign-off"}},
+    {
+      "id": "q08-close-walls-2b-standing-rule",
+      "scenario_event": "e07",
+      "expect": {"prefix": "Not yet", "basis": "standing_rule", "escalated": false}
+    },
+    {
+      "id": "q09-close-walls-1c-passed",
+      "scenario_event": "e08",
+      "expect": {"prefix": "Yes", "basis": "record", "escalated": false}
+    },
+    {
+      "id": "q10-move-crew-needs-decision",
+      "event": {"id": "q10", "channel": "telegram", "sent_at": "2026-11-13T07:25:00Z", "sender": "Priya Shah", "sender_role": "Drywall foreman", "text": "Should we move the drywall crew from 2A over to 3B for the day instead?"},
+      "expect": {"escalated": true}
+    }
+  ]
+}

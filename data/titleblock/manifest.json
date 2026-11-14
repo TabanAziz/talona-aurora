@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "source": "User-supplied ImageGen images",
+    "source_archive": "Baustellenfotos_8_Bilder.zip",
+    "source_archive_sha256": "8e244356194dfa564390f06b60fd60b5686a7534766b38cb8b2d451ba9c6dcc4",
+    "synthetic": true,
+    "physical_camera_photo": false,
+    "transformations": []
+  },
+  "register_baseline": {
+    "A-201": "C",
+    "E-201": "B"
+  },
+  "expectation_basis": "Visual review of supplied images, not measured model output. Register status applies only to the stated baseline.",
+  "fixtures": [
+    {
+      "file": "01_A201_C_topdown.png",
+      "sha256": "af751e13ae8aa487a04d8d81b0d74475ecbb432b560ec5c5b0e538d5445ecac9",
+      "bytes": 2455416,
+      "width": 1632,
+      "height": 964,
+      "condition": "top-down, neutral light",
+      "expected": {
+        "sheet_id": "A-201",
+        "revision": "C",
+        "disposition": "read_titleblock",
+        "register_status": "current"
+      }
+    },
+    {
+      "file": "02_A201_C_perspective.png",
+      "sha256": "da6bdfefac755859072d1f6732c90bb2660eb0b558dacd3dfda4fbb8c6cd528c",
+      "bytes": 2431431,
+      "width": 1536,
+      "height": 1024,
+      "condition": "perspective angle",
+      "expected": {
+        "sheet_id": "A-201",
+        "revision": "C",
+        "disposition": "read_titleblock",
+        "register_status": "current"
+      }
+    },
+    {
+      "file": "03_E201_B_warm.png",
+      "sha256": "a98d9bace7e817e15ac575d5a19dc8d2c0753e27894d92092e3696fb8b1d245c",
+      "bytes": 2580971,
+      "width": 1630,
+      "height": 965,
+      "condition": "warm light",
+      "expected": {
+        "sheet_id": "E-201",
+        "revision": "B",
+        "disposition": "read_titleblock",
+        "register_status": "current"
+      }
+    },
+    {
+      "file": "04_E201_B_header.png",
+      "sha256": "c6511968120e6e263f7c0b2b3070e90e717c940e4b82fec0eadb39cd37f6bf32",
+      "bytes": 2732706,
+      "width": 1774,
+      "height": 887,
+      "condition": "header framing",
+      "expected": {
+        "sheet_id": "E-201",
+        "revision": "B",
+        "disposition": "read_titleblock",
+        "register_status": "current"
+      }
+    },
+    {
+      "file": "05_A201_B_used.png",
+      "sha256": "689e001dd3be6efd645d299e35c0587a7284139f5fbd2c10f2fc007996451862",
+      "bytes": 2626054,
+      "width": 1672,
+      "height": 941,
+      "condition": "creased sheet",
+      "expected": {
+        "sheet_id": "A-201",
+        "revision": "B",
+        "disposition": "read_titleblock",
+        "register_status": "superseded"
+      }
+    },
+    {
+      "file": "06_E201_A_daylight.png",
+      "sha256": "6336bda6faa0f10bcb1ac09de52b1a561ea2632afc0349622b5ebfd99c62c4d3",
+      "bytes": 2733037,
+      "width": 1627,
+      "height": 967,
+      "condition": "daylight",
+      "expected": {
+        "sheet_id": "E-201",
+        "revision": "A",
+        "disposition": "read_titleblock",
+        "register_status": "superseded"
+      }
+    },
+    {
+      "file": "07_blurred.png",
+      "sha256": "48f48ca5a6936e6400388193071e051b2196ff167c5b25387529571fd7e8b33e",
+      "bytes": 1798102,
+      "width": 1672,
+      "height": 941,
+      "condition": "severe blur; complete sheet/revision pair not reliably readable",
+      "expected": {
+        "sheet_id": null,
+        "revision": null,
+        "disposition": "request_readable_drawing_photo",
+        "register_status": null
+      }
+    },
+    {
+      "file": "08_tools_no_drawing.png",
+      "sha256": "d23b9542f7c4e288a20ba491a030eca2bbb281cd379d3c1635ced6b18bcfe53e",
+      "bytes": 2862573,
+      "width": 1448,
+      "height": 1086,
+      "condition": "tools only; no drawing sheet",
+      "expected": {
+        "sheet_id": null,
+        "revision": null,
+        "disposition": "request_readable_drawing_photo",
+        "register_status": null
+      }
+    }
+  ]
+}

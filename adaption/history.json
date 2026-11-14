@@ -1,0 +1,725 @@
+{
+  "anchor_day": "2026-11-12",
+  "rows": [
+    {
+      "time": "04:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "2C: Concrete pour for Maple Court foundation slab is complete and curing procedures will begin this morning.",
+      "day": -14,
+      "sender_role": null,
+      "id": "h01"
+    },
+    {
+      "time": "06:00",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "1E: All machinery is checked and ready to start north trench work.",
+      "day": -14,
+      "sender_role": "Concrete foreman",
+      "id": "h02"
+    },
+    {
+      "time": "07:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3C: Electrical rough-in is complete on Level 3.",
+      "day": -14,
+      "sender_role": null,
+      "id": "h03"
+    },
+    {
+      "time": "07:20",
+      "subject": null,
+      "sender": "Marco Ruiz",
+      "channel": "telegram",
+      "text": "2A: Framing crew onsite starting Level 2 walls with all lumber staged.",
+      "day": -14,
+      "sender_role": "Framing foreman",
+      "id": "h04"
+    },
+    {
+      "time": "08:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3F: Painting team onsite starting primer on north wing walls.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h05"
+    },
+    {
+      "time": "08:10",
+      "subject": "2E: morning security patrol complete",
+      "sender": "Superintendent",
+      "channel": "email",
+      "text": "2E: morning security patrol complete.",
+      "day": -14,
+      "sender_role": "Superintendent",
+      "id": "h06"
+    },
+    {
+      "time": "09:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3G: Primer application on Level 3 is finished. Starting topcoat on lobby walls after lunch.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h07"
+    },
+    {
+      "time": "09:50",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3H: Flooring installation is fifty percent complete in the lift area and weight room section begins next.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h08"
+    },
+    {
+      "time": "10:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3H: Installing marble tiles in the main bathroom while kitchen grout dries.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h09"
+    },
+    {
+      "time": "10:30",
+      "subject": "2H: Facade panel installation begins tomorrow morning on",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "2H: Facade panel installation begins tomorrow morning on site.",
+      "day": -14,
+      "sender_role": "Architect",
+      "id": "h10"
+    },
+    {
+      "time": "10:40",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3A: Glazing on the north facade is complete.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h11"
+    },
+    {
+      "time": "11:15",
+      "subject": null,
+      "sender": "Jonas Meyer",
+      "channel": "telegram",
+      "text": "1B: Installing north skylight glass panels today.",
+      "day": -14,
+      "sender_role": "Roofing foreman",
+      "id": "h12"
+    },
+    {
+      "time": "11:15",
+      "subject": "2C: Maple Court lobby flooring is complete and",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "2C: Maple Court lobby flooring is complete and wall finishes are done.",
+      "day": -14,
+      "sender_role": "Architect",
+      "id": "h13"
+    },
+    {
+      "time": "11:20",
+      "subject": null,
+      "sender": "Jonas Meyer",
+      "channel": "telegram",
+      "text": "3E: Flashing is complete on the north wing and roofing is 80 percent done. We are starting shingle laydown now.",
+      "day": -14,
+      "sender_role": "Roofing foreman",
+      "id": "h14"
+    },
+    {
+      "time": "11:30",
+      "subject": "1A: Power is required to test the control",
+      "sender": "Lena Ortiz",
+      "channel": "email",
+      "text": "1A: Power is required to test the control panels today.",
+      "day": -14,
+      "sender_role": "Crane operator",
+      "id": "h15"
+    },
+    {
+      "time": "12:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "2E: Panel installation and array alignment are complete on sector four.",
+      "day": -14,
+      "sender_role": null,
+      "id": "h16"
+    },
+    {
+      "time": "12:25",
+      "subject": "3A: Foundation work is complete and framing begins",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "3A: Foundation work is complete and framing begins now.",
+      "day": -14,
+      "sender_role": "Architect",
+      "id": "h17"
+    },
+    {
+      "time": "12:30",
+      "subject": null,
+      "sender": "Marco Ruiz",
+      "channel": "telegram",
+      "text": "3A: Steel beams secured on Level 3 and welding is progressing.",
+      "day": -14,
+      "sender_role": "Framing foreman",
+      "id": "h18"
+    },
+    {
+      "time": "15:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3F: Lobby painting and Level 3 walls are complete.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h19"
+    },
+    {
+      "time": "15:30",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3H: Level 3 bathroom tiling is complete.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h20"
+    },
+    {
+      "time": "15:50",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "2F: North wing glazing panels installed successfully.",
+      "day": -14,
+      "sender_role": "Drywall foreman",
+      "id": "h21"
+    },
+    {
+      "time": "16:00",
+      "subject": null,
+      "sender": "Hannah Kowalski",
+      "channel": "telegram",
+      "text": "1B: Atrium lighting fixtures installed today.",
+      "day": -14,
+      "sender_role": "Electrical foreman",
+      "id": "h22"
+    },
+    {
+      "time": "16:00",
+      "subject": "3F: Level 3 painting is complete and flooring",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "3F: Level 3 painting is complete and flooring installation begins tomorrow morning.",
+      "day": -14,
+      "sender_role": "Architect",
+      "id": "h23"
+    },
+    {
+      "time": "16:05",
+      "subject": "1A: Foundation pouring and curing are complete with",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "1A: Foundation pouring and curing are complete with steel framing starting tomorrow morning.",
+      "day": -14,
+      "sender_role": "Architect",
+      "id": "h24"
+    },
+    {
+      "time": "16:30",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3A: North tower scaffolding stabilized with structural supports and braces held firm during heavy winds.",
+      "day": -14,
+      "sender_role": null,
+      "id": "h25"
+    },
+    {
+      "time": "18:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "1H: waste removal complete.",
+      "day": -14,
+      "sender_role": null,
+      "id": "h26"
+    },
+    {
+      "time": "22:00",
+      "subject": "1A: Night patrol of Maple Court perimeter complete",
+      "sender": "Superintendent",
+      "channel": "email",
+      "text": "1A: Night patrol of Maple Court perimeter complete.",
+      "day": -14,
+      "sender_role": "Superintendent",
+      "id": "h27"
+    },
+    {
+      "time": "23:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "2B: Sector 4 wiring is complete and power systems are stable.",
+      "day": -14,
+      "sender_role": null,
+      "id": "h28"
+    },
+    {
+      "time": "07:10",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "3A: Formwork is set for the east wall on Level 3.",
+      "day": -13,
+      "sender_role": "Concrete foreman",
+      "id": "h29"
+    },
+    {
+      "time": "09:40",
+      "subject": null,
+      "sender": "Sam Okafor",
+      "channel": "telegram",
+      "text": "2H: Wiring is complete and the site is secure. Power is active and all systems are operational for foundation pouring today.",
+      "day": -13,
+      "sender_role": "Site labor foreman",
+      "id": "h30"
+    },
+    {
+      "time": "11:45",
+      "subject": null,
+      "sender": "Hannah Kowalski",
+      "channel": "telegram",
+      "text": "3A: Lobby rough-ins and Level 3 wiring are complete.",
+      "day": -13,
+      "sender_role": "Electrical foreman",
+      "id": "h31"
+    },
+    {
+      "time": "13:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3D: Framing and sector five work begin next.",
+      "day": -13,
+      "sender_role": null,
+      "id": "h32"
+    },
+    {
+      "time": "13:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3H: Maple Court glazing is fifty percent complete.",
+      "day": -13,
+      "sender_role": "Drywall foreman",
+      "id": "h33"
+    },
+    {
+      "time": "13:55",
+      "subject": "2B: Steel framing finished, exterior cladding proceeds on",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "2B: Steel framing finished, exterior cladding proceeds on schedule.",
+      "day": -13,
+      "sender_role": "Architect",
+      "id": "h34"
+    },
+    {
+      "time": "14:20",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "2B: HVAC installation is complete and on schedule.",
+      "day": -13,
+      "sender_role": "Drywall foreman",
+      "id": "h35"
+    },
+    {
+      "time": "15:30",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3E: Sealant application on the north facade is 80 percent complete and curing has started.",
+      "day": -13,
+      "sender_role": "Drywall foreman",
+      "id": "h36"
+    },
+    {
+      "time": "16:30",
+      "subject": null,
+      "sender": "Marco Ruiz",
+      "channel": "telegram",
+      "text": "3C: Steel fixing complete on north span and pier.",
+      "day": -13,
+      "sender_role": "Framing foreman",
+      "id": "h37"
+    },
+    {
+      "time": "20:00",
+      "subject": "1E: Evening patrol complete and site is secure",
+      "sender": "Superintendent",
+      "channel": "email",
+      "text": "1E: Evening patrol complete and site is secure.",
+      "day": -13,
+      "sender_role": "Superintendent",
+      "id": "h38"
+    },
+    {
+      "time": "05:30",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "3C: Crews are ready to start the concrete pour.",
+      "day": -12,
+      "sender_role": "Concrete foreman",
+      "id": "h39"
+    },
+    {
+      "time": "06:15",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "2C: Grading operations are underway on the north slope.",
+      "day": -12,
+      "sender_role": "Concrete foreman",
+      "id": "h40"
+    },
+    {
+      "time": "06:30",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "2G: Kitchen plumbing and ventilation are installed.",
+      "day": -12,
+      "sender_role": null,
+      "id": "h41"
+    },
+    {
+      "time": "09:30",
+      "subject": null,
+      "sender": "Jonas Meyer",
+      "channel": "telegram",
+      "text": "1F: Roofing installation is 80% complete and crew started flashing work this morning with materials stocked and ready.",
+      "day": -12,
+      "sender_role": "Roofing foreman",
+      "id": "h42"
+    },
+    {
+      "time": "11:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "1D: North facade cladding is fully secured and waterproofing begins next. West facade cladding is fifty percent complete.",
+      "day": -12,
+      "sender_role": "Drywall foreman",
+      "id": "h43"
+    },
+    {
+      "time": "11:00",
+      "subject": null,
+      "sender": "Hannah Kowalski",
+      "channel": "telegram",
+      "text": "2B: Main panel wiring and Level 2 rough-in are complete.",
+      "day": -12,
+      "sender_role": "Electrical foreman",
+      "id": "h44"
+    },
+    {
+      "time": "11:00",
+      "subject": "3F: Foundation work complete, concrete pouring starts Monday",
+      "sender": "Plumbing inspector",
+      "channel": "email",
+      "text": "3F: Foundation work complete, concrete pouring starts Monday.",
+      "day": -12,
+      "sender_role": "Inspector",
+      "id": "h45"
+    },
+    {
+      "time": "12:30",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3E: Rough-in plumbing is complete and main supply lines are installed.",
+      "day": -12,
+      "sender_role": "Drywall foreman",
+      "id": "h46"
+    },
+    {
+      "time": "13:00",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "1G: North facade cladding panels are fully installed and secure.",
+      "day": -12,
+      "sender_role": "Drywall foreman",
+      "id": "h47"
+    },
+    {
+      "time": "13:20",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3C: Main lot paving complete.",
+      "day": -12,
+      "sender_role": null,
+      "id": "h48"
+    },
+    {
+      "time": "13:45",
+      "subject": "1E: Facade restoration is complete and scaffolding removal",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "1E: Facade restoration is complete and scaffolding removal begins tomorrow.",
+      "day": -12,
+      "sender_role": "Architect",
+      "id": "h49"
+    },
+    {
+      "time": "14:50",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "1C: Maple Court foundation is complete and steel assembly begins next Monday.",
+      "day": -12,
+      "sender_role": null,
+      "id": "h50"
+    },
+    {
+      "time": "14:50",
+      "subject": "2B: North face cladding is complete, south facade",
+      "sender": "Superintendent",
+      "channel": "email",
+      "text": "2B: North face cladding is complete, south facade is 80 percent done.",
+      "day": -12,
+      "sender_role": "Superintendent",
+      "id": "h51"
+    },
+    {
+      "time": "16:00",
+      "subject": null,
+      "sender": "Jonas Meyer",
+      "channel": "telegram",
+      "text": "1B: Roofing installation is nearly complete with ridge caps finished.",
+      "day": -12,
+      "sender_role": "Roofing foreman",
+      "id": "h52"
+    },
+    {
+      "time": "16:20",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "1F: Lighting pass begins tomorrow.",
+      "day": -12,
+      "sender_role": null,
+      "id": "h53"
+    },
+    {
+      "time": "03:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "1D: Overnight HVAC diagnostics complete with all systems stable and no critical errors found during night cycle.",
+      "day": -11,
+      "sender_role": null,
+      "id": "h54"
+    },
+    {
+      "time": "04:00",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "3C: Slab pour commenced at 0400 with all pumps operational and crews in position.",
+      "day": -11,
+      "sender_role": "Concrete foreman",
+      "id": "h55"
+    },
+    {
+      "time": "04:30",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3A: Concrete pouring for pier supports has started.",
+      "day": -11,
+      "sender_role": null,
+      "id": "h56"
+    },
+    {
+      "time": "07:15",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "2A: Crew onsite at 07:15 starting rebar tying on Level 2 which is fifty percent complete.",
+      "day": -11,
+      "sender_role": "Concrete foreman",
+      "id": "h57"
+    },
+    {
+      "time": "09:10",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3E: Ductwork installation on Level 3 is complete and on schedule, with unit placement starting this afternoon.",
+      "day": -11,
+      "sender_role": "Drywall foreman",
+      "id": "h58"
+    },
+    {
+      "time": "09:20",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "2E: Marble columns are set and structural beams installed.",
+      "day": -11,
+      "sender_role": null,
+      "id": "h59"
+    },
+    {
+      "time": "09:50",
+      "subject": "3H: Steel installation begins at ten AM today",
+      "sender": "Dana Whitfield",
+      "channel": "email",
+      "text": "3H: Steel installation begins at ten AM today.",
+      "day": -11,
+      "sender_role": "Architect",
+      "id": "h60"
+    },
+    {
+      "time": "10:15",
+      "subject": null,
+      "sender": "Priya Shah",
+      "channel": "telegram",
+      "text": "3D: Second and Level 3 pipe installations are complete with pressure testing starting today.",
+      "day": -11,
+      "sender_role": "Drywall foreman",
+      "id": "h61"
+    },
+    {
+      "time": "11:00",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "1B: Despite heavy rain and mud, trench excavation is complete. We are now reinforcing walls with timber.",
+      "day": -11,
+      "sender_role": null,
+      "id": "h62"
+    },
+    {
+      "time": "12:00",
+      "subject": null,
+      "sender": "Marco Ruiz",
+      "channel": "telegram",
+      "text": "2C: Level 2 framing is finished and we are starting roof truss installation this afternoon.",
+      "day": -11,
+      "sender_role": "Framing foreman",
+      "id": "h63"
+    },
+    {
+      "time": "14:20",
+      "subject": null,
+      "sender": "Hannah Kowalski",
+      "channel": "telegram",
+      "text": "3C: Level 3 wiring is complete and the main panel is done.",
+      "day": -11,
+      "sender_role": "Electrical foreman",
+      "id": "h64"
+    },
+    {
+      "time": "16:45",
+      "subject": "3F: Final steel beam placed on section four",
+      "sender": "Lena Ortiz",
+      "channel": "email",
+      "text": "3F: Final steel beam placed on section four.",
+      "day": -11,
+      "sender_role": "Crane operator",
+      "id": "h65"
+    },
+    {
+      "time": "17:30",
+      "subject": null,
+      "sender": "Sam Okafor",
+      "channel": "telegram",
+      "text": "1G: Framing is done and painting starts tomorrow.",
+      "day": -11,
+      "sender_role": "Site labor foreman",
+      "id": "h66"
+    },
+    {
+      "time": "06:15",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "3C: excavation crew is onsite with equipment checks complete, starting trenching in the north zone.",
+      "day": -10,
+      "sender_role": "Concrete foreman",
+      "id": "h67"
+    },
+    {
+      "time": "07:30",
+      "subject": null,
+      "sender": "Dmitri Volkov",
+      "channel": "telegram",
+      "text": "3A: excavation is underway on the north side with all equipment fueled and operating normally.",
+      "day": -10,
+      "sender_role": "Concrete foreman",
+      "id": "h68"
+    },
+    {
+      "time": "07:30",
+      "subject": null,
+      "sender": "Sam Okafor",
+      "channel": "telegram",
+      "text": "3G: Foundation work is complete and all crews are present.",
+      "day": -10,
+      "sender_role": "Site labor foreman",
+      "id": "h69"
+    },
+    {
+      "time": "10:55",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3D: Sector four framing and foundation are complete.",
+      "day": -10,
+      "sender_role": null,
+      "id": "h70"
+    },
+    {
+      "time": "11:30",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "3H: Crews are moving to foundation excavation within the hour.",
+      "day": -10,
+      "sender_role": null,
+      "id": "h71"
+    },
+    {
+      "time": "12:40",
+      "subject": null,
+      "sender": "Schedule update",
+      "channel": "schedule",
+      "text": "1B: Maple Court excavation in sector four is complete.",
+      "day": -10,
+      "sender_role": null,
+      "id": "h72"
+    }
+  ]
+}

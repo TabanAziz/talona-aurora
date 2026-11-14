@@ -1,0 +1,43 @@
+{
+  "kind": "separate read-back safeguard proof",
+  "measurements_sha256": "111e8b842d9bc08e6612a5e76801c080fab1b5a90ddc6ebdff5be82c0eeb6786",
+  "original_stt_result_changed": false,
+  "new_speech_calls": 0,
+  "limitation": "Recorded provider responses and scripted sender correction; no human interaction or improved recognition proved.",
+  "cases": [
+    {
+      "added_snr_db": 5,
+      "audio_sha256": "1fce865a6cfed2d7b9f8e6b4f8561aa94c29a442cad82cc58fa4838ff24be48e",
+      "original_heard": "On the next working day, we start rough electrical in 3D. The wire is cut to length from E201 Rev A.",
+      "original_source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+      "held_before_confirmation": true,
+      "facts_before_confirmation": 0,
+      "scripted_correction": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+      "correction_source": "measured baseline transcript",
+      "corrected_units": [
+        "3B"
+      ],
+      "heard_preserved": true,
+      "repeat_added_nothing": true,
+      "provider_calls": 0,
+      "delivery": "simulated"
+    },
+    {
+      "added_snr_db": 0,
+      "audio_sha256": "1b5ea252c0f5d19f92a28bec141db4e15d28fb370e0cf684efb403ff9226b945",
+      "original_heard": "On the next working day, we start rough electrical in 3D. The wire is cut to length from E-201 Rev A.",
+      "original_source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+      "held_before_confirmation": true,
+      "facts_before_confirmation": 0,
+      "scripted_correction": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+      "correction_source": "measured baseline transcript",
+      "corrected_units": [
+        "3B"
+      ],
+      "heard_preserved": true,
+      "repeat_added_nothing": true,
+      "provider_calls": 0,
+      "delivery": "simulated"
+    }
+  ]
+}

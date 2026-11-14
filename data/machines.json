@@ -1,0 +1,5 @@
+[
+  {"id": "layout-robot-1", "kind": "robot", "name": "Layout robot", "units": ["3B"], "sheets": ["A-201"], "simulated": true},
+  {"id": "survey-drone-1", "kind": "drone", "name": "Survey drone", "units": ["3B"], "sheets": ["A-201"], "simulated": true},
+  {"id": "gate-sensor-1", "kind": "sensor", "name": "Gate sensor", "units": [], "sheets": [], "simulated": true}
+]

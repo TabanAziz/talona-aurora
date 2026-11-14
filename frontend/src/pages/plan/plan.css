@@ -1,0 +1,127 @@
+.plan { display: flex; flex-direction: column; gap: var(--s5); min-width: 0; }
+
+.plan-kpi { display: flex; flex-direction: column; align-items: flex-end; }
+.plan-kpi-value { font-size: var(--t-2xl); font-weight: var(--w-strong); line-height: var(--lh-tight); font-variant-numeric: tabular-nums; }
+
+.plan-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s5); align-items: start; }
+.plan-main, .plan-side { display: flex; flex-direction: column; gap: var(--s5); min-width: 0; }
+.plan-card { gap: var(--s4); }
+.plan-card .table-wrap { border: 0; border-radius: 0; }
+.plan-card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s4); }
+
+/* plan versus actual */
+.plan-item { display: inline-flex; align-items: center; gap: var(--s2); }
+.plan-marker { flex: none; width: var(--s2); height: var(--s2); background: var(--line); }
+.plan-marker-over { background: var(--warning); }
+.plan-marker-under { background: var(--danger); }
+.plan-diff { display: inline-block; padding: 0 var(--s2); border-radius: var(--r-sm); background: var(--surface-2); font-weight: var(--w-strong); }
+.plan-diff-over { background: var(--warning-soft); color: var(--warning); }
+.plan-diff-under { background: var(--danger-soft); color: var(--danger); }
+.plan-diff-none { color: var(--text-muted); font-weight: var(--w-regular); }
+/* a reported value sits above the word that says where it came from, so the column stays one value wide */
+.plan-actual { display: inline-flex; flex-direction: column; align-items: flex-end; }
+.plan-actual-mark { display: inline-flex; align-items: center; min-height: var(--h-bar); font-family: var(--font); word-spacing: normal; white-space: nowrap; }
+
+/* the week */
+.gantt { display: flex; flex-direction: column; gap: var(--s2); }
+.gantt-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s1) var(--s4); align-items: center; }
+.gantt-label { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
+.gantt-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+/* weekday and date stack on a phone, where one line would run into the next day */
+.gantt-day { display: flex; flex-direction: column; min-width: 0; line-height: var(--lh-tight); }
+.gantt-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  min-width: 0;
+  padding-block: var(--s1);
+  border-radius: var(--r-sm);
+  background-color: var(--surface-2);
+  /* one line per day, so a bar can be read against the header without a second grid */
+  background-image: repeating-linear-gradient(to right, var(--line) 0 1px, transparent 1px calc(100% / 7));
+}
+.gantt-bar { min-width: var(--s2); min-height: var(--h-bar); border-radius: var(--r-sm); }
+.gantt-bar-original { background: color-mix(in srgb, var(--text-muted) 35%, var(--surface)); }
+.gantt-bar-hold { background: var(--warning); }
+.gantt-bar-proposed { background: var(--accent); }
+
+.plan-legend { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s4); }
+.plan-legend-item { display: inline-flex; align-items: center; gap: var(--s2); }
+.plan-swatch { width: var(--s4); height: var(--s3); border-radius: var(--r-sm); }
+.plan-swatch-original { background: color-mix(in srgb, var(--text-muted) 35%, var(--surface)); }
+.plan-swatch-proposed { background: var(--accent); }
+.plan-more { align-self: flex-start; }
+
+/* proposed plan change */
+.plan-proposal { gap: var(--s4); }
+.plan-handover-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: var(--border); border-radius: var(--r); overflow: hidden; }
+.plan-handover-box { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; padding: var(--s3) var(--s4); }
+.plan-handover-new { background: var(--accent); color: var(--accent-text); }
+.plan-handover-date { font-size: var(--t-lg); line-height: var(--lh-tight); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+.plan-chain, .plan-unchanged { display: flex; flex-direction: column; background: var(--surface); border: var(--border); border-radius: var(--r); }
+.plan-chain li, .plan-unchanged li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s3);
+  min-width: 0;
+  padding: var(--s2) var(--s3);
+  overflow-wrap: anywhere;
+}
+.plan-chain li + li, .plan-unchanged li + li { border-top: var(--border); }
+.plan-chain-name { display: flex; flex-direction: column; min-width: 0; }
+.plan-chain-delta { display: flex; flex-direction: column; align-items: flex-end; flex: none; font-weight: var(--w-strong); }
+.plan-chain-end { background: var(--accent-soft); font-weight: var(--w-strong); }
+.plan-error { color: var(--danger); overflow-wrap: anywhere; }
+.plan-side .list a { display: inline-flex; align-items: center; min-height: var(--h-bar); }
+
+/* media queries can not read custom properties, so the breakpoints are literals */
+@media (min-width: 900px) {
+  .gantt-row { grid-template-columns: var(--w-label) minmax(0, 1fr); }
+  .gantt-day { flex-direction: row; gap: var(--s1); }
+}
+@media (min-width: 1100px) {
+  .plan-grid { grid-template-columns: minmax(0, 2fr) minmax(var(--w-side), 1fr); }
+}
+
+/* A deviation is a link in a list row: give the row a target a finger can hit, not the height of the text. */
+.plan-deviation a { display: inline-flex; align-items: center; min-height: var(--s5); align-self: flex-start; }
+.plan-proposal-summary { font-weight: var(--w-strong); }
+
+.plan-filters { display: flex; flex-wrap: wrap; gap: var(--s3); }
+.plan-filters label { display: flex; flex: 1; flex-direction: column; min-width: var(--w-thumb); gap: var(--s1); font-size: var(--t-sm); color: var(--text-muted); }
+.plan-filters input, .plan-filters select { width: 100%; min-width: 0; color: var(--text); }
+.plan-agenda { display: flex; flex-direction: column; gap: var(--s5); }
+.plan-day { display: flex; flex-direction: column; gap: var(--s2); min-width: 0; }
+.plan-day h3 { color: var(--text-muted); font-size: var(--t-sm); }
+.plan-work-list { list-style: none; padding: 0; margin: 0; }
+.plan-work { display: flex; flex-direction: column; gap: var(--s2); padding-block: var(--s4); min-width: 0; overflow-wrap: anywhere; border-top: var(--border); }
+.plan-work-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--s2); }
+.plan-work-head strong { flex: 1; min-width: 0; }
+.plan-work-dates { display: flex; flex-wrap: wrap; gap: var(--s3) var(--s5); margin: 0; }
+.plan-work-dates > div { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; }
+.plan-work-dates dt { font-size: var(--t-sm); color: var(--text-muted); }
+.plan-work-dates dd { margin: 0; font-variant-numeric: tabular-nums; }
+.plan-work-proposed { padding-inline-start: var(--s3); border-inline-start: var(--underline) solid var(--warning); }
+.plan-work-warning { color: var(--warning); align-self: flex-start; }
+.plan-timeline-details { min-width: 0; }
+.plan-timeline-details summary { cursor: pointer; font-size: var(--t-lg); font-weight: var(--w-strong); min-height: var(--h-control); }
+.plan-timeline-details[open] { display: flex; flex-direction: column; gap: var(--s4); }
+.plan-deviation { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s2); overflow-wrap: anywhere; }
+.plan-proposal { scroll-margin-top: var(--s5); }
+.plan-proposal-selected, .plan-proposal:target { outline: var(--ring) solid var(--focus); outline-offset: var(--s1); }
+.plan-chain li { flex-wrap: wrap; }
+.plan-chain-name { gap: var(--s1); flex: 1; }
+.plan-chain-delta { margin-inline-start: auto; }
+.plan-resource-list { display: flex; flex-direction: column; list-style: none; padding: 0; margin: 0; }
+.plan-resource { display: flex; flex-direction: column; gap: var(--s3); padding-block: var(--s4); border-top: var(--border); min-width: 0; overflow-wrap: anywhere; }
+.plan-resource-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s2) var(--s4); }
+.plan-resource-head .plan-item { flex: 1; min-width: 0; }
+.plan-resource-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--w-thumb)), 1fr)); gap: var(--s3) var(--s5); margin: 0; }
+.plan-resource-facts > div { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; }
+.plan-resource-facts dt { font-size: var(--t-sm); color: var(--text-muted); }
+.plan-resource-facts dd { margin: 0; font-variant-numeric: tabular-nums; }
+.plan-resource-facts .plan-actual { align-items: flex-start; }
+.plan-resource-facts .plan-actual-mark { white-space: normal; }
+.plan-resource-difference { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s2); }

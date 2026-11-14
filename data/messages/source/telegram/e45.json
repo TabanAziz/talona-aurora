@@ -1,0 +1,20 @@
+{
+  "update_id": 910024,
+  "message": {
+    "message_id": 4224,
+    "from": {
+      "id": 7000009,
+      "is_bot": false,
+      "first_name": "Sam",
+      "last_name": "Okafor",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794505500,
+    "text": "Curing protection is staged for tomorrow, blankets and heaters ready from nine."
+  }
+}

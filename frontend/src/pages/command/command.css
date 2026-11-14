@@ -1,0 +1,13 @@
+.command-page { max-width: var(--w-read); margin: 0; display: grid; gap: var(--s5); min-width: 0; overflow-wrap: anywhere; }
+.command-page h1, .command-page h2 { margin: 0 0 var(--s3); }
+.command-page h2 { font-size: var(--t-lg); }
+.command-page p { margin: 0 0 var(--s3); }
+.command-eyebrow { color: var(--text-muted); font-family: var(--font-mono); font-size: var(--t-xs); }
+.command-form, .command-review { padding: var(--pad-panel); display: grid; gap: var(--s4); }
+.command-form label { font-weight: var(--w-strong); }
+.command-form textarea { width: 100%; min-height: calc(var(--s8) * 2); padding: var(--s3); resize: vertical; font: inherit; color: var(--text); background: var(--surface); border: var(--border); }
+.command-actions { display: flex; flex-wrap: wrap; gap: var(--s3); }
+.command-error { padding: var(--s4); border: 1px solid var(--danger-line); color: var(--danger); background: var(--danger-soft); }
+.command-shifts { padding-left: var(--s5); }
+.command-shifts li { margin-bottom: var(--s3); }
+.command-shifts span { display: block; color: var(--text-muted); }

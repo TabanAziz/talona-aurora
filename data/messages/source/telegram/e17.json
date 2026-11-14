@@ -1,0 +1,20 @@
+{
+  "update_id": 910004,
+  "message": {
+    "message_id": 4204,
+    "from": {
+      "id": 7000009,
+      "is_bot": false,
+      "first_name": "Sam",
+      "last_name": "Okafor",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1793892000,
+    "text": "Curing blankets for the podium are on site, stored in the east bay."
+  }
+}

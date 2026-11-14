@@ -1,0 +1,67 @@
+{
+  "source": "saved hosted failed fact",
+  "initial": {
+    "facts": [
+      {
+        "type": "delivery_planned",
+        "subject": "Concrete trucks for Sunday podium pour",
+        "data": {
+          "actual": 4,
+          "date": "2026-11-15",
+          "item": "Concrete trucks",
+          "planned": 3
+        },
+        "confidence": 0.9,
+        "quote": "Confirming Sunday's podium topping pour. We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00."
+      }
+    ]
+  },
+  "repair": {
+    "facts": [
+      {
+        "type": "delivery_actual",
+        "subject": "Concrete trucks for Sunday podium pour",
+        "quote": "Confirming Sunday's podium topping pour. We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00.",
+        "confidence": 0.9,
+        "data": {
+          "actual": 4,
+          "actual_date": null,
+          "change": null,
+          "crew": null,
+          "date": "2026-11-15",
+          "inspection": null,
+          "item": "Concrete trucks",
+          "new_time": null,
+          "note": null,
+          "planned": 3,
+          "planned_date": null,
+          "replaces": null,
+          "revision": null,
+          "sheet": null,
+          "start": null,
+          "task": null,
+          "time": null,
+          "topic": null,
+          "unit": null,
+          "units": null
+        }
+      }
+    ]
+  },
+  "cleaned": [
+    {
+      "type": "delivery_actual",
+      "subject": "Concrete trucks for Sunday podium pour",
+      "quote": "Confirming Sunday's podium topping pour. We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00.",
+      "confidence": 0.9,
+      "data": {
+        "actual": 4,
+        "date": "2026-11-15",
+        "item": "Concrete trucks",
+        "planned": 3
+      }
+    }
+  ],
+  "model": "deepseek-v4-1-flash-1017",
+  "live_calls": 1
+}

@@ -1,0 +1,42 @@
+.learned { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; max-width: var(--w-page); }
+
+.learned-head { gap: var(--s2); max-width: var(--w-read); }
+.learned-head h1 { overflow-wrap: anywhere; }
+
+.learned-panel { gap: var(--s3); }
+
+.learned-list { display: flex; flex-direction: column; min-width: 0; }
+.learned-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  min-width: 0;
+  padding-block: var(--s3);
+  border-top: var(--border);
+  overflow-wrap: anywhere;
+}
+.learned-row:first-child { border-top: 0; }
+.learned-rule-text { font-weight: var(--w-strong); }
+
+.learned-row-line {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s1) var(--s3);
+}
+.learned-time { flex: none; }
+.learned-actor { flex: none; }
+.learned-line-text { flex: 1 1 var(--w-thumb); min-width: 0; overflow-wrap: anywhere; }
+.learned-saving { flex: none; }
+.learned-source { flex: none; align-self: center; min-height: var(--h-bar); white-space: nowrap; }
+
+.learned-row-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s2); min-width: 0; }
+.learned-examples { display: flex; flex-direction: column; gap: var(--s1); padding-inline-start: var(--s4); list-style: disc; }
+
+.learned-counts { display: flex; flex-wrap: wrap; gap: var(--s4) var(--s6); }
+.learned-count { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; }
+.learned-number { font-size: var(--t-2xl); font-weight: var(--w-strong); line-height: var(--lh-tight); }
+
+.learned-total { font-size: var(--t-lg); font-weight: var(--w-strong); overflow-wrap: anywhere; }
+
+.learned-foot { padding-top: var(--s3); border-top: var(--border); overflow-wrap: anywhere; }

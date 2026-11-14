@@ -1,0 +1,194 @@
+{
+  "sheet": "A-201",
+  "revision": "B",
+  "units": "mm",
+  "width": 22000,
+  "height": 13000,
+  "wall_height": 2700,
+  "walls": [
+    {
+      "id": "ext-n",
+      "x1": 0,
+      "y1": 0,
+      "x2": 22000,
+      "y2": 0,
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    {
+      "id": "ext-e",
+      "x1": 22000,
+      "y1": 0,
+      "x2": 22000,
+      "y2": 13000,
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    {
+      "id": "ext-s",
+      "x1": 0,
+      "y1": 13000,
+      "x2": 22000,
+      "y2": 13000,
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    {
+      "id": "ext-w",
+      "x1": 0,
+      "y1": 0,
+      "x2": 0,
+      "y2": 13000,
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    {
+      "id": "cor-n",
+      "x1": 0,
+      "y1": 6500,
+      "x2": 22000,
+      "y2": 6500,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "cor-s",
+      "x1": 0,
+      "y1": 8000,
+      "x2": 22000,
+      "y2": 8000,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "n-1",
+      "x1": 5500,
+      "y1": 0,
+      "x2": 5500,
+      "y2": 6500,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "n-2",
+      "x1": 11000,
+      "y1": 0,
+      "x2": 11000,
+      "y2": 6500,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "n-3",
+      "x1": 16500,
+      "y1": 0,
+      "x2": 16500,
+      "y2": 6500,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "s-1",
+      "x1": 5500,
+      "y1": 8000,
+      "x2": 5500,
+      "y2": 13000,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "s-2",
+      "x1": 11000,
+      "y1": 8000,
+      "x2": 11000,
+      "y2": 13000,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "s-3",
+      "x1": 16500,
+      "y1": 8000,
+      "x2": 16500,
+      "y2": 13000,
+      "thickness": 200,
+      "kind": "interior"
+    },
+    {
+      "id": "p-3a",
+      "x1": 0,
+      "y1": 3250,
+      "x2": 3500,
+      "y2": 3250,
+      "thickness": 100,
+      "kind": "partition"
+    },
+    {
+      "id": "p-3a2",
+      "x1": 5500,
+      "y1": 3750,
+      "x2": 9000,
+      "y2": 3750,
+      "thickness": 100,
+      "kind": "partition"
+    },
+    {
+      "id": "p-3c",
+      "x1": 16500,
+      "y1": 4250,
+      "x2": 20000,
+      "y2": 4250,
+      "thickness": 100,
+      "kind": "partition"
+    },
+    {
+      "id": "p-3b-v",
+      "x1": 13750,
+      "y1": 0,
+      "x2": 13750,
+      "y2": 2500,
+      "thickness": 100,
+      "kind": "partition"
+    },
+    {
+      "id": "p-3b",
+      "x1": 11000,
+      "y1": 4500,
+      "x2": 16500,
+      "y2": 4500,
+      "thickness": 100,
+      "kind": "partition"
+    }
+  ],
+  "openings": [
+    {
+      "wall": "cor-n",
+      "offset": 13000,
+      "width": 900,
+      "kind": "door"
+    }
+  ],
+  "rooms": [
+    {
+      "label": "3A",
+      "x": 2500,
+      "y": 1750
+    },
+    {
+      "label": "3B",
+      "x": 13500,
+      "y": 5750
+    },
+    {
+      "label": "3C",
+      "x": 18750,
+      "y": 1750
+    },
+    {
+      "label": "3D",
+      "x": 2500,
+      "y": 10750
+    }
+  ],
+  "changed": []
+}

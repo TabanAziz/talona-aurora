@@ -1,0 +1,26 @@
+{
+  "update_id": 910033,
+  "message": {
+    "message_id": 4233,
+    "from": {
+      "id": 7000002,
+      "is_bot": false,
+      "first_name": "Hannah",
+      "last_name": "Kowalski",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794558600,
+    "voice": {
+      "duration": 9,
+      "mime_type": "audio/ogg",
+      "file_id": "AwACAgQAAyEF-demo-e53",
+      "file_unique_id": "AgAD-e53",
+      "file_size": 28521
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "update_id": 910005,
+  "message": {
+    "message_id": 4205,
+    "from": {
+      "id": 7000005,
+      "is_bot": false,
+      "first_name": "Marco",
+      "last_name": "Ruiz",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1793947800,
+    "voice": {
+      "duration": 6,
+      "mime_type": "audio/ogg",
+      "file_id": "AwACAgQAAyEF-demo-e18",
+      "file_unique_id": "AgAD-e18",
+      "file_size": 24685
+    }
+  }
+}

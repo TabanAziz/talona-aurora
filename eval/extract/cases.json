@@ -1,0 +1,108 @@
+{
+  "about": "Golden cases for fact extraction. Synthetic messages for the fictional Maple Court project. A case either names a scenario event or carries its own event. `expect` lists the specific facts (every type except other) the message states; an empty list means no specific fact is correct. Text values compare without case.",
+  "cases": [
+    {
+      "id": "g01-revision",
+      "scenario_event": "e01",
+      "expect": [{"type": "drawing_revision", "data": {"sheet": "A-201", "revision": "C", "replaces": "B", "units": ["3B"]}}]
+    },
+    {
+      "id": "g02-voice-plan",
+      "scenario_event": "e02",
+      "expect": [{"type": "work_planned", "data": {"unit": "3B", "crew": "Framing crew", "task": "T-031", "sheet": "A-201", "revision": "B", "start": "2026-11-13T06:00:00Z"}}]
+    },
+    {
+      "id": "g03-trucks",
+      "scenario_event": "e03",
+      "expect": [{"type": "delivery_actual", "data": {"item": "Concrete trucks", "planned": 3, "actual": 4, "date": "2026-11-13"}}]
+    },
+    {
+      "id": "g04-crane",
+      "scenario_event": "e04",
+      "expect": [{"type": "equipment_actual", "data": {"item": "Mobile crane", "planned_date": "2026-11-13", "actual_date": "2026-11-16"}}]
+    },
+    {
+      "id": "g05-inspection-moved",
+      "scenario_event": "e05",
+      "expect": [{"type": "inspection_moved", "data": {"unit": "2A", "inspection": "Rough plumbing", "new_time": "2026-11-13T13:00:00Z"}}]
+    },
+    {
+      "id": "g06-question-2a",
+      "scenario_event": "e06",
+      "expect": [{"type": "question", "data": {"unit": "2A"}}]
+    },
+    {
+      "id": "g07-question-2b",
+      "scenario_event": "e07",
+      "expect": [{"type": "question", "data": {"unit": "2B"}}]
+    },
+    {
+      "id": "g08-question-1c",
+      "scenario_event": "e08",
+      "expect": [{"type": "question", "data": {"unit": "1C"}}]
+    },
+    {
+      "id": "g09-acknowledgement",
+      "event": {
+        "id": "g09", "channel": "telegram", "sent_at": "2026-11-12T16:30:00Z", "received_at": "2026-11-12T16:30:02Z",
+        "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site",
+        "text": "Got A-201 Rev C, thanks. The framing crew has it now."
+      },
+      "expect": [{"type": "acknowledgement", "data": {"crew": "Framing crew", "sheet": "A-201", "revision": "C"}}]
+    },
+    {
+      "id": "g10-control-thanks",
+      "event": {
+        "id": "g10", "channel": "telegram", "sent_at": "2026-11-13T15:10:00Z", "received_at": "2026-11-13T15:10:02Z",
+        "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site",
+        "text": "Thanks everyone, good week. See you Monday."
+      },
+      "expect": []
+    },
+    {
+      "id": "g11-control-ok",
+      "event": {
+        "id": "g11", "channel": "telegram", "sent_at": "2026-11-13T07:21:00Z", "received_at": "2026-11-13T07:21:01Z",
+        "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site",
+        "text": "Ok thanks"
+      },
+      "expect": []
+    },
+    {
+      "id": "g12-control-weather",
+      "event": {
+        "id": "g12", "channel": "telegram", "sent_at": "2026-11-13T05:50:00Z", "received_at": "2026-11-13T05:50:02Z",
+        "sender": "Lena Ortiz", "sender_role": "Crane operator", "thread": "Maple Court site",
+        "text": "Cold one this morning, wear your gloves."
+      },
+      "expect": []
+    },
+    {
+      "id": "g13-inspection-passed",
+      "event": {
+        "id": "g13", "channel": "email", "sent_at": "2026-11-13T12:45:00Z", "received_at": "2026-11-13T12:45:20Z",
+        "sender": "City plumbing inspector", "sender_role": "Plumbing inspector", "subject": "Maple Court 2A",
+        "text": "Rough plumbing in unit 2A passed. Signed off today at 13:40."
+      },
+      "expect": [{"type": "inspection_passed", "data": {"unit": "2A", "inspection": "Rough plumbing", "time": "2026-11-13T12:40:00Z"}}]
+    },
+    {
+      "id": "g14-work-started",
+      "event": {
+        "id": "g14", "channel": "telegram", "sent_at": "2026-11-13T07:30:00Z", "received_at": "2026-11-13T07:30:02Z",
+        "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site",
+        "text": "We started closing the walls in 1C."
+      },
+      "expect": [{"type": "work_started", "data": {"unit": "1C", "crew": "Drywall crew", "task": "T-061"}}]
+    },
+    {
+      "id": "g15-inspection-scheduled",
+      "event": {
+        "id": "g15", "channel": "schedule", "sent_at": "2026-11-13T08:00:00Z", "received_at": "2026-11-13T08:00:00Z",
+        "sender": "Schedule update",
+        "text": "Rough plumbing inspection for unit 2B booked for Tuesday 09:00."
+      },
+      "expect": [{"type": "inspection_scheduled", "data": {"unit": "2B", "inspection": "Rough plumbing", "time": "2026-11-17T08:00:00Z"}}]
+    }
+  ]
+}

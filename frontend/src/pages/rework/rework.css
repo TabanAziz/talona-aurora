@@ -1,0 +1,90 @@
+.rework { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; max-width: var(--w-read); }
+.rework-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s4); }
+.rework-head { gap: var(--s2); }
+.rework-summary { max-width: var(--w-read); }
+.rework-facts { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); margin: 0; }
+.rework-facts > div { display: flex; flex-direction: column; min-width: 0; }
+.rework-facts dd { margin: 0; overflow-wrap: anywhere; }
+.rework-not-found { max-width: var(--w-read); }
+
+.rework-timeline { gap: var(--s3); }
+.rework-steps { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.rework-step { position: relative; display: flex; gap: var(--s3); padding-block: var(--s2); min-width: 0; }
+/* the line that joins the dots, as on the live record and the proof of notice */
+.rework-step::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: calc(var(--s1) + 1px);
+  width: 1px;
+  background: var(--line);
+}
+.rework-step:first-child::before { inset-block-start: var(--s4); }
+.rework-step:last-child::before { inset-block-end: calc(100% - var(--s4)); }
+.rework-dot { position: relative; flex: none; width: var(--s2); height: var(--s2); margin-top: var(--s2); background: var(--text); }
+/* orange marks the one thing the page is about: the hours the work stood before the revision. */
+.rework-step-gap .rework-dot { background: var(--accent); }
+.rework-step-gap strong { color: var(--text); font-size: var(--t-md); }
+.rework-step-confirmation[data-warning="true"] .rework-dot { background: var(--warning); }
+.rework-step[data-warning="true"] .rework-dot { background: var(--warning); }
+.rework-step-body { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; overflow-wrap: anywhere; }
+.rework-time { font-family: var(--font-mono); }
+.rework-detail { margin: 0; }
+.rework-quote { margin: 0; padding-inline-start: var(--s3); border-inline-start: 2px solid var(--text); }
+.rework-source { display: inline-flex; align-items: center; align-self: flex-start; min-height: var(--h-bar); }
+.rework-overlay { margin: var(--s2) 0 0; border: var(--border); }
+.rework-overlay img { width: 100%; height: auto; }
+.rework-overlay figcaption { padding: var(--s2) var(--s3); border-top: var(--border); }
+
+.rework-cost { gap: var(--s3); }
+.rework-cost-list { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.rework-cost-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s1) var(--s3);
+  padding-block: var(--s1);
+  border-bottom: var(--border);
+}
+.rework-total { margin: 0; }
+.rework-rate { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s3); }
+.rework-rate label { font-weight: var(--w-strong); }
+.rework-rate-input {
+  min-height: var(--h-control);
+  padding: 0 var(--s3);
+  border: 1px solid var(--text);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.rework-rate-print { display: none; }
+.rework-amount { margin: 0; }
+.rework-foot { padding-block: var(--s2); border-top: var(--border); }
+
+@media print {
+  @page { size: A4; margin: 10mm; }
+  .app:has(.rework) .topbar, .rework-actions { display: none; }
+  .app:has(.rework) { color-scheme: light; background: Canvas; color: CanvasText; }
+  .app:has(.rework) .page { max-width: none; padding: 0; }
+  /* One A4 page: the attachment is read at arm's length, so print runs denser than the screen. */
+  .rework { max-width: none; color: CanvasText; gap: var(--s2); font-size: var(--t-xs); }
+  .rework .panel { gap: var(--s2); padding: var(--s2) var(--s3); border-color: CanvasText; background: Canvas; break-inside: avoid; }
+  .rework-head { gap: var(--s1); }
+  .rework-head h1 { font-size: var(--t-md); }
+  .rework-facts { gap: var(--s1) var(--s4); }
+  .rework-steps { gap: 0; }
+  .rework-step { padding-block: 0; }
+  .rework-step-body { gap: 0; }
+  .rework-time, .rework-detail, .rework-quote, .rework-source, .rework-overlay figcaption { font-size: var(--t-xs); line-height: 1.35; }
+  .rework-source { min-height: 0; }
+  .rework-quote { padding-inline-start: var(--s2); }
+  .rework a, .rework .muted { color: CanvasText; }
+  .rework-rate-input { display: none; }
+  .rework-rate-print { display: inline; }
+  .rework-overlay { margin-top: 0; }
+  .rework-overlay img { width: auto; max-width: 100%; max-height: 26mm; }
+  .rework-overlay figcaption { padding: var(--s1) var(--s2); }
+  .rework-cost-list li { padding-block: 0; }
+  .rework-foot { border-color: CanvasText; padding-block: var(--s1); }
+}

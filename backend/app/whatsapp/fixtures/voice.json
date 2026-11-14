@@ -1,0 +1,16 @@
+{
+  "SmsMessageSid": "SM00000000000000000000000000000002",
+  "NumMedia": "1",
+  "ProfileName": "Marco Ruiz",
+  "MessageType": "audio",
+  "SmsStatus": "received",
+  "Body": "",
+  "To": "whatsapp:+14155238886",
+  "MessageSid": "SM00000000000000000000000000000002",
+  "AccountSid": "ACtest000000000000000000000000000",
+  "From": "whatsapp:+4915550000002",
+  "MediaContentType0": "audio/ogg",
+  "MediaUrl0": "https://api.twilio.com/2010-04-01/Accounts/ACtest000000000000000000000000000/Messages/SM00000000000000000000000000000002/Media/ME00000000000000000000000000000001",
+  "WaId": "4915550000002",
+  "ApiVersion": "2010-04-01"
+}

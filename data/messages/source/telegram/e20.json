@@ -1,0 +1,19 @@
+{
+  "update_id": 910007,
+  "message": {
+    "message_id": 4207,
+    "from": {
+      "id": 7000011,
+      "is_bot": false,
+      "first_name": "Superintendent",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1793975400,
+    "text": "Access road is clear, the gate crew opens at 6:30 on the day of the lift."
+  }
+}

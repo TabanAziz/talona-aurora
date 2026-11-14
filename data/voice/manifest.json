@@ -1,0 +1,68 @@
+[
+  {
+    "id": "e02",
+    "file": "e02.wav",
+    "speaker": "Marco Ruiz",
+    "text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+    "noise_snr_db": null,
+    "voice": "Chris",
+    "model": "eleven_multilingual_v2",
+    "seconds": 4.59,
+    "sha256": "a066fb4308b0c25173f2a801eb7877f2b62684d24ad10241b17ea1aee7853f05"
+  },
+  {
+    "id": "e06",
+    "file": "e06.wav",
+    "speaker": "Priya Shah",
+    "text": "Can we close the walls in 2A this morning?",
+    "noise_snr_db": null,
+    "voice": "Jessica",
+    "model": "eleven_multilingual_v2",
+    "seconds": 2.78,
+    "sha256": "16374f7d611dbdc43407b3be7bf3eb477cd038ce2a1d09463401affdc9d93744"
+  },
+  {
+    "id": "e34",
+    "file": "e34.wav",
+    "speaker": "Jonas Meyer",
+    "text": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week.",
+    "noise_snr_db": 8,
+    "voice": "Roger",
+    "model": "eleven_multilingual_v2",
+    "seconds": 7.1,
+    "sha256": "1db64056800dc6f60d22494090a96f7a4f0f3913e06218dd24a435b50c0b73b2"
+  },
+  {
+    "id": "e41",
+    "file": "e41.wav",
+    "speaker": "Hannah Kowalski",
+    "text": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical.",
+    "noise_snr_db": null,
+    "voice": "Sarah",
+    "model": "eleven_multilingual_v2",
+    "seconds": 6.31,
+    "sha256": "1a4861f0d64fb9cfc253ebe30e7bad03e1739f06455b641f80a936ab5587f4d4"
+  },
+  {
+    "id": "e51",
+    "file": "e51.wav",
+    "speaker": "Priya Shah",
+    "text": "2D, the plumbing inspector is coming at nine, so we wait on the walls there.",
+    "noise_snr_db": null,
+    "voice": "Jessica",
+    "model": "eleven_multilingual_v2",
+    "seconds": 5.01,
+    "sha256": "272cee5d32a2e8a593b1bec13cea9eb62ee6e24e52dd9e1d025e4d4f288299a5"
+  },
+  {
+    "id": "e53",
+    "file": "e53.wav",
+    "speaker": "Hannah Kowalski",
+    "text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+    "noise_snr_db": 5,
+    "voice": "Sarah",
+    "model": "eleven_multilingual_v2",
+    "seconds": 6.78,
+    "sha256": "770169e64ae9b25f4f7b0561d16711d2bba0279f15a8f6e164b477c1a1b50a10"
+  }
+]

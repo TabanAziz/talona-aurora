@@ -1,0 +1,215 @@
+{
+  "about": "Fixed end-to-end cases for the detection pipeline. Synthetic messages for the fictional Maple Court project. Each case starts from the project's baseline, ingests its events in order and states which flags should exist afterwards. `messages` is a library; an event names one with `msg` and gives its own id and sent_at. A flag is expected when a flag of the same type exists whose `affected` values include the listed ones. Any other flag is a false alarm. This file is the only place the expected answers live.",
+  "messages": {
+    "rev_c": {"channel": "email", "sender": "Dana Whitfield", "sender_role": "Architect", "subject": "A-201 Rev C issued", "text": "Attached A-201 Rev C. The partition between bedroom and living room in 3B shifts 300 mm north. Rev C replaces Rev B.", "attachments": [{"kind": "pdf", "name": "A-201-RevC.pdf", "url": "/media/mock/a201-rev-c.svg", "media_type": "application/pdf"}]},
+    "work_3b_rev_b": {"channel": "telegram", "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site", "text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B."},
+    "work_3b_plain": {"channel": "telegram", "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site", "text": "Starting the 3B partitions tomorrow at seven."},
+    "work_3b_rev_c": {"channel": "telegram", "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site", "text": "Starting the 3B partitions tomorrow at seven, per A-201 rev C."},
+    "work_2a_plain": {"channel": "telegram", "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site", "text": "Starting the 2A partitions tomorrow at seven."},
+    "ack_c": {"channel": "telegram", "sender": "Marco Ruiz", "sender_role": "Framing foreman", "thread": "Maple Court site", "text": "Got A-201 Rev C, thanks. The framing crew has it now."},
+    "trucks_4": {"channel": "email", "sender": "Ridgeline Concrete dispatch", "sender_role": "Supplier", "subject": "Friday pour: 4 trucks", "text": "Confirming Friday's podium topping pour. We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00."},
+    "trucks_3": {"channel": "email", "sender": "Ridgeline Concrete dispatch", "sender_role": "Supplier", "subject": "Friday pour: 3 trucks", "text": "Confirming Friday's podium topping pour: 3 trucks as planned. First truck on site 7:00."},
+    "trucks_2": {"channel": "email", "sender": "Ridgeline Concrete dispatch", "sender_role": "Supplier", "subject": "Friday pour: 2 trucks", "text": "Confirming Friday's podium topping pour. We can only send 2 trucks, the others are booked elsewhere. First truck on site 7:00."},
+    "crane_mon": {"channel": "telegram", "sender": "Lena Ortiz", "sender_role": "Crane operator", "thread": "Maple Court site", "text": "Heads up, the mobile crane gets to site Monday, not Friday. The transport permit slipped."},
+    "crane_tue": {"channel": "telegram", "sender": "Lena Ortiz", "sender_role": "Crane operator", "thread": "Maple Court site", "text": "Heads up, the mobile crane will only be on site Tuesday, not Friday. The transport permit slipped."},
+    "crane_ok": {"channel": "telegram", "sender": "Lena Ortiz", "sender_role": "Crane operator", "thread": "Maple Court site", "text": "The mobile crane is on site Friday morning as planned."},
+    "insp_moved_2a": {"channel": "schedule", "sender": "Schedule update", "text": "Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00."},
+    "insp_passed_2a": {"channel": "email", "sender": "City plumbing inspector", "sender_role": "Plumbing inspector", "subject": "Maple Court 2A", "text": "Rough plumbing in unit 2A passed. Signed off today at 13:40."},
+    "q_close_2a": {"channel": "telegram", "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site", "text": "Can we close the walls in 2A this morning?"},
+    "q_close_2a_now": {"channel": "telegram", "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site", "text": "Can we close the walls in 2A now?"},
+    "plan_close_2a": {"channel": "telegram", "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site", "text": "We will close the walls in 2A at seven tomorrow morning."},
+    "q_close_1c": {"channel": "telegram", "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site", "text": "And 1C, can we close the walls there?"},
+    "chat_thanks": {"channel": "telegram", "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site", "text": "Thanks everyone, good week. See you Monday."},
+    "chat_ok": {"channel": "telegram", "sender": "Priya Shah", "sender_role": "Drywall foreman", "thread": "Maple Court site", "text": "Ok thanks"},
+    "chat_weather": {"channel": "telegram", "sender": "Lena Ortiz", "sender_role": "Crane operator", "thread": "Maple Court site", "text": "Cold one this morning, wear your gloves."},
+    "q_truck_time": {"channel": "telegram", "sender": "Sam Okafor", "sender_role": "Site labor foreman", "thread": "Maple Court site", "text": "What time does the first truck get here on Friday?"}
+  },
+  "cases": [
+    {
+      "id": "p01-stale-drawing",
+      "note": "Rev C replaces Rev B, then the framing crew announces work per Rev B.",
+      "events": [
+        {"id": "p01-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "p01-2", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:05:00Z"}
+      ],
+      "expect_flags": [{"type": "stale_drawing", "affected": {"unit": "3B", "sheet": "A-201", "revision": "C"}, "raised_by": "p01-2"}]
+    },
+    {
+      "id": "p02-unconfirmed-change",
+      "note": "Rev C is out, the framing crew announces work without saying which revision.",
+      "events": [
+        {"id": "p02-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "p02-2", "msg": "work_3b_plain", "sent_at": "2026-11-12T16:05:00Z"}
+      ],
+      "expect_flags": [{"type": "unacknowledged_change", "affected": {"unit": "3B", "sheet": "A-201", "revision": "C"}, "raised_by": "p02-2"}]
+    },
+    {
+      "id": "p03-revision-after-announcement",
+      "note": "The work is announced per Rev B first, Rev C arrives later the same afternoon.",
+      "events": [
+        {"id": "p03-1", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T15:50:00Z"},
+        {"id": "p03-2", "msg": "rev_c", "sent_at": "2026-11-12T16:30:00Z"}
+      ],
+      "expect_flags": [{"type": "stale_drawing", "affected": {"unit": "3B", "revision": "C"}, "raised_by": "p03-2"}]
+    },
+    {
+      "id": "p04-too-many-trucks",
+      "note": "The supplier sends 4 trucks, the plan has 3.",
+      "events": [{"id": "p04-1", "msg": "trucks_4", "sent_at": "2026-11-12T16:40:00Z"}],
+      "expect_flags": [{"type": "plan_deviation", "affected": {"resource": "R-trucks"}, "raised_by": "p04-1"}]
+    },
+    {
+      "id": "p05-crane-late",
+      "note": "The mobile crane arrives Monday, the plan has Friday.",
+      "events": [{"id": "p05-1", "msg": "crane_mon", "sent_at": "2026-11-12T17:02:00Z"}],
+      "expect_flags": [{"type": "plan_deviation", "affected": {"resource": "R-crane"}, "raised_by": "p05-1"}]
+    },
+    {
+      "id": "p06-close-before-inspection-question",
+      "note": "The 2A inspection moved to Friday afternoon, the drywall foreman asks to close the walls that morning.",
+      "events": [
+        {"id": "p06-1", "msg": "insp_moved_2a", "sent_at": "2026-11-12T17:30:00Z"},
+        {"id": "p06-2", "msg": "q_close_2a", "sent_at": "2026-11-13T06:40:00Z"}
+      ],
+      "expect_flags": [{"type": "out_of_sequence", "affected": {"unit": "2A", "task": "T-060"}, "raised_by": "p06-2"}]
+    },
+    {
+      "id": "p07-close-before-inspection-plan",
+      "note": "The drywall foreman announces closing the 2A walls, no inspection date is in the record.",
+      "events": [{"id": "p07-1", "msg": "plan_close_2a", "sent_at": "2026-11-12T16:20:00Z"}],
+      "expect_flags": [{"type": "out_of_sequence", "affected": {"unit": "2A", "task": "T-060"}, "raised_by": "p07-1"}]
+    },
+    {
+      "id": "p08-two-resource-deviations",
+      "note": "A delivery and a machine both differ from the plan.",
+      "events": [
+        {"id": "p08-1", "msg": "trucks_4", "sent_at": "2026-11-12T16:40:00Z"},
+        {"id": "p08-2", "msg": "crane_mon", "sent_at": "2026-11-12T17:02:00Z"}
+      ],
+      "expect_flags": [
+        {"type": "plan_deviation", "affected": {"resource": "R-trucks"}, "raised_by": "p08-1"},
+        {"type": "plan_deviation", "affected": {"resource": "R-crane"}, "raised_by": "p08-2"}
+      ]
+    },
+    {
+      "id": "p09-crane-tuesday",
+      "note": "The crane slips to Tuesday.",
+      "events": [{"id": "p09-1", "msg": "crane_tue", "sent_at": "2026-11-12T17:02:00Z"}],
+      "expect_flags": [{"type": "plan_deviation", "affected": {"resource": "R-crane"}, "raised_by": "p09-1"}]
+    },
+    {
+      "id": "p10-too-few-trucks",
+      "note": "The supplier sends 2 trucks, the plan has 3.",
+      "events": [{"id": "p10-1", "msg": "trucks_2", "sent_at": "2026-11-12T16:40:00Z"}],
+      "expect_flags": [{"type": "plan_deviation", "affected": {"resource": "R-trucks"}, "raised_by": "p10-1"}]
+    },
+    {
+      "id": "p11-flag-resolved-by-confirmation",
+      "note": "A stale announcement is flagged, then the framing crew confirms Rev C: the flag ends resolved.",
+      "events": [
+        {"id": "p11-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "p11-2", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:05:00Z"},
+        {"id": "p11-3", "msg": "ack_c", "sent_at": "2026-11-12T16:30:00Z"}
+      ],
+      "expect_flags": [{"type": "stale_drawing", "affected": {"unit": "3B"}, "raised_by": "p11-2", "final_status": "resolved"}]
+    },
+    {
+      "id": "p12-drawing-and-delivery",
+      "note": "A stale announcement and a delivery change in the same afternoon.",
+      "events": [
+        {"id": "p12-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "p12-2", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:05:00Z"},
+        {"id": "p12-3", "msg": "trucks_4", "sent_at": "2026-11-12T16:40:00Z"}
+      ],
+      "expect_flags": [
+        {"type": "stale_drawing", "affected": {"unit": "3B"}, "raised_by": "p12-2"},
+        {"type": "plan_deviation", "affected": {"resource": "R-trucks"}, "raised_by": "p12-3"}
+      ]
+    },
+    {
+      "id": "p13-same-message-twice",
+      "note": "The stale announcement is delivered twice with the same id: one record entry, one flag.",
+      "events": [
+        {"id": "p13-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "p13-2", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:05:00Z"},
+        {"id": "p13-2", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:05:00Z"}
+      ],
+      "expect_flags": [{"type": "stale_drawing", "affected": {"unit": "3B"}, "raised_by": "p13-2"}]
+    },
+    {
+      "id": "p14-same-text-resent",
+      "note": "The foreman sends the same announcement again as a new message: still one flag.",
+      "events": [
+        {"id": "p14-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "p14-2", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:05:00Z"},
+        {"id": "p14-3", "msg": "work_3b_rev_b", "sent_at": "2026-11-12T16:20:00Z"}
+      ],
+      "expect_flags": [{"type": "stale_drawing", "affected": {"unit": "3B"}, "raised_by": "p14-2"}]
+    },
+    {
+      "id": "n01-chat-only",
+      "note": "Three messages that state nothing about the plan.",
+      "events": [
+        {"id": "n01-1", "msg": "chat_weather", "sent_at": "2026-11-13T05:50:00Z"},
+        {"id": "n01-2", "msg": "chat_ok", "sent_at": "2026-11-13T07:21:00Z"},
+        {"id": "n01-3", "msg": "chat_thanks", "sent_at": "2026-11-13T15:10:00Z"}
+      ],
+      "expect_flags": []
+    },
+    {
+      "id": "n02-confirmed-then-work-per-rev-c",
+      "note": "Rev C is out, the crew confirms it, then announces work per Rev C.",
+      "events": [
+        {"id": "n02-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "n02-2", "msg": "ack_c", "sent_at": "2026-11-12T16:30:00Z"},
+        {"id": "n02-3", "msg": "work_3b_rev_c", "sent_at": "2026-11-12T16:50:00Z"}
+      ],
+      "expect_flags": []
+    },
+    {
+      "id": "n03-close-walls-after-passed-inspection",
+      "note": "1C passed its rough plumbing inspection on Monday, closing the walls is fine.",
+      "events": [{"id": "n03-1", "msg": "q_close_1c", "sent_at": "2026-11-13T07:20:00Z"}],
+      "expect_flags": []
+    },
+    {
+      "id": "n04-inspection-passed-then-close",
+      "note": "The 2A inspection passes, then the drywall foreman asks to close the walls.",
+      "events": [
+        {"id": "n04-1", "msg": "insp_passed_2a", "sent_at": "2026-11-13T12:45:00Z"},
+        {"id": "n04-2", "msg": "q_close_2a_now", "sent_at": "2026-11-13T13:10:00Z"}
+      ],
+      "expect_flags": []
+    },
+    {
+      "id": "n05-trucks-as-planned",
+      "note": "The supplier confirms the planned 3 trucks.",
+      "events": [{"id": "n05-1", "msg": "trucks_3", "sent_at": "2026-11-12T16:40:00Z"}],
+      "expect_flags": []
+    },
+    {
+      "id": "n06-crane-on-time",
+      "note": "The crane operator confirms the crane is on site as planned.",
+      "events": [{"id": "n06-1", "msg": "crane_ok", "sent_at": "2026-11-12T17:02:00Z"}],
+      "expect_flags": []
+    },
+    {
+      "id": "n07-revision-for-another-unit",
+      "note": "Rev C only changes 3B, the framing crew announces work in 2A.",
+      "events": [
+        {"id": "n07-1", "msg": "rev_c", "sent_at": "2026-11-12T09:12:00Z"},
+        {"id": "n07-2", "msg": "work_2a_plain", "sent_at": "2026-11-12T16:05:00Z"}
+      ],
+      "expect_flags": []
+    },
+    {
+      "id": "n08-confirmation-and-small-question",
+      "note": "An acknowledgement of a revision nobody contradicted and a question about the truck time.",
+      "events": [
+        {"id": "n08-1", "msg": "ack_c", "sent_at": "2026-11-12T16:30:00Z"},
+        {"id": "n08-2", "msg": "q_truck_time", "sent_at": "2026-11-12T16:45:00Z"}
+      ],
+      "expect_flags": []
+    }
+  ]
+}

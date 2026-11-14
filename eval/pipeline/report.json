@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "when": "2026-11-14 02:51",
+    "mode": "real model",
+    "model": "deepseek-v4-1-flash-1017",
+    "commit": "7f3d34ce70c94867ff05500804664f551d9a16df",
+    "real_areas": [
+      "replay",
+      "voice",
+      "titleblock",
+      "extract",
+      "record",
+      "rules_drawings",
+      "rules_sequence",
+      "rules_resources",
+      "drawings",
+      "crosscheck",
+      "schedule",
+      "decisions",
+      "outbox",
+      "qa",
+      "gate",
+      "readiness",
+      "insights",
+      "autonomy",
+      "command",
+      "learning",
+      "followup",
+      "names",
+      "telegram",
+      "email",
+      "whatsapp"
+    ],
+    "mock_areas": []
+  },
+  "summary": {
+    "cases": 22,
+    "cases_with_problem": 14,
+    "cases_without_problem": 8,
+    "cases_passed": 22,
+    "cases_with_errors": 0,
+    "expected_flags": 16,
+    "flags_found": 16,
+    "missed_problems": 0,
+    "false_alarms": 0,
+    "no_problem_cases_with_a_flag": 0,
+    "timing_on_expected_event": "16/16",
+    "timing_not_before_information": "16/16",
+    "timing_before_work_start": "16/16",
+    "evidence_cites_arrived_events": "16/16",
+    "final_status_as_expected": "1/1"
+  },
+  "cases": [
+    {
+      "id": "p01-stale-drawing",
+      "note": "Rev C replaces Rev B, then the framing crew announces work per Rev B.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "stale_drawing",
+          "raised_by": "p01-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p02-unconfirmed-change",
+      "note": "Rev C is out, the framing crew announces work without saying which revision.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "unacknowledged_change",
+          "raised_by": "p02-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p03-revision-after-announcement",
+      "note": "The work is announced per Rev B first, Rev C arrives later the same afternoon.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "stale_drawing",
+          "raised_by": "p03-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p04-too-many-trucks",
+      "note": "The supplier sends 4 trucks, the plan has 3.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-trucks",
+          "type": "plan_deviation",
+          "raised_by": "p04-1",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p05-crane-late",
+      "note": "The mobile crane arrives Monday, the plan has Friday.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-crane",
+          "type": "plan_deviation",
+          "raised_by": "p05-1",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p06-close-before-inspection-question",
+      "note": "The 2A inspection moved to Friday afternoon, the drywall foreman asks to close the walls that morning.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-seq-2a",
+          "type": "out_of_sequence",
+          "raised_by": "p06-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p07-close-before-inspection-plan",
+      "note": "The drywall foreman announces closing the 2A walls, no inspection date is in the record.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-seq-2a",
+          "type": "out_of_sequence",
+          "raised_by": "p07-1",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p08-two-resource-deviations",
+      "note": "A delivery and a machine both differ from the plan.",
+      "expected": 2,
+      "hits": [
+        {
+          "flag_id": "f-trucks",
+          "type": "plan_deviation",
+          "raised_by": "p08-1",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        },
+        {
+          "flag_id": "f-crane",
+          "type": "plan_deviation",
+          "raised_by": "p08-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p09-crane-tuesday",
+      "note": "The crane slips to Tuesday.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-crane",
+          "type": "plan_deviation",
+          "raised_by": "p09-1",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p10-too-few-trucks",
+      "note": "The supplier sends 2 trucks, the plan has 3.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-trucks",
+          "type": "plan_deviation",
+          "raised_by": "p10-1",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p11-flag-resolved-by-confirmation",
+      "note": "A stale announcement is flagged, then the framing crew confirms Rev C: the flag ends resolved.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "stale_drawing",
+          "raised_by": "p11-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": true
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p12-drawing-and-delivery",
+      "note": "A stale announcement and a delivery change in the same afternoon.",
+      "expected": 2,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "stale_drawing",
+          "raised_by": "p12-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        },
+        {
+          "flag_id": "f-trucks",
+          "type": "plan_deviation",
+          "raised_by": "p12-3",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p13-same-message-twice",
+      "note": "The stale announcement is delivered twice with the same id: one record entry, one flag.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "stale_drawing",
+          "raised_by": "p13-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "p14-same-text-resent",
+      "note": "The foreman sends the same announcement again as a new message: still one flag.",
+      "expected": 1,
+      "hits": [
+        {
+          "flag_id": "f-stale-3b",
+          "type": "stale_drawing",
+          "raised_by": "p14-2",
+          "on_expected_event": true,
+          "not_before_information": true,
+          "before_work_start": true,
+          "evidence_ok": true,
+          "status_ok": null
+        }
+      ],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n01-chat-only",
+      "note": "Three messages that state nothing about the plan.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n02-confirmed-then-work-per-rev-c",
+      "note": "Rev C is out, the crew confirms it, then announces work per Rev C.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n03-close-walls-after-passed-inspection",
+      "note": "1C passed its rough plumbing inspection on Monday, closing the walls is fine.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n04-inspection-passed-then-close",
+      "note": "The 2A inspection passes, then the drywall foreman asks to close the walls.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n05-trucks-as-planned",
+      "note": "The supplier confirms the planned 3 trucks.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n06-crane-on-time",
+      "note": "The crane operator confirms the crane is on site as planned.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n07-revision-for-another-unit",
+      "note": "Rev C only changes 3B, the framing crew announces work in 2A.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "id": "n08-confirmation-and-small-question",
+      "note": "An acknowledgement of a revision nobody contradicted and a question about the truck time.",
+      "expected": 0,
+      "hits": [],
+      "missed": [],
+      "false_alarms": [],
+      "errors": [],
+      "passed": true
+    }
+  ]
+}

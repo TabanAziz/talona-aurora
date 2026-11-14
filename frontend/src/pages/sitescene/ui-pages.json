@@ -1,0 +1,4 @@
+{
+  "viewports": ["1280x800", "1920x1080", "390x844"],
+  "pages": [{"name":"site-actors","path":"/site","wait":"[data-testid=sitescene-view]"}]
+}

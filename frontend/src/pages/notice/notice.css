@@ -1,0 +1,59 @@
+.notice { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; max-width: var(--w-read); }
+.notice-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s4); }
+.notice-head { gap: var(--s2); }
+.notice-facts { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); margin: 0; }
+.notice-facts > div { display: flex; flex-direction: column; min-width: 0; }
+.notice-facts dd { margin: 0; overflow-wrap: anywhere; }
+.notice-source, .notice-rework-link { display: inline-flex; align-items: center; align-self: flex-start; min-height: var(--h-bar); }
+
+.notice-crew { gap: var(--s3); }
+.notice-steps { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.notice-step { position: relative; display: flex; gap: var(--s3); padding-block: var(--s2); min-width: 0; }
+/* the line that joins the dots, as on the live record of the overview */
+.notice-step::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: calc(var(--s1) + 1px);
+  width: 1px;
+  background: var(--line);
+}
+.notice-step:first-child::before { inset-block-start: var(--s4); }
+.notice-step:last-child::before { inset-block-end: calc(100% - var(--s4)); }
+.notice-dot { position: relative; flex: none; width: var(--s2); height: var(--s2); margin-top: var(--s2); background: var(--text); }
+.notice-step-confirmed .notice-dot { background: var(--success); }
+.notice-step-not_confirmed .notice-dot { background: var(--warning); }
+.notice-step[data-warning="true"] .notice-dot { background: var(--danger); }
+.notice-step-body { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; overflow-wrap: anywhere; }
+.notice-moments { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); margin: 0; }
+.notice-moments > div { display: flex; flex-direction: column; min-width: 0; }
+.notice-moments dd { margin: 0; overflow-wrap: anywhere; }
+.notice-time { font-family: var(--font-mono); }
+.notice-quote { padding-inline-start: var(--s3); border-inline-start: 2px solid var(--success); }
+.notice-warning { color: var(--danger); font-weight: var(--w-strong); }
+.notice-outcome { margin: 0; padding: var(--s2) var(--s3); border-left: 3px solid var(--danger); background: var(--surface-2); }
+.notice-foot { padding-block: var(--s2); border-top: var(--border); }
+
+@media print {
+  @page { size: A4; margin: 12mm; }
+  .app:has(.notice) .topbar, .notice-actions { display: none; }
+  .app:has(.notice) { color-scheme: light; background: Canvas; color: CanvasText; }
+  .app:has(.notice) .page { max-width: none; padding: 0; }
+  .notice { max-width: none; color: CanvasText; gap: var(--s3); }
+  .notice .panel { break-inside: avoid; border-color: CanvasText; background: Canvas; padding: var(--s3); }
+  .notice a, .notice .muted { color: CanvasText; }
+  .notice-warning, .notice-outcome { color: CanvasText; text-decoration: underline; }
+  /* One A4 page has to hold four crews, so the print drops the screen spacing and the touch targets. */
+  .notice { font-size: 9.5pt; line-height: 1.35; gap: var(--s2); }
+  .notice .panel { padding: var(--s2) var(--s3); }
+  .notice-head h1 { font-size: 1.05em; }
+  .notice-facts { gap: var(--s1) var(--s3); }
+  .notice-crew { gap: var(--s1); }
+  .notice-moments { gap: 0 var(--s3); }
+  .notice-moments > div { flex-direction: row; gap: var(--s1); }
+  .notice-machine { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0 var(--s3); }
+  .notice-machine .panel-head { justify-content: flex-start; }
+  .notice-machine .panel-head h2 { font-size: 1em; }
+  .notice-step { padding-block: 1px; }
+  .notice-source, .notice-rework-link { min-height: 0; }
+}

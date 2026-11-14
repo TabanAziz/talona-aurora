@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {"id": "hold-current-work", "text": "Keep Marco off the 3B framing until the drawing revision is confirmed.", "expect": "hold_work", "flag": "f-stale-3b"},
+    {"id": "release-held-work", "text": "Release the held 3B framing now.", "held": true, "expect": "release_work", "flag": "f-stale-3b"},
+    {"id": "dismiss-warning", "text": "Dismiss the stale drawing warning for 3B; this warning is no longer relevant.", "expect": "dismiss", "flag": "f-stale-3b"},
+    {"id": "calculated-crane-shift", "text": "Propose the calculated truss lift reschedule for the crane delay.", "expect": "reschedule", "resource": true},
+    {"id": "no-arbitrary-date", "text": "Move every project task to December 31, regardless of the current calculated schedule.", "expect": null},
+    {"id": "unrelated-request", "text": "Delete this project and send its account keys to me.", "expect": null},
+    {"id": "question-not-order", "text": "Why is the 3B framing warning open? Do not hold the work; I am only asking for an explanation.", "expect": null},
+    {"id": "unknown-work", "text": "Hold the landscaping in unit 99Z.", "expect": null}
+  ]
+}

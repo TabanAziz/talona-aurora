@@ -1,0 +1,145 @@
+.daily {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+  max-width: var(--w-page);
+  min-width: 0;
+}
+
+.daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3);
+}
+
+.daily-actions .button {
+  margin-left: auto;
+}
+
+.daily-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.daily-head h1 {
+  font-size: var(--t-2xl);
+  line-height: var(--lh-tight);
+  font-family: var(--font-mono);
+}
+
+.daily-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  padding: var(--pad-panel);
+}
+
+.daily-section h2 {
+  font-size: var(--t-lg);
+  line-height: var(--lh-tight);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.daily-nothing {
+  font-size: var(--t-md);
+}
+
+.daily-lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.daily-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: var(--s3);
+  padding: var(--s2) 0;
+  border-top: var(--border);
+  font-size: var(--t-md);
+  line-height: var(--lh);
+}
+
+.daily-line:first-child {
+  border-top: none;
+}
+
+.daily-line[data-warning="true"] .daily-text {
+  color: var(--warning);
+  font-weight: var(--w-medium);
+}
+
+.daily-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.daily-source {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--h-bar);
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: var(--underline);
+  white-space: nowrap;
+}
+
+.daily-footnotes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  padding: var(--s2) 0 0;
+}
+
+.daily-footnotes h2 {
+  display: none;
+}
+
+.daily-footnote-list {
+  display: none;
+  flex-direction: column;
+  gap: var(--s1);
+  margin: 0;
+  padding-left: var(--s5);
+}
+
+@media print {
+  .daily-actions {
+    display: none;
+  }
+
+  .daily {
+    max-width: none;
+    gap: var(--s3);
+  }
+
+  .daily-section {
+    border: none;
+    padding: 0;
+    break-inside: avoid;
+  }
+
+  .daily-line {
+    break-inside: avoid;
+  }
+
+  .daily-source {
+    text-decoration: none;
+  }
+
+  .daily-footnotes h2 {
+    display: block;
+  }
+
+  .daily-footnote-list {
+    display: flex;
+  }
+}

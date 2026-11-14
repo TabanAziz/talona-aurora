@@ -1,0 +1,18 @@
+{
+  "update_id": 731400104,
+  "my_chat_member": {
+    "chat": {
+      "id": -1002233445566,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "from": {
+      "id": 5550104,
+      "is_bot": false,
+      "first_name": "Sam"
+    },
+    "date": 1794300000,
+    "old_chat_member": {"user": {"id": 7000000001, "is_bot": true, "first_name": "Aurora"}, "status": "left"},
+    "new_chat_member": {"user": {"id": 7000000001, "is_bot": true, "first_name": "Aurora"}, "status": "member"}
+  }
+}

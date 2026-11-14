@@ -1,0 +1,28 @@
+{
+  "day": "2026-11-12",
+  "machines": [{"id":"robot-1","name":"Layout robot","simulated":true}, {"id":"idle-1","name":"Idle robot"}],
+  "checks": [
+    {"id":"c1","asked_by":"robot-1","allowed":"no","checked_at":"2026-11-12T08:00:00Z","reasons":[{"blocking":true,"flag_id":"f-held"},{"blocking":false,"flag_id":"f-advice"}]},
+    {"id":"c2","asked_by":"robot-1","allowed":"yes","checked_at":"2026-11-12T09:00:00Z","reasons":[]},
+    {"id":"c-old","asked_by":"robot-1","allowed":"no","checked_at":"2026-11-11T12:00:00Z","reasons":[]},
+    {"id":"c-human","asked_by":"Framing crew","allowed":"no","checked_at":"2026-11-12T08:00:00Z","reasons":[]},
+    {"id":"c-unknown","asked_by":"unregistered-robot","allowed":"no","checked_at":"2026-11-12T08:00:00Z","reasons":[]}
+  ],
+  "record": [
+    {"id":"r-check-c1","at":"2026-11-12T08:00:00Z","kind":"answer","actor":"Aurora","title":"Check","refs":{"check":"c1"}},
+    {"id":"r-check-c2","at":"2026-11-12T09:00:00Z","kind":"answer","actor":"Aurora","title":"Check","refs":{"check":"c2"}},
+    {"id":"r-confirm","at":"2026-11-12T10:00:00Z","kind":"acknowledgement","actor":"robot-1","title":"Loaded drawing","refs":{"machine":"robot-1","sheet":"A-201","revision":"C"}},
+    {"id":"r-wall","at":"2026-11-12T11:00:00Z","kind":"info","actor":"robot-1","title":"Wall measured at Rev B","detail":"Measured 300 mm south.","source_event_ids":["e-wall"],"refs":{"fact":"fact-wall"}},
+    {"id":"r-older","at":"2026-11-11T10:00:00Z","kind":"info","actor":"robot-1","title":"Old measurement","refs":{}}
+  ],
+  "flags": [{"id":"f-wall","affected":{},"evidence":[{"event_id":"e-wall"}]}],
+  "expected": {
+    "key":"machines","title":"Machines","lines":[
+      {"key":"machine-robot-1","text":"Layout robot (robot-1) [simulated]: 2 start checks; 1 stopped.","source":{"label":"Record entry","href":"/#record-r-check-c1"}},
+      {"key":"check-c1","text":"robot-1 at 08:00 UTC: stopped. Flags: f-held.","source":{"label":"Record entry","href":"/#record-r-check-c1"}},
+      {"key":"check-c2","text":"robot-1 at 09:00 UTC: allowed. No blocking flag recorded.","source":{"label":"Record entry","href":"/#record-r-check-c2"}},
+      {"key":"r-confirm","text":"robot-1 confirmed A-201 Rev C at 10:00 UTC.","source":{"label":"Record entry","href":"/#record-r-confirm"}},
+      {"key":"r-wall","text":"robot-1 at 11:00 UTC: Wall measured at Rev B: Measured 300 mm south. Flags: f-wall.","source":{"label":"Record entry","href":"/#record-r-wall"}}
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+.timelapse { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; }
+
+.timelapse-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--s3) var(--s5); }
+.timelapse-title { display: flex; flex-direction: column; gap: var(--s2); min-width: 0; max-width: var(--w-read); }
+.timelapse-clock { display: flex; flex-direction: column; align-items: flex-end; gap: var(--s1); min-width: 0; }
+.timelapse-time { font-size: var(--t-3xl); font-weight: var(--w-strong); line-height: var(--lh-tight); }
+
+.timelapse-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s3); }
+.timelapse-track {
+  flex: 1 1 200px;
+  min-width: var(--w-thumb);
+  height: var(--s2);
+  background: var(--surface-2);
+  border: var(--border);
+}
+.timelapse-track-fill { display: block; height: 100%; background: var(--accent); }
+
+.timelapse-counters { display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--w-card), 1fr)); gap: var(--s4); }
+.timelapse-count { gap: var(--s1); }
+.timelapse-count .count-value { font-size: var(--t-2xl); font-weight: var(--w-strong); line-height: var(--lh-tight); }
+.timelapse-count .count-note { max-width: var(--w-read); }
+.timelapse-day { line-height: var(--lh-tight); }
+
+.timelapse-summary {
+  border-left: var(--h-tab-line) solid var(--accent);
+  font-size: var(--t-lg);
+  font-weight: var(--w-strong);
+  overflow-wrap: anywhere;
+}
+
+.timelapse-feed { gap: var(--s2); }
+.timelapse-items { display: flex; flex-direction: column; min-width: 0; }
+.timelapse-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--s1) var(--s3);
+  min-width: 0;
+  padding-block: var(--s3);
+  border-top: var(--border);
+}
+.timelapse-item:first-child { border-top: 0; }
+.item-time { flex: none; font-size: var(--t-sm); }
+.item-mark { display: flex; flex: none; align-items: center; justify-content: center; min-height: var(--icon-lg); color: var(--text-muted); }
+.channel-icon { width: var(--icon); height: var(--icon); }
+.mark-dot { width: var(--s2); height: var(--s2); background: var(--text-muted); }
+.timelapse-item-flag .mark-dot { background: var(--warning); }
+.timelapse-item-decision .mark-dot { background: var(--text); }
+
+.item-body { display: flex; flex: 1 1 var(--w-thumb); flex-direction: column; gap: var(--s1); min-width: 0; }
+.item-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s2); min-width: 0; }
+.item-line strong { min-width: 0; overflow-wrap: anywhere; }
+.item-detail { color: var(--text-muted); font-size: var(--t-sm); overflow-wrap: anywhere; }
+.item-link { flex: none; align-self: center; min-height: var(--h-bar); white-space: nowrap; }
+
+.timelapse-foot { padding-top: var(--s3); border-top: var(--border); overflow-wrap: anywhere; }
+
+@media (max-width: 760px) {
+  .timelapse-clock { align-items: flex-start; }
+  .timelapse-time { font-size: var(--t-2xl); }
+}

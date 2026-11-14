@@ -1,0 +1,12 @@
+{
+  "viewports": ["1280x800", "1920x1080", "390x844"],
+  "pages": [
+    { "name": "flag-drawing", "path": "/flags/f-stale-3b", "wait": "[data-testid=flag-drawing-facts]" },
+    { "name": "flag-equipment", "path": "/flags/f-crane", "wait": "[data-testid=flag-proposal]" },
+    { "name": "flag-delivery", "path": "/flags/f-trucks", "wait": "[data-testid=flag-proposal]" },
+    { "name": "flag-sequence", "path": "/flags/f-seq-2a", "wait": "[data-testid=flag-proposal]" },
+    { "name": "flag-empty", "path": "/flags/f-stale-3b?state=empty", "wait": "[data-testid=state-empty]" },
+    { "name": "flag-error", "path": "/flags/f-stale-3b?state=error", "wait": "[data-testid=state-error]" },
+    { "name": "flag-loading", "path": "/flags/f-stale-3b?state=loading", "wait": "[data-testid=state-loading]" }
+  ]
+}

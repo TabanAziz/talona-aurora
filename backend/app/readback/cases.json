@@ -1,0 +1,15 @@
+{
+  "diff": "d-a201-b-c",
+  "cases": [
+    {"id": "r01-exact", "reply": "Got Rev C. Partition in 3B moves 300 mm north.", "verdict": "match"},
+    {"id": "r02-centimetres", "reply": "ok so the 3B wall goes 30 cm further north, understood", "verdict": "match"},
+    {"id": "r03-voice-filler", "reply": "uh yeah so the, um, the partition in three B, it moves like three hundred millimetres to the north, right, we got it", "verdict": "match"},
+    {"id": "r04-metres", "reply": "Confirmed: wall shifts north by 0.3 m in 3B.", "verdict": "match"},
+    {"id": "r05-wrong-number", "reply": "Partition 3B moves 500 mm north, got it.", "verdict": "mismatch"},
+    {"id": "r06-wrong-direction", "reply": "Understood, the 3B partition moves 300 mm south.", "verdict": "mismatch"},
+    {"id": "r07-old-revision", "reply": "We have it, partition stays at 3750 mm from the grid like on Rev B.", "verdict": "mismatch"},
+    {"id": "r08-bare-ok", "reply": "ok", "verdict": "bare"},
+    {"id": "r09-bare-thumbs", "reply": "Confirmed", "verdict": "bare"},
+    {"id": "r10-off-topic", "reply": "Is the crane still coming on day 16 or not?", "verdict": "unclear"}
+  ]
+}

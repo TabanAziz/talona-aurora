@@ -1,0 +1,22 @@
+.plan3d-controls-area { display: flex; flex-direction: column; align-items: center; gap: var(--s2); padding: var(--s3); background: var(--sheet); color: var(--ink); flex: 0 0 auto; }
+.plan3d-controls { display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: var(--s1); max-width: 100%; padding: var(--s2); border: 1px solid var(--glass-border, var(--line)); border-radius: var(--r-lg); background: var(--glass-bg, var(--surface)); box-shadow: var(--glass-shadow, var(--shadow-1)); backdrop-filter: blur(var(--glass-blur, var(--s4))); color: var(--text); }
+.plan3d-controls button { display: inline-flex; align-items: center; justify-content: center; gap: var(--s2); min-width: var(--h-touch); min-height: var(--h-touch); padding: var(--s2) var(--s3); border: 0; border-radius: var(--r-full); background: transparent; color: inherit; font: inherit; cursor: pointer; transition: background var(--motion-fast, var(--fast)) var(--ease); }
+.plan3d-controls button:hover { background: var(--selection, var(--accent-soft)); }
+.plan3d-controls button:focus-visible { outline: var(--ring) solid var(--focus, var(--accent)); outline-offset: var(--s1); }
+.plan3d-control-hint { color: var(--ink-muted); font-size: var(--t-sm); text-align: center; margin: 0; }
+.plan3d-view { height: 100%; width: 100%; min-height: 0; display: flex; flex-direction: column; background: var(--sheet); }
+.plan3d-view .drawings-geometry { flex: 1; min-height: var(--w-card); }
+.immersive-expanded .plan3d-view .drawings-geometry { height: auto; min-height: var(--w-card); }
+@media (max-width: 600px) { .plan3d-controls { border-radius: var(--r); } .plan3d-controls button { padding-inline: var(--s2); } }
+@media (prefers-reduced-motion: reduce) { .plan3d-controls button { transition: none; } }
+.plan3d-model-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:var(--s3); padding:var(--s2) var(--s3); }
+.plan3d-model-heading p { margin:0; }
+.plan3d-view .workspace-model { display:block; flex:1; min-height:var(--w-card); touch-action:none; }
+.plan3d-view .workspace-model canvas { touch-action:none; }
+.immersive-expanded .plan3d-view .workspace-model { height:auto; min-height:var(--w-card); }
+.plan3d-material-key { display:flex; flex-wrap:wrap; justify-content:center; gap:var(--s3); list-style:none; padding:0; margin:0; color:var(--ink-muted); font-size:var(--t-sm); }
+.plan3d-material-key li { display:inline-flex; align-items:center; gap:var(--s2); }
+.plan3d-material-key i { display:inline-block; width:var(--s3); height:var(--s3); border:1px solid var(--model-edge); border-radius:var(--s1); }
+.model-key-wall { background:var(--model-wall); }
+.model-key-partition { background:var(--model-partition); }
+.model-key-glass { background:var(--model-glass); }

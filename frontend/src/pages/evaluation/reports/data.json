@@ -1,0 +1,1995 @@
+{
+ "pipeline": {
+  "cases": [
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p01-2",
+      "status_ok": null,
+      "type": "stale_drawing"
+     }
+    ],
+    "id": "p01-stale-drawing",
+    "missed": [],
+    "note": "Rev C replaces Rev B, then the framing crew announces work per Rev B.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p02-2",
+      "status_ok": null,
+      "type": "unacknowledged_change"
+     }
+    ],
+    "id": "p02-unconfirmed-change",
+    "missed": [],
+    "note": "Rev C is out, the framing crew announces work without saying which revision.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p03-2",
+      "status_ok": null,
+      "type": "stale_drawing"
+     }
+    ],
+    "id": "p03-revision-after-announcement",
+    "missed": [],
+    "note": "The work is announced per Rev B first, Rev C arrives later the same afternoon.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-trucks",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p04-1",
+      "status_ok": null,
+      "type": "plan_deviation"
+     }
+    ],
+    "id": "p04-too-many-trucks",
+    "missed": [],
+    "note": "The supplier sends 4 trucks, the plan has 3.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-crane",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p05-1",
+      "status_ok": null,
+      "type": "plan_deviation"
+     }
+    ],
+    "id": "p05-crane-late",
+    "missed": [],
+    "note": "The mobile crane arrives Monday, the plan has Friday.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-seq-2a",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p06-2",
+      "status_ok": null,
+      "type": "out_of_sequence"
+     }
+    ],
+    "id": "p06-close-before-inspection-question",
+    "missed": [],
+    "note": "The 2A inspection moved to Friday afternoon, the drywall foreman asks to close the walls that morning.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-seq-2a",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p07-1",
+      "status_ok": null,
+      "type": "out_of_sequence"
+     }
+    ],
+    "id": "p07-close-before-inspection-plan",
+    "missed": [],
+    "note": "The drywall foreman announces closing the 2A walls, no inspection date is in the record.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 2,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-trucks",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p08-1",
+      "status_ok": null,
+      "type": "plan_deviation"
+     },
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-crane",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p08-2",
+      "status_ok": null,
+      "type": "plan_deviation"
+     }
+    ],
+    "id": "p08-two-resource-deviations",
+    "missed": [],
+    "note": "A delivery and a machine both differ from the plan.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-crane",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p09-1",
+      "status_ok": null,
+      "type": "plan_deviation"
+     }
+    ],
+    "id": "p09-crane-tuesday",
+    "missed": [],
+    "note": "The crane slips to Tuesday.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-trucks",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p10-1",
+      "status_ok": null,
+      "type": "plan_deviation"
+     }
+    ],
+    "id": "p10-too-few-trucks",
+    "missed": [],
+    "note": "The supplier sends 2 trucks, the plan has 3.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p11-2",
+      "status_ok": true,
+      "type": "stale_drawing"
+     }
+    ],
+    "id": "p11-flag-resolved-by-confirmation",
+    "missed": [],
+    "note": "A stale announcement is flagged, then the framing crew confirms Rev C: the flag ends resolved.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 2,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p12-2",
+      "status_ok": null,
+      "type": "stale_drawing"
+     },
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-trucks",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p12-3",
+      "status_ok": null,
+      "type": "plan_deviation"
+     }
+    ],
+    "id": "p12-drawing-and-delivery",
+    "missed": [],
+    "note": "A stale announcement and a delivery change in the same afternoon.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p13-2",
+      "status_ok": null,
+      "type": "stale_drawing"
+     }
+    ],
+    "id": "p13-same-message-twice",
+    "missed": [],
+    "note": "The stale announcement is delivered twice with the same id: one record entry, one flag.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 1,
+    "false_alarms": [],
+    "hits": [
+     {
+      "before_work_start": true,
+      "evidence_ok": true,
+      "flag_id": "f-stale-3b",
+      "not_before_information": true,
+      "on_expected_event": true,
+      "raised_by": "p14-2",
+      "status_ok": null,
+      "type": "stale_drawing"
+     }
+    ],
+    "id": "p14-same-text-resent",
+    "missed": [],
+    "note": "The foreman sends the same announcement again as a new message: still one flag.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n01-chat-only",
+    "missed": [],
+    "note": "Three messages that state nothing about the plan.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n02-confirmed-then-work-per-rev-c",
+    "missed": [],
+    "note": "Rev C is out, the crew confirms it, then announces work per Rev C.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n03-close-walls-after-passed-inspection",
+    "missed": [],
+    "note": "1C passed its rough plumbing inspection on Monday, closing the walls is fine.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n04-inspection-passed-then-close",
+    "missed": [],
+    "note": "The 2A inspection passes, then the drywall foreman asks to close the walls.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n05-trucks-as-planned",
+    "missed": [],
+    "note": "The supplier confirms the planned 3 trucks.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n06-crane-on-time",
+    "missed": [],
+    "note": "The crane operator confirms the crane is on site as planned.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n07-revision-for-another-unit",
+    "missed": [],
+    "note": "Rev C only changes 3B, the framing crew announces work in 2A.",
+    "passed": true
+   },
+   {
+    "errors": [],
+    "expected": 0,
+    "false_alarms": [],
+    "hits": [],
+    "id": "n08-confirmation-and-small-question",
+    "missed": [],
+    "note": "An acknowledgement of a revision nobody contradicted and a question about the truck time.",
+    "passed": true
+   }
+  ],
+  "limitations": [
+   "Sample size is 22 synthetic cases written by the team, so the numbers show that the known paths work, not a rate on real site traffic.",
+   "Voice notes arrive as text here: speech to text is not part of this run.",
+   "Questions from crews and the wording of answers are not scored, only the flags.",
+   "Delivery to the real Telegram and email services is not tested: the channel modules run, and both send through their mocked service, so the formats are covered and the network is not.",
+   "One run per case at temperature 0; run-to-run variation of the model is not measured.",
+   "A repeated live run on the same commit missed the truck delivery case (p10-too-few-trucks) that this run passed, so the model is not perfectly repeatable and this is one measured result, not a guarantee. The committed recordings replay this run's answers."
+  ],
+  "meta": {
+   "commit": "7f3d34ce70c94867ff05500804664f551d9a16df",
+   "mock_areas": [],
+   "mode": "real model",
+   "model": "deepseek-v4-1-flash-1017",
+   "real_areas": [
+    "replay",
+    "voice",
+    "titleblock",
+    "extract",
+    "record",
+    "rules_drawings",
+    "rules_sequence",
+    "rules_resources",
+    "drawings",
+    "crosscheck",
+    "schedule",
+    "decisions",
+    "outbox",
+    "qa",
+    "gate",
+    "readiness",
+    "insights",
+    "autonomy",
+    "command",
+    "learning",
+    "followup",
+    "names",
+    "telegram",
+    "email",
+    "whatsapp"
+   ],
+   "when": "2026-11-14 02:51"
+  },
+  "summary": {
+   "cases": 22,
+   "cases_passed": 22,
+   "cases_with_errors": 0,
+   "cases_with_problem": 14,
+   "cases_without_problem": 8,
+   "evidence_cites_arrived_events": "16/16",
+   "expected_flags": 16,
+   "false_alarms": 0,
+   "final_status_as_expected": "1/1",
+   "flags_found": 16,
+   "missed_problems": 0,
+   "no_problem_cases_with_a_flag": 0,
+   "timing_before_work_start": "16/16",
+   "timing_not_before_information": "16/16",
+   "timing_on_expected_event": "16/16"
+  }
+ },
+ "stress": {
+  "kinds": [
+   {
+    "calls": 52,
+    "failed": [],
+    "kind": "clean",
+    "skipped_cases": [],
+    "skipped_messages": [],
+    "style": null,
+    "summary": {
+     "cases": 22,
+     "cases_passed": 22,
+     "cases_with_errors": 0,
+     "cases_with_problem": 14,
+     "cases_without_problem": 8,
+     "evidence_cites_arrived_events": "16/16",
+     "expected_flags": 16,
+     "false_alarms": 0,
+     "final_status_as_expected": "1/1",
+     "flags_found": 16,
+     "missed_problems": 0,
+     "no_problem_cases_with_a_flag": 0,
+     "timing_before_work_start": "16/16",
+     "timing_not_before_information": "16/16",
+     "timing_on_expected_event": "16/16"
+    }
+   },
+   {
+    "calls": 49,
+    "failed": [],
+    "kind": "site_slang",
+    "skipped_cases": [],
+    "skipped_messages": [],
+    "style": "site_slang",
+    "summary": {
+     "cases": 22,
+     "cases_passed": 22,
+     "cases_with_errors": 0,
+     "cases_with_problem": 14,
+     "cases_without_problem": 8,
+     "evidence_cites_arrived_events": "16/16",
+     "expected_flags": 16,
+     "false_alarms": 0,
+     "final_status_as_expected": "1/1",
+     "flags_found": 16,
+     "missed_problems": 0,
+     "no_problem_cases_with_a_flag": 0,
+     "timing_before_work_start": "16/16",
+     "timing_not_before_information": "16/16",
+     "timing_on_expected_event": "16/16"
+    }
+   },
+   {
+    "calls": 45,
+    "failed": [],
+    "kind": "typos",
+    "skipped_cases": [
+     "p06-close-before-inspection-question",
+     "n04-inspection-passed-then-close",
+     "n08-confirmation-and-small-question"
+    ],
+    "skipped_messages": [
+     "insp_moved_2a",
+     "insp_passed_2a",
+     "q_truck_time"
+    ],
+    "style": "typos",
+    "summary": {
+     "cases": 19,
+     "cases_passed": 19,
+     "cases_with_errors": 0,
+     "cases_with_problem": 13,
+     "cases_without_problem": 6,
+     "evidence_cites_arrived_events": "15/15",
+     "expected_flags": 15,
+     "false_alarms": 0,
+     "final_status_as_expected": "1/1",
+     "flags_found": 15,
+     "missed_problems": 0,
+     "no_problem_cases_with_a_flag": 0,
+     "timing_before_work_start": "15/15",
+     "timing_not_before_information": "15/15",
+     "timing_on_expected_event": "15/15"
+    }
+   },
+   {
+    "calls": 38,
+    "failed": [],
+    "kind": "mixed_language",
+    "skipped_cases": [
+     "p04-too-many-trucks",
+     "p05-crane-late",
+     "p08-two-resource-deviations",
+     "p09-crane-tuesday",
+     "p10-too-few-trucks",
+     "p12-drawing-and-delivery",
+     "n05-trucks-as-planned",
+     "n08-confirmation-and-small-question"
+    ],
+    "skipped_messages": [
+     "trucks_4",
+     "trucks_3",
+     "trucks_2",
+     "crane_mon",
+     "crane_tue",
+     "q_truck_time"
+    ],
+    "style": "mixed_language",
+    "summary": {
+     "cases": 14,
+     "cases_passed": 14,
+     "cases_with_errors": 0,
+     "cases_with_problem": 8,
+     "cases_without_problem": 6,
+     "evidence_cites_arrived_events": "8/8",
+     "expected_flags": 8,
+     "false_alarms": 0,
+     "final_status_as_expected": "1/1",
+     "flags_found": 8,
+     "missed_problems": 0,
+     "no_problem_cases_with_a_flag": 0,
+     "timing_before_work_start": "8/8",
+     "timing_not_before_information": "8/8",
+     "timing_on_expected_event": "8/8"
+    }
+   },
+   {
+    "calls": 13,
+    "failed": [],
+    "kind": "asr",
+    "skipped_cases": [
+     "p01-stale-drawing",
+     "p02-unconfirmed-change",
+     "p03-revision-after-announcement",
+     "p06-close-before-inspection-question",
+     "p07-close-before-inspection-plan",
+     "p11-flag-resolved-by-confirmation",
+     "p12-drawing-and-delivery",
+     "p13-same-message-twice",
+     "p14-same-text-resent",
+     "n02-confirmed-then-work-per-rev-c",
+     "n03-close-walls-after-passed-inspection",
+     "n04-inspection-passed-then-close",
+     "n07-revision-for-another-unit",
+     "n08-confirmation-and-small-question"
+    ],
+    "skipped_messages": [
+     "rev_c",
+     "work_3b_rev_b",
+     "work_3b_plain",
+     "work_3b_rev_c",
+     "work_2a_plain",
+     "ack_c",
+     "insp_moved_2a",
+     "insp_passed_2a",
+     "q_close_2a",
+     "q_close_2a_now",
+     "plan_close_2a",
+     "q_close_1c"
+    ],
+    "style": "asr",
+    "summary": {
+     "cases": 8,
+     "cases_passed": 8,
+     "cases_with_errors": 0,
+     "cases_with_problem": 5,
+     "cases_without_problem": 3,
+     "evidence_cites_arrived_events": "6/6",
+     "expected_flags": 6,
+     "false_alarms": 0,
+     "final_status_as_expected": "0/0",
+     "flags_found": 6,
+     "missed_problems": 0,
+     "no_problem_cases_with_a_flag": 0,
+     "timing_before_work_start": "6/6",
+     "timing_not_before_information": "6/6",
+     "timing_on_expected_event": "6/6"
+    }
+   },
+   {
+    "calls": 46,
+    "failed": [],
+    "kind": "long",
+    "skipped_cases": [],
+    "skipped_messages": [],
+    "style": "long",
+    "summary": {
+     "cases": 22,
+     "cases_passed": 22,
+     "cases_with_errors": 0,
+     "cases_with_problem": 14,
+     "cases_without_problem": 8,
+     "evidence_cites_arrived_events": "16/16",
+     "expected_flags": 16,
+     "false_alarms": 0,
+     "final_status_as_expected": "1/1",
+     "flags_found": 16,
+     "missed_problems": 0,
+     "no_problem_cases_with_a_flag": 0,
+     "timing_before_work_start": "16/16",
+     "timing_not_before_information": "16/16",
+     "timing_on_expected_event": "16/16"
+    }
+   }
+  ],
+  "limitations": [
+   "The variants are written by the same model that reads them, so they share its habits; real site messages would be harder in other ways.",
+   "The variants keep the unit, sheet, revision, count and day of the original by construction; a real message that loses one of those is a different case, not covered here.",
+   "Voice notes, speech to text, channels and answers are not part of this run.",
+   "One run per case at temperature 0; run-to-run variation is not measured."
+  ],
+  "meta": {
+   "calls": {
+    "real": 243,
+    "replay": 0
+   },
+   "estimate": 315,
+   "mode": "real model, answers recorded; the clean baseline recordings were completed in this run",
+   "model": "deepseek-v4-1-flash-1017",
+   "variants_generated_at": "2026-11-13 21:01",
+   "when": "2026-11-13 21:07"
+  }
+ },
+ "voice": {
+  "baselines": [
+   {
+    "added_snr_db": null,
+    "audio_sha256": "a066fb4308b0c25173f2a801eb7877f2b62684d24ad10241b17ea1aee7853f05",
+    "elapsed_s": 3.75,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "crew": "Framing crew",
+       "revision": "B",
+       "sheet": "A-201",
+       "start": "2026-11-13T06:00:00Z",
+       "task": "T-031",
+       "unit": "3B"
+      },
+      "event_id": "e02",
+      "id": "f-e02-1",
+      "quote": "Starting the 3B partition tomorrow at 7:00 per A-201 Rev B.",
+      "subject": "3B partition framing",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e02",
+    "source_noise_snr_db": null,
+    "source_text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+    "transcript": "Starting the 3B partition tomorrow at 7:00 per A-201 Rev B.",
+    "when": "2026-11-13T21:10:08.464640+00:00"
+   },
+   {
+    "added_snr_db": null,
+    "audio_sha256": "16374f7d611dbdc43407b3be7bf3eb477cd038ce2a1d09463401affdc9d93744",
+    "elapsed_s": 1.625,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "topic": "Close walls",
+       "unit": "2A"
+      },
+      "event_id": "e06",
+      "id": "f-e06-1",
+      "quote": "Can we close the walls in 2A this morning?",
+      "subject": "Closing walls in 2A",
+      "type": "question"
+     }
+    ],
+    "id": "e06",
+    "source_noise_snr_db": null,
+    "source_text": "Can we close the walls in 2A this morning?",
+    "transcript": "Can we close the walls in 2A this morning?",
+    "when": "2026-11-13T21:11:12.805374+00:00"
+   },
+   {
+    "added_snr_db": null,
+    "audio_sha256": "1db64056800dc6f60d22494090a96f7a4f0f3913e06218dd24a435b50c0b73b2",
+    "elapsed_s": 2.5309999999990396,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "item": "Mobile crane",
+       "planned_date": "2026-11-13"
+      },
+      "event_id": "e34",
+      "id": "f-e34-1",
+      "quote": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane.",
+      "subject": "Mobile crane for truss lift",
+      "type": "equipment_planned"
+     }
+    ],
+    "id": "e34",
+    "source_noise_snr_db": 8,
+    "source_text": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week.",
+    "transcript": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane. Crew of six, same as last week.",
+    "when": "2026-11-13T21:11:22.763421+00:00"
+   },
+   {
+    "added_snr_db": null,
+    "audio_sha256": "1a4861f0d64fb9cfc253ebe30e7bad03e1739f06455b641f80a936ab5587f4d4",
+    "elapsed_s": 4.375,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-221",
+       "unit": "2E"
+      },
+      "event_id": "e41",
+      "id": "f-e41-1",
+      "quote": "We finish the home runs in 2E tomorrow",
+      "subject": "Rough electrical 2E",
+      "type": "work_planned"
+     },
+     {
+      "confidence": 0.85,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e41",
+      "id": "f-e41-2",
+      "quote": "then after the weekend, we move to 3B for the rough electrical.",
+      "subject": "Rough electrical 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e41",
+    "source_noise_snr_db": null,
+    "source_text": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical.",
+    "transcript": "We finish the home runs in 2E tomorrow, then after the weekend, we move to 3B for the rough electrical.",
+    "when": "2026-11-13T21:11:45.819464+00:00"
+   },
+   {
+    "added_snr_db": null,
+    "audio_sha256": "272cee5d32a2e8a593b1bec13cea9eb62ee6e24e52dd9e1d025e4d4f288299a5",
+    "elapsed_s": 4.313000000001921,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "inspection": "Plumbing",
+       "time": "2026-11-13T08:00:00Z",
+       "unit": "2D"
+      },
+      "event_id": "e51",
+      "id": "f-e51-1",
+      "quote": "The plumbing inspector is coming at 9:00",
+      "subject": "Plumbing inspection in 2D",
+      "type": "inspection_scheduled"
+     },
+     {
+      "confidence": 0.85,
+      "data": {
+       "note": "Drywall crew waits on the walls in 2D until the plumbing inspection is done."
+      },
+      "event_id": "e51",
+      "id": "f-e51-2",
+      "quote": "so we wait on the walls there",
+      "subject": "Walls in 2D on hold",
+      "type": "other"
+     }
+    ],
+    "id": "e51",
+    "source_noise_snr_db": null,
+    "source_text": "2D, the plumbing inspector is coming at nine, so we wait on the walls there.",
+    "transcript": "2D. The plumbing inspector is coming at 9:00, so we wait on the walls there.",
+    "when": "2026-11-13T21:12:17.848363+00:00"
+   },
+   {
+    "added_snr_db": null,
+    "audio_sha256": "770169e64ae9b25f4f7b0561d16711d2bba0279f15a8f6e164b477c1a1b50a10",
+    "elapsed_s": 6.937999999998283,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "revision": "A",
+       "sheet": "E201",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e53",
+      "id": "f-e53-1",
+      "quote": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+      "subject": "Rough electrical in 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e53",
+    "source_noise_snr_db": 5,
+    "source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+    "transcript": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+    "when": "2026-11-13T21:12:39.638896+00:00"
+   }
+  ],
+  "complete": true,
+  "first_failing_added_snr_db": 10,
+  "first_key_loss_added_snr_db": 5,
+  "first_wrong_unit_or_revision_added_snr_db": 5,
+  "invalid_baseline_ids": [
+   "e34",
+   "e53"
+  ],
+  "levels": [
+   {
+    "added_snr_db": 20,
+    "keys_retained": 6,
+    "n": 6,
+    "safe_failures": 0,
+    "same_facts": 6,
+    "unrejected_failures": 2,
+    "valid_baselines": 4,
+    "wrong_critical_facts": 1
+   },
+   {
+    "added_snr_db": 10,
+    "keys_retained": 6,
+    "n": 6,
+    "safe_failures": 0,
+    "same_facts": 4,
+    "unrejected_failures": 3,
+    "valid_baselines": 4,
+    "wrong_critical_facts": 0
+   },
+   {
+    "added_snr_db": 5,
+    "keys_retained": 5,
+    "n": 6,
+    "safe_failures": 0,
+    "same_facts": 3,
+    "unrejected_failures": 4,
+    "valid_baselines": 4,
+    "wrong_critical_facts": 1
+   },
+   {
+    "added_snr_db": 0,
+    "keys_retained": 5,
+    "n": 6,
+    "safe_failures": 0,
+    "same_facts": 4,
+    "unrejected_failures": 3,
+    "valid_baselines": 4,
+    "wrong_critical_facts": 1
+   }
+  ],
+  "limitations": [
+   "Six synthetic voice notes, one observation per level; this is not a field-accuracy estimate.",
+   "e34 and e53 already contain site noise at 8 and 5 dB. Added SNR is relative to each supplied recording.",
+   "Key scoring uses the published fixed-sample spelling/time rubric; unfamiliar paraphrases can fail it.",
+   "Same facts means identical fact type and data, excluding IDs, quotes, subjects and confidence. Semantic paraphrases of note data can fail it.",
+   "Baseline checks require stated unit/sheet/revision values and explicit clock hours in extracted facts. Other semantics and inferred calendar dates are not independently gold-labelled; same facts is stability, not gold accuracy.",
+   "A fact accepted from a transcription that loses a key is reported, never replaced or suppressed by this evaluator."
+  ],
+  "meta": {
+   "audio_seconds": 162.89249999999998,
+   "implementation_sha256": "e36da89614c12d45f8eafa961108bc5e62eb87eb0ade1ed952dde3299d41effe",
+   "model": "deepseek-v4-1-flash-1017",
+   "model_requests": 44,
+   "speech_model": "scribe_v3",
+   "speech_requests": 30,
+   "when": "2026-11-13T21:10:04.597192+00:00"
+  },
+  "results": [
+   {
+    "added_snr_db": 20,
+    "audio_sha256": "bc0b5ac1932f38b979c8b757b1ca75f33008b11471050f6eb89d2c8a9d6a8e21",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 2.25,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "crew": "Framing crew",
+       "revision": "B",
+       "sheet": "A-201",
+       "start": "2026-11-13T06:00:00Z",
+       "task": "T-031",
+       "unit": "3B"
+      },
+      "event_id": "e02",
+      "id": "f-e02-1",
+      "quote": "Starting the 3B partitions tomorrow at 7 per A-201 Rev B.",
+      "subject": "3B partitions start",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e02",
+    "key_checks": {
+     "revision:B": true,
+     "sheet:A-201": true,
+     "time:seven": true,
+     "time:tomorrow": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+    "transcript": "Starting the 3B partitions tomorrow at 7 per A-201 Rev B.",
+    "when": "2026-11-13T21:10:10.712122+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 10,
+    "audio_sha256": "09f5f9ab12df46f3fd3beb28367f6c82377c3e6f980e0f334f1b503b998f081d",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 5.84400000000096,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "crew": "Framing crew",
+       "revision": "B",
+       "sheet": "A-201",
+       "start": "2026-11-13T06:00:00Z",
+       "task": "T-031",
+       "unit": "3B"
+      },
+      "event_id": "e02",
+      "id": "f-e02-1",
+      "quote": "Starting the 3B partition tomorrow at 7 for A-201 Rev B.",
+      "subject": "3B partition framing",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e02",
+    "key_checks": {
+     "revision:B": true,
+     "sheet:A-201": true,
+     "time:seven": true,
+     "time:tomorrow": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+    "transcript": "Starting the 3B partition tomorrow at 7 for A-201 Rev B.",
+    "when": "2026-11-13T21:11:06.300490+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 5,
+    "audio_sha256": "474b71f624fc2afb83070021cc37b42c8092230bee78b2357f70611e0ec061af",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 2.077999999997701,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "crew": "Framing crew",
+       "revision": "B",
+       "sheet": "A-201",
+       "start": "2026-11-13T06:00:00Z",
+       "task": "T-031",
+       "unit": "3B"
+      },
+      "event_id": "e02",
+      "id": "f-e02-1",
+      "quote": "Starting the 3B partition tomorrow at 7:00 for A-201 Rev B.",
+      "subject": "3B partition framing",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e02",
+    "key_checks": {
+     "revision:B": true,
+     "sheet:A-201": true,
+     "time:seven": true,
+     "time:tomorrow": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+    "transcript": "Starting the 3B partition tomorrow at 7:00 for A-201 Rev B.",
+    "when": "2026-11-13T21:11:08.392693+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 0,
+    "audio_sha256": "d8f71de52c3f12c82c628d8aded3ec83cc48115fb92a691dfc1c65f76eafe22e",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 2.797000000002299,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "crew": "Framing crew",
+       "revision": "B",
+       "sheet": "A-201",
+       "start": "2026-11-13T06:00:00Z",
+       "task": "T-031",
+       "unit": "3B"
+      },
+      "event_id": "e02",
+      "id": "f-e02-1",
+      "quote": "Starting the 3B partition tomorrow at 7:00 for A-201 Rev B.",
+      "subject": "3B partition framing",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e02",
+    "key_checks": {
+     "revision:B": true,
+     "sheet:A-201": true,
+     "time:seven": true,
+     "time:tomorrow": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+    "transcript": "Starting the 3B partition tomorrow at 7:00 for A-201 Rev B.",
+    "when": "2026-11-13T21:11:11.186566+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 20,
+    "audio_sha256": "84f1cc271fd57d14c12f32a8d4513678d9e10e91926132bd9576464966862c38",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 1.875,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "topic": "Close walls",
+       "unit": "2A"
+      },
+      "event_id": "e06",
+      "id": "f-e06-1",
+      "quote": "Can we close the walls in 2A this morning?",
+      "subject": "Closing walls in 2A",
+      "type": "question"
+     }
+    ],
+    "id": "e06",
+    "key_checks": {
+     "time:this morning": true,
+     "unit:2A": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "Can we close the walls in 2A this morning?",
+    "transcript": "Can we close the walls in 2A this morning?",
+    "when": "2026-11-13T21:11:14.688895+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 10,
+    "audio_sha256": "dde1d555480681fe34802d16d301d6f2091fea755ab04fa04d733e7294a1524d",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 1.5469999999986612,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "topic": "closing walls",
+       "unit": "2A"
+      },
+      "event_id": "e06",
+      "id": "f-e06-1",
+      "quote": "Can we close the walls in 2A this morning?",
+      "subject": "closing walls in 2A",
+      "type": "question"
+     }
+    ],
+    "id": "e06",
+    "key_checks": {
+     "time:this morning": true,
+     "unit:2A": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": null,
+    "source_text": "Can we close the walls in 2A this morning?",
+    "transcript": "Can we close the walls in 2A this morning?",
+    "when": "2026-11-13T21:11:16.233741+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 5,
+    "audio_sha256": "5250fbab893b775e5c097672a75f4a03bf201a19959c400ce261f4a1e6724f03",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 1.639999999999418,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "topic": "closing walls",
+       "unit": "2A"
+      },
+      "event_id": "e06",
+      "id": "f-e06-1",
+      "quote": "Can we close the walls in 2A this morning?",
+      "subject": "closing walls in 2A",
+      "type": "question"
+     }
+    ],
+    "id": "e06",
+    "key_checks": {
+     "time:this morning": true,
+     "unit:2A": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": null,
+    "source_text": "Can we close the walls in 2A this morning?",
+    "transcript": "Can we close the walls in 2A this morning?",
+    "when": "2026-11-13T21:11:17.878414+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 0,
+    "audio_sha256": "bae4c57819bd91a6fac7d0ba1e3ef17c1b20dc6ea7bb1b85428dac6348990585",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 2.3280000000013388,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "topic": "Close walls",
+       "unit": "2A"
+      },
+      "event_id": "e06",
+      "id": "f-e06-1",
+      "quote": "Can we close the walls in 2A this morning?",
+      "subject": "Closing walls in 2A",
+      "type": "question"
+     }
+    ],
+    "id": "e06",
+    "key_checks": {
+     "time:this morning": true,
+     "unit:2A": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "Can we close the walls in 2A this morning?",
+    "transcript": "Can we close the walls in 2A this morning?",
+    "when": "2026-11-13T21:11:20.221484+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 20,
+    "audio_sha256": "286cad94f01d2ae4e2ead2ad849e618f0cb20cad0ce9d2e792caa7ff5f56c96c",
+    "baseline_key_fact_gaps": [
+     "time:07:00"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 3.4840000000003783,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "item": "Mobile crane",
+       "planned_date": "2026-11-13"
+      },
+      "event_id": "e34",
+      "id": "f-e34-1",
+      "quote": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+      "subject": "Mobile crane for truss lift",
+      "type": "equipment_planned"
+     }
+    ],
+    "id": "e34",
+    "key_checks": {
+     "time:day after tomorrow": true,
+     "time:seven": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": 8,
+    "source_text": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week.",
+    "transcript": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+    "when": "2026-11-13T21:11:26.253404+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 10,
+    "audio_sha256": "122630516ec3645ae42527120b9eba3f9bae64025a96b547159580ba1f49f9cb",
+    "baseline_key_fact_gaps": [
+     "time:07:00"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 6.828000000001339,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "item": "Mobile crane",
+       "planned_date": "2026-11-13"
+      },
+      "event_id": "e34",
+      "id": "f-e34-1",
+      "quote": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+      "subject": "Mobile crane for truss lift",
+      "type": "equipment_planned"
+     }
+    ],
+    "id": "e34",
+    "key_checks": {
+     "time:day after tomorrow": true,
+     "time:seven": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": 8,
+    "source_text": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week.",
+    "transcript": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+    "when": "2026-11-13T21:11:33.086845+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 5,
+    "audio_sha256": "fdf8d2a33da59db0486730d23fdd6d6be10453a7b0e2391b8b2ba27cad749799",
+    "baseline_key_fact_gaps": [
+     "time:07:00"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 3.7340000000003783,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "item": "Mobile crane",
+       "planned_date": "2026-11-13"
+      },
+      "event_id": "e34",
+      "id": "f-e34-1",
+      "quote": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+      "subject": "Mobile crane for truss lift",
+      "type": "equipment_planned"
+     }
+    ],
+    "id": "e34",
+    "key_checks": {
+     "time:day after tomorrow": true,
+     "time:seven": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": 8,
+    "source_text": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week.",
+    "transcript": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+    "when": "2026-11-13T21:11:36.818883+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 0,
+    "audio_sha256": "172debc06a7b31b148f02f15242aac6ce76a4bc27f709fe0aa92b13dc0de3b4a",
+    "baseline_key_fact_gaps": [
+     "time:07:00"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 4.610000000000582,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "item": "Mobile crane",
+       "planned_date": "2026-11-13"
+      },
+      "event_id": "e34",
+      "id": "f-e34-1",
+      "quote": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+      "subject": "Mobile crane for truss lift",
+      "type": "equipment_planned"
+     }
+    ],
+    "id": "e34",
+    "key_checks": {
+     "time:day after tomorrow": true,
+     "time:seven": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": 8,
+    "source_text": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week.",
+    "transcript": "The truss lift is planned for the day after tomorrow at 7:00 with the mobile crane, crew of six, same as last week.",
+    "when": "2026-11-13T21:11:41.440237+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 20,
+    "audio_sha256": "91e54cf98ae3e94ca2de22f7002e6844f27136f7e5f3a23195f35be67d3cb183",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 6.235000000000582,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-221",
+       "unit": "2E"
+      },
+      "event_id": "e41",
+      "id": "f-e41-1",
+      "quote": "We finish the home runs in 2E tomorrow",
+      "subject": "Rough electrical 2E",
+      "type": "work_planned"
+     },
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e41",
+      "id": "f-e41-2",
+      "quote": "then after the weekend, we move to 3B for the rough electrical",
+      "subject": "Rough electrical 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e41",
+    "key_checks": {
+     "time:after weekend": true,
+     "time:tomorrow": true,
+     "unit:2E": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical.",
+    "transcript": "We finish the home runs in 2E tomorrow, then after the weekend, we move to 3B for the rough electrical.",
+    "when": "2026-11-13T21:11:52.067082+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 10,
+    "audio_sha256": "b5adbf1bc316687fc746396d31e3fe2e93988c4f3d5a87b69304fdd9c14b9aef",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 4.625,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-221",
+       "unit": "2E"
+      },
+      "event_id": "e41",
+      "id": "f-e41-1",
+      "quote": "We finish the home runs in 2E tomorrow",
+      "subject": "Rough electrical 2E",
+      "type": "work_planned"
+     },
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e41",
+      "id": "f-e41-2",
+      "quote": "then after the weekend, we move to 3B for the rough electrical.",
+      "subject": "Rough electrical 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e41",
+    "key_checks": {
+     "time:after weekend": true,
+     "time:tomorrow": true,
+     "unit:2E": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical.",
+    "transcript": "We finish the home runs in 2E tomorrow, then after the weekend, we move to 3B for the rough electrical.",
+    "when": "2026-11-13T21:11:56.700881+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 5,
+    "audio_sha256": "265bc204d30d13c18289edf27a662e0dd9c4516f9b359152a9a7e77a5903ba30",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 4.34400000000096,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-221",
+       "unit": "2E"
+      },
+      "event_id": "e41",
+      "id": "f-e41-1",
+      "quote": "We finish the home runs in 2E tomorrow",
+      "subject": "Rough electrical 2E",
+      "type": "work_planned"
+     },
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e41",
+      "id": "f-e41-2",
+      "quote": "then after the weekend, we move to 3B for the rough electrical.",
+      "subject": "Rough electrical 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e41",
+    "key_checks": {
+     "time:after weekend": true,
+     "time:tomorrow": true,
+     "unit:2E": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical.",
+    "transcript": "We finish the home runs in 2E tomorrow, then after the weekend, we move to 3B for the rough electrical.",
+    "when": "2026-11-13T21:12:01.055878+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 0,
+    "audio_sha256": "8bb94fd34db2332250175234061b0534a5fc513b9c9f80639cfd617ad59ff43a",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 12.467999999997119,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-221",
+       "unit": "2E"
+      },
+      "event_id": "e41",
+      "id": "f-e41-1",
+      "quote": "We finish the home runs in 2E tomorrow",
+      "subject": "Rough electrical 2E",
+      "type": "work_planned"
+     },
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e41",
+      "id": "f-e41-2",
+      "quote": "then after the weekend, we move to 3B for the rough electrical.",
+      "subject": "Rough electrical 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e41",
+    "key_checks": {
+     "time:after weekend": true,
+     "time:tomorrow": true,
+     "unit:2E": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical.",
+    "transcript": "We finish the home runs in 2E tomorrow, then after the weekend, we move to 3B for the rough electrical.",
+    "when": "2026-11-13T21:12:13.522442+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 20,
+    "audio_sha256": "ee229f14258fefe4971964ac5bc7846a58b7e1a1cca37432372526b97152474e",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 2.4680000000007567,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "inspection": "Plumbing",
+       "time": "2026-11-13T08:00:00Z",
+       "unit": "2D"
+      },
+      "event_id": "e51",
+      "id": "f-e51-1",
+      "quote": "The plumbing inspector is coming at 9:00",
+      "subject": "Plumbing inspection in 2D",
+      "type": "inspection_scheduled"
+     },
+     {
+      "confidence": 0.85,
+      "data": {
+       "note": "Drywall crew waits on the walls in 2D until the plumbing inspection is done."
+      },
+      "event_id": "e51",
+      "id": "f-e51-2",
+      "quote": "so we wait on the walls there",
+      "subject": "Walls in 2D on hold",
+      "type": "other"
+     }
+    ],
+    "id": "e51",
+    "key_checks": {
+     "time:nine": true,
+     "unit:2D": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "2D, the plumbing inspector is coming at nine, so we wait on the walls there.",
+    "transcript": "2D. The plumbing inspector is coming at 9:00, so we wait on the walls there.",
+    "when": "2026-11-13T21:12:20.332864+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 10,
+    "audio_sha256": "f16bfe18547a279a3c23a3f5b46c1f87d91b7fa80583a2d83d6137302804625a",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 2.811999999998079,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "inspection": "Plumbing",
+       "time": "2026-11-13T08:00:00Z",
+       "unit": "2D"
+      },
+      "event_id": "e51",
+      "id": "f-e51-1",
+      "quote": "The plumbing inspector is coming at 9:00",
+      "subject": "Plumbing inspection in 2D",
+      "type": "inspection_scheduled"
+     },
+     {
+      "confidence": 0.85,
+      "data": {
+       "note": "Drywall crew waits on the walls in 2D until the plumbing inspection is done."
+      },
+      "event_id": "e51",
+      "id": "f-e51-2",
+      "quote": "so we wait on the walls there",
+      "subject": "Walls in 2D on hold",
+      "type": "other"
+     }
+    ],
+    "id": "e51",
+    "key_checks": {
+     "time:nine": true,
+     "unit:2D": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": true,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": null,
+    "source_text": "2D, the plumbing inspector is coming at nine, so we wait on the walls there.",
+    "transcript": "2D. The plumbing inspector is coming at 9:00, so we wait on the walls there.",
+    "when": "2026-11-13T21:12:23.152154+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 5,
+    "audio_sha256": "0aec4ff1b2865d6580457928da61e3ff7497915b2e926e49345d2a6fac862912",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 6.172000000002299,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "inspection": "Plumbing",
+       "unit": "2D"
+      },
+      "event_id": "e51",
+      "id": "f-e51-1",
+      "quote": "The plumbing inspector is coming at 9:00",
+      "subject": "Plumbing inspection in 2D",
+      "type": "inspection_scheduled"
+     }
+    ],
+    "id": "e51",
+    "key_checks": {
+     "time:nine": true,
+     "unit:2D": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": null,
+    "source_text": "2D, the plumbing inspector is coming at nine, so we wait on the walls there.",
+    "transcript": "2D. The plumbing inspector is coming at 9:00, so we wait on the walls there.",
+    "when": "2026-11-13T21:12:29.327422+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 0,
+    "audio_sha256": "b8833de48cf99de687ad364255560e890c32f21786924efeb5504a0673a18f62",
+    "baseline_key_fact_gaps": [],
+    "baseline_transcript_valid": true,
+    "baseline_valid": true,
+    "elapsed_s": 3.375,
+    "facts": [
+     {
+      "confidence": 0.85,
+      "data": {
+       "inspection": "Plumbing",
+       "time": "2026-11-13T08:00:00Z",
+       "unit": "2D"
+      },
+      "event_id": "e51",
+      "id": "f-e51-1",
+      "quote": "The plumbing inspector is coming at 9:00",
+      "subject": "Plumbing inspection in 2D",
+      "type": "inspection_scheduled"
+     }
+    ],
+    "id": "e51",
+    "key_checks": {
+     "time:nine": true,
+     "unit:2D": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": null,
+    "source_text": "2D, the plumbing inspector is coming at nine, so we wait on the walls there.",
+    "transcript": "2D. The plumbing inspector is coming at 9:00, so we wait on the walls there.",
+    "when": "2026-11-13T21:12:32.702534+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 20,
+    "audio_sha256": "42f769b5ee3015d63ad3526c34245cbd9bf2e9a83da2cbc647ab2eb2170c59d9",
+    "baseline_key_fact_gaps": [
+     "sheet:E-201"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 2.922000000002299,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "revision": "A",
+       "sheet": "E201",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e53",
+      "id": "f-e53-1",
+      "quote": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+      "subject": "Rough electrical 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e53",
+    "key_checks": {
+     "revision:A": true,
+     "sheet:E-201": true,
+     "time:next working day": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": true,
+    "source_noise_snr_db": 5,
+    "source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+    "transcript": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+    "when": "2026-11-13T21:12:42.552139+00:00",
+    "wrong_critical_values": {
+     "sheet": [
+      "E201"
+     ]
+    }
+   },
+   {
+    "added_snr_db": 10,
+    "audio_sha256": "f574d8954e6fe233eff8258336a4d10f2e2d843e00f5ecf79036b17142b3f2f0",
+    "baseline_key_fact_gaps": [
+     "sheet:E-201"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 5.28099999999904,
+    "facts": [
+     {
+      "confidence": 0.95,
+      "data": {
+       "crew": "Electrical crew",
+       "start": "2026-11-15T23:00:00Z",
+       "task": "T-032",
+       "unit": "3B"
+      },
+      "event_id": "e53",
+      "id": "f-e53-1",
+      "quote": "On the next working day, we start rough electrical in 3B.",
+      "subject": "Rough electrical in 3B",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e53",
+    "key_checks": {
+     "revision:A": true,
+     "sheet:E-201": true,
+     "time:next working day": true,
+     "unit:3B": true
+    },
+    "keys_retained": true,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": 5,
+    "source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+    "transcript": "On the next working day, we start rough electrical in 3B. The wire is cut to length from E201 Rev A.",
+    "when": "2026-11-13T21:12:47.846807+00:00",
+    "wrong_critical_values": {}
+   },
+   {
+    "added_snr_db": 5,
+    "audio_sha256": "1fce865a6cfed2d7b9f8e6b4f8561aa94c29a442cad82cc58fa4838ff24be48e",
+    "baseline_key_fact_gaps": [
+     "sheet:E-201"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 4.53099999999904,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "start": "2026-11-15T23:00:00Z",
+       "task": "T-291",
+       "unit": "3D"
+      },
+      "event_id": "e53",
+      "id": "f-e53-1",
+      "quote": "On the next working day, we start rough electrical in 3D.",
+      "subject": "Rough electrical in 3D",
+      "type": "work_planned"
+     },
+     {
+      "confidence": 0.8,
+      "data": {
+       "note": "Wire is cut to length from drawing E201 Rev A."
+      },
+      "event_id": "e53",
+      "id": "f-e53-2",
+      "quote": "The wire is cut to length from E201 Rev A.",
+      "subject": "Wire cut from E201 Rev A",
+      "type": "other"
+     }
+    ],
+    "id": "e53",
+    "key_checks": {
+     "revision:A": true,
+     "sheet:E-201": true,
+     "time:next working day": true,
+     "unit:3B": false
+    },
+    "keys_retained": false,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": 5,
+    "source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+    "transcript": "On the next working day, we start rough electrical in 3D. The wire is cut to length from E201 Rev A.",
+    "when": "2026-11-13T21:12:52.392829+00:00",
+    "wrong_critical_values": {
+     "unit": [
+      "3D"
+     ]
+    }
+   },
+   {
+    "added_snr_db": 0,
+    "audio_sha256": "1b5ea252c0f5d19f92a28bec141db4e15d28fb370e0cf684efb403ff9226b945",
+    "baseline_key_fact_gaps": [
+     "sheet:E-201"
+    ],
+    "baseline_transcript_valid": true,
+    "baseline_valid": false,
+    "elapsed_s": 6.3290000000015425,
+    "facts": [
+     {
+      "confidence": 0.9,
+      "data": {
+       "crew": "Electrical crew",
+       "revision": "A",
+       "sheet": "E-201",
+       "task": "T-291",
+       "unit": "3D"
+      },
+      "event_id": "e53",
+      "id": "f-e53-1",
+      "quote": "On the next working day, we start rough electrical in 3D. The wire is cut to length from E-201 Rev A.",
+      "subject": "Rough electrical in 3D",
+      "type": "work_planned"
+     }
+    ],
+    "id": "e53",
+    "key_checks": {
+     "revision:A": true,
+     "sheet:E-201": true,
+     "time:next working day": true,
+     "unit:3B": false
+    },
+    "keys_retained": false,
+    "not_understood": false,
+    "passed": false,
+    "safe_failure": false,
+    "same_facts": false,
+    "source_noise_snr_db": 5,
+    "source_text": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A.",
+    "transcript": "On the next working day, we start rough electrical in 3D. The wire is cut to length from E-201 Rev A.",
+    "when": "2026-11-13T21:12:58.736885+00:00",
+    "wrong_critical_values": {
+     "unit": [
+      "3D"
+     ]
+    }
+   }
+  ],
+  "scope": "Direct speech-to-extraction measurements without sender read-back. The original recognition and extraction errors remain below. Separate offline read-back checks use recorded model responses and scripted sender corrections; they establish neither improved recognition nor a human phone interaction."
+ }
+}

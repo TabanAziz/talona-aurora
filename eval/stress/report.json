@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "when": "2026-11-13 21:07",
+    "mode": "real model, answers recorded; the clean baseline recordings were completed in this run",
+    "model": "deepseek-v4-1-flash-1017",
+    "variants_generated_at": "2026-11-13 21:01",
+    "estimate": 315,
+    "calls": {
+      "real": 243,
+      "replay": 0
+    }
+  },
+  "kinds": [
+    {
+      "kind": "clean",
+      "style": null,
+      "summary": {
+        "cases": 22,
+        "cases_with_problem": 14,
+        "cases_without_problem": 8,
+        "cases_passed": 22,
+        "cases_with_errors": 0,
+        "expected_flags": 16,
+        "flags_found": 16,
+        "missed_problems": 0,
+        "false_alarms": 0,
+        "no_problem_cases_with_a_flag": 0,
+        "timing_on_expected_event": "16/16",
+        "timing_not_before_information": "16/16",
+        "timing_before_work_start": "16/16",
+        "evidence_cites_arrived_events": "16/16",
+        "final_status_as_expected": "1/1"
+      },
+      "skipped_cases": [],
+      "skipped_messages": [],
+      "failed": [],
+      "calls": 52
+    },
+    {
+      "kind": "site_slang",
+      "style": "site_slang",
+      "summary": {
+        "cases": 22,
+        "cases_with_problem": 14,
+        "cases_without_problem": 8,
+        "cases_passed": 22,
+        "cases_with_errors": 0,
+        "expected_flags": 16,
+        "flags_found": 16,
+        "missed_problems": 0,
+        "false_alarms": 0,
+        "no_problem_cases_with_a_flag": 0,
+        "timing_on_expected_event": "16/16",
+        "timing_not_before_information": "16/16",
+        "timing_before_work_start": "16/16",
+        "evidence_cites_arrived_events": "16/16",
+        "final_status_as_expected": "1/1"
+      },
+      "skipped_cases": [],
+      "skipped_messages": [],
+      "failed": [],
+      "calls": 49
+    },
+    {
+      "kind": "typos",
+      "style": "typos",
+      "summary": {
+        "cases": 19,
+        "cases_with_problem": 13,
+        "cases_without_problem": 6,
+        "cases_passed": 19,
+        "cases_with_errors": 0,
+        "expected_flags": 15,
+        "flags_found": 15,
+        "missed_problems": 0,
+        "false_alarms": 0,
+        "no_problem_cases_with_a_flag": 0,
+        "timing_on_expected_event": "15/15",
+        "timing_not_before_information": "15/15",
+        "timing_before_work_start": "15/15",
+        "evidence_cites_arrived_events": "15/15",
+        "final_status_as_expected": "1/1"
+      },
+      "skipped_cases": [
+        "p06-close-before-inspection-question",
+        "n04-inspection-passed-then-close",
+        "n08-confirmation-and-small-question"
+      ],
+      "skipped_messages": [
+        "insp_moved_2a",
+        "insp_passed_2a",
+        "q_truck_time"
+      ],
+      "failed": [],
+      "calls": 45
+    },
+    {
+      "kind": "mixed_language",
+      "style": "mixed_language",
+      "summary": {
+        "cases": 14,
+        "cases_with_problem": 8,
+        "cases_without_problem": 6,
+        "cases_passed": 14,
+        "cases_with_errors": 0,
+        "expected_flags": 8,
+        "flags_found": 8,
+        "missed_problems": 0,
+        "false_alarms": 0,
+        "no_problem_cases_with_a_flag": 0,
+        "timing_on_expected_event": "8/8",
+        "timing_not_before_information": "8/8",
+        "timing_before_work_start": "8/8",
+        "evidence_cites_arrived_events": "8/8",
+        "final_status_as_expected": "1/1"
+      },
+      "skipped_cases": [
+        "p04-too-many-trucks",
+        "p05-crane-late",
+        "p08-two-resource-deviations",
+        "p09-crane-tuesday",
+        "p10-too-few-trucks",
+        "p12-drawing-and-delivery",
+        "n05-trucks-as-planned",
+        "n08-confirmation-and-small-question"
+      ],
+      "skipped_messages": [
+        "trucks_4",
+        "trucks_3",
+        "trucks_2",
+        "crane_mon",
+        "crane_tue",
+        "q_truck_time"
+      ],
+      "failed": [],
+      "calls": 38
+    },
+    {
+      "kind": "asr",
+      "style": "asr",
+      "summary": {
+        "cases": 8,
+        "cases_with_problem": 5,
+        "cases_without_problem": 3,
+        "cases_passed": 8,
+        "cases_with_errors": 0,
+        "expected_flags": 6,
+        "flags_found": 6,
+        "missed_problems": 0,
+        "false_alarms": 0,
+        "no_problem_cases_with_a_flag": 0,
+        "timing_on_expected_event": "6/6",
+        "timing_not_before_information": "6/6",
+        "timing_before_work_start": "6/6",
+        "evidence_cites_arrived_events": "6/6",
+        "final_status_as_expected": "0/0"
+      },
+      "skipped_cases": [
+        "p01-stale-drawing",
+        "p02-unconfirmed-change",
+        "p03-revision-after-announcement",
+        "p06-close-before-inspection-question",
+        "p07-close-before-inspection-plan",
+        "p11-flag-resolved-by-confirmation",
+        "p12-drawing-and-delivery",
+        "p13-same-message-twice",
+        "p14-same-text-resent",
+        "n02-confirmed-then-work-per-rev-c",
+        "n03-close-walls-after-passed-inspection",
+        "n04-inspection-passed-then-close",
+        "n07-revision-for-another-unit",
+        "n08-confirmation-and-small-question"
+      ],
+      "skipped_messages": [
+        "rev_c",
+        "work_3b_rev_b",
+        "work_3b_plain",
+        "work_3b_rev_c",
+        "work_2a_plain",
+        "ack_c",
+        "insp_moved_2a",
+        "insp_passed_2a",
+        "q_close_2a",
+        "q_close_2a_now",
+        "plan_close_2a",
+        "q_close_1c"
+      ],
+      "failed": [],
+      "calls": 13
+    },
+    {
+      "kind": "long",
+      "style": "long",
+      "summary": {
+        "cases": 22,
+        "cases_with_problem": 14,
+        "cases_without_problem": 8,
+        "cases_passed": 22,
+        "cases_with_errors": 0,
+        "expected_flags": 16,
+        "flags_found": 16,
+        "missed_problems": 0,
+        "false_alarms": 0,
+        "no_problem_cases_with_a_flag": 0,
+        "timing_on_expected_event": "16/16",
+        "timing_not_before_information": "16/16",
+        "timing_before_work_start": "16/16",
+        "evidence_cites_arrived_events": "16/16",
+        "final_status_as_expected": "1/1"
+      },
+      "skipped_cases": [],
+      "skipped_messages": [],
+      "failed": [],
+      "calls": 46
+    }
+  ],
+  "limitations": [
+    "The variants are written by the same model that reads them, so they share its habits; real site messages would be harder in other ways.",
+    "The variants keep the unit, sheet, revision, count and day of the original by construction; a real message that loses one of those is a different case, not covered here.",
+    "Voice notes, speech to text, channels and answers are not part of this run.",
+    "One run per case at temperature 0; run-to-run variation is not measured."
+  ]
+}

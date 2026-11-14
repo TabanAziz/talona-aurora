@@ -1,0 +1,20 @@
+{
+  "update_id": 910032,
+  "message": {
+    "message_id": 4232,
+    "from": {
+      "id": 7000003,
+      "is_bot": false,
+      "first_name": "Jonas",
+      "last_name": "Meyer",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794557400,
+    "text": "Got it on the crane. The roof lift moves to the next working day and the trusses stay stacked."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "update_id": 910029,
+  "message": {
+    "message_id": 4229,
+    "from": {
+      "id": 7000007,
+      "is_bot": false,
+      "first_name": "Priya",
+      "last_name": "Shah",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794554100,
+    "text": "What about 2B, can we close those walls?"
+  }
+}

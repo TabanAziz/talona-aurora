@@ -1,0 +1,37 @@
+{
+  "update_id": 731400103,
+  "callback_query": {
+    "id": "4382bfdwdsb323b2d9",
+    "from": {
+      "id": 5550103,
+      "is_bot": false,
+      "first_name": "Marco",
+      "last_name": "Ruiz",
+      "language_code": "en"
+    },
+    "message": {
+      "message_id": 409,
+      "from": {
+        "id": 7000000001,
+        "is_bot": true,
+        "first_name": "Aurora",
+        "username": "AuroraConnectPlanner_bot"
+      },
+      "chat": {
+        "id": -1002233445566,
+        "title": "Maple Court site",
+        "type": "supergroup"
+      },
+      "date": 1794302000,
+      "text": "Framing crew: A-201 Rev C replaces Rev B. The partition in 3B moved 300 mm north. Please confirm you have Rev C.",
+      "reply_markup": {
+        "inline_keyboard": [
+          [{"text": "Confirmed", "callback_data": "0:o-e01-framing"}],
+          [{"text": "I have a question", "callback_data": "1:o-e01-framing"}]
+        ]
+      }
+    },
+    "chat_instance": "-8812345678901234567",
+    "data": "0:o-e01-framing"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "update_id": 910026,
+  "message": {
+    "message_id": 4226,
+    "from": {
+      "id": 7000001,
+      "is_bot": false,
+      "first_name": "Dmitri",
+      "last_name": "Volkov",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794550500,
+    "text": "Pump is set up on the podium and the forms are checked. Ready for the trucks."
+  }
+}

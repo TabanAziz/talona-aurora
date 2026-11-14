@@ -1,0 +1,11 @@
+.workspace-project-mark.project-logo { position:relative; isolation:isolate; overflow:hidden; background:var(--logo-background,var(--surface-2)); transition:transform var(--normal) var(--ease),box-shadow var(--normal) var(--ease); }
+.project-logo svg { transition:transform var(--normal) var(--ease); }
+.project-logo-path { stroke-dasharray:1; stroke-dashoffset:0; animation:project-logo-draw 800ms var(--ease) both; animation-delay:calc(var(--logo-path-order) * 50ms); }
+.project-logo-path[data-filled="true"] { animation-name:project-logo-fill; }
+.workspace-project:hover .project-logo { transform:translateY(calc(-1 * var(--ring))); box-shadow:var(--shadow-1); }
+.workspace-project:hover .project-logo svg { transform:scale(1.06); }
+.project-logo::after { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(115deg,transparent 25%,rgb(255 255 255 / .55) 50%,transparent 75%); opacity:0; transform:translateX(-120%); transition:transform 650ms var(--ease),opacity var(--normal) var(--ease); }
+.workspace-project:hover .project-logo::after { opacity:.8; transform:translateX(120%); }
+@keyframes project-logo-draw { from { stroke-dashoffset:1; opacity:0; } to { stroke-dashoffset:0; opacity:1; } }
+@keyframes project-logo-fill { from { opacity:0; transform:translateY(var(--s1)); } to { opacity:1; transform:translateY(0); } }
+@media(prefers-reduced-motion:reduce) { .project-logo,.project-logo svg,.project-logo-path,.project-logo::after { animation:none; transition:none; transform:none; } .project-logo::after { display:none; } }

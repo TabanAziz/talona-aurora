@@ -1,0 +1,23 @@
+{
+  "day": "2026-11-12", "site_timezone": "Europe/Berlin",
+  "machines": [{"id":"robot-1","name":"Layout robot","simulated":true}],
+  "checks": [
+    {"id":"midnight","asked_by":"robot-1","allowed":"no","checked_at":"2026-11-11T23:30:00Z","reasons":[{"blocking":true,"flag_id":"f-held"}]},
+    {"id":"tomorrow","asked_by":"robot-1","allowed":"yes","checked_at":"2026-11-12T23:30:00Z","reasons":[]}
+  ],
+  "record": [
+    {"id":"r-check-midnight","at":"2026-11-11T23:30:00Z","kind":"answer","actor":"Aurora","title":"Check","refs":{"check":"midnight"}},
+    {"id":"r-check-tomorrow","at":"2026-11-12T23:30:00Z","kind":"answer","actor":"Aurora","title":"Check","refs":{"check":"tomorrow"}},
+    {"id":"r-confirm","at":"2026-11-11T23:35:00Z","kind":"acknowledgement","actor":"robot-1","title":"Loaded drawing","refs":{"machine":"robot-1","sheet":"A-201","revision":"C"}}
+  ],
+  "flags": [],
+  "expected": {"key":"machines","title":"Machines","lines":[
+    {"key":"machine-robot-1","text":"Layout robot (robot-1) [simulated]: 1 start checks; 1 stopped.","source":{"label":"Record entry","href":"/#record-r-check-midnight"}},
+    {"key":"check-midnight","text":"robot-1 at 23:30 UTC: stopped. Flags: f-held.","source":{"label":"Record entry","href":"/#record-r-check-midnight"}},
+    {"key":"r-confirm","text":"robot-1 confirmed A-201 Rev C at 23:35 UTC.","source":{"label":"Record entry","href":"/#record-r-confirm"}}
+  ]},
+  "alternates": [{"site_timezone":"America/New_York","expected":{"key":"machines","title":"Machines","lines":[
+    {"key":"machine-robot-1","text":"Layout robot (robot-1) [simulated]: 1 start checks; 0 stopped.","source":{"label":"Record entry","href":"/#record-r-check-tomorrow"}},
+    {"key":"check-tomorrow","text":"robot-1 at 23:30 UTC: allowed. No blocking flag recorded.","source":{"label":"Record entry","href":"/#record-r-check-tomorrow"}}
+  ]}}]
+}

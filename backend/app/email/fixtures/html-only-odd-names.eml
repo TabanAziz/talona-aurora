@@ -1,0 +1,26 @@
+From: =?utf-8?q?Jos=C3=A9_Ortega?= <jose@gc.example>
+To: site@maplecourt.example
+Subject: Re: Level 3 access
+Date: Thu, 12 Nov 2026 10:00:00 +0100
+Message-ID: <html-1@gc.example>
+In-Reply-To: <earlier@gc.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/html; charset="utf-8"
+
+<html><style>p{color:red}</style><body><p>Crane moves to <b>Monday</b>.</p><p>Thanks</p></body></html>
+--b1
+Content-Type: application/pdf; name="../../evil.pdf"
+Content-Disposition: attachment; filename="../../evil.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQK
+--b1
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="../../evil.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQK
+--b1--

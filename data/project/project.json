@@ -1,0 +1,596 @@
+{
+  "demo_data": true,
+  "label": "Synthetic demo data. Maple Court is a fictional project.",
+  "seed": 20261113,
+  "as_of": "2026-11-13T06:00:00Z",
+  "handover": "2026-12-18T16:00:00Z",
+  "calendar": {
+    "working_days": "Mon-Fri",
+    "holidays": [],
+    "timezone": "UTC"
+  },
+  "project": {
+    "id": "maple-court",
+    "name": "Maple Court",
+    "description": "24-unit multifamily building, wood frame over podium",
+    "units": [
+      "1A",
+      "1B",
+      "1C",
+      "1D",
+      "1E",
+      "1F",
+      "1G",
+      "1H",
+      "2A",
+      "2B",
+      "2C",
+      "2D",
+      "2E",
+      "2F",
+      "2G",
+      "2H",
+      "3A",
+      "3B",
+      "3C",
+      "3D",
+      "3E",
+      "3F",
+      "3G",
+      "3H"
+    ],
+    "sheets": [
+      "A-201"
+    ],
+    "crews": [
+      "Framing crew",
+      "Electrical crew",
+      "Concrete crew",
+      "Site labor",
+      "Roofing crew",
+      "Drywall crew"
+    ],
+    "demo_data": true
+  },
+  "units": [
+    {
+      "id": "1A",
+      "level": 1,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "1B",
+      "level": 1,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "1C",
+      "level": 1,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "1D",
+      "level": 1,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "1E",
+      "level": 1,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "1F",
+      "level": 1,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "1G",
+      "level": 1,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "1H",
+      "level": 1,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "2A",
+      "level": 2,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "2B",
+      "level": 2,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "2C",
+      "level": 2,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "2D",
+      "level": 2,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "2E",
+      "level": 2,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "2F",
+      "level": 2,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "2G",
+      "level": 2,
+      "type": "2 bed",
+      "area_m2": 68
+    },
+    {
+      "id": "2H",
+      "level": 2,
+      "type": "2 bed",
+      "area_m2": 68
+    },
+    {
+      "id": "3A",
+      "level": 3,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "3B",
+      "level": 3,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "3C",
+      "level": 3,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "3D",
+      "level": 3,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "3E",
+      "level": 3,
+      "type": "Studio",
+      "area_m2": 32
+    },
+    {
+      "id": "3F",
+      "level": 3,
+      "type": "2 bed",
+      "area_m2": 68
+    },
+    {
+      "id": "3G",
+      "level": 3,
+      "type": "1 bed",
+      "area_m2": 46
+    },
+    {
+      "id": "3H",
+      "level": 3,
+      "type": "1 bed",
+      "area_m2": 46
+    }
+  ],
+  "crews": [
+    {
+      "name": "Framing crew",
+      "trade": "Wood framing",
+      "foreman": "Marco Ruiz",
+      "people": 6
+    },
+    {
+      "name": "Electrical crew",
+      "trade": "Electrical",
+      "foreman": "Hannah Kowalski",
+      "people": 4
+    },
+    {
+      "name": "Concrete crew",
+      "trade": "Concrete and podium",
+      "foreman": "Dmitri Volkov",
+      "people": 8
+    },
+    {
+      "name": "Site labor",
+      "trade": "General site labor",
+      "foreman": "Sam Okafor",
+      "people": 5
+    },
+    {
+      "name": "Roofing crew",
+      "trade": "Roofing",
+      "foreman": "Jonas Meyer",
+      "people": 6
+    },
+    {
+      "name": "Drywall crew",
+      "trade": "Drywall and finishing",
+      "foreman": "Priya Shah",
+      "people": 6
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Dana Whitfield",
+      "role": "Architect",
+      "organisation": "Whitfield Architects (fictional)"
+    },
+    {
+      "name": "Lena Ortiz",
+      "role": "Crane operator",
+      "organisation": "Northline Crane Hire (fictional)"
+    },
+    {
+      "name": "Ridgeline Concrete dispatch",
+      "role": "Supplier",
+      "organisation": "Ridgeline Concrete (fictional)"
+    },
+    {
+      "name": "Plumbing inspector",
+      "role": "Inspector",
+      "organisation": "City building department (fictional)"
+    },
+    {
+      "name": "Superintendent",
+      "role": "Superintendent",
+      "organisation": "General contractor"
+    }
+  ],
+  "inspections": [
+    {
+      "id": "INS-1A-RP",
+      "name": "Rough plumbing 1A",
+      "unit": "1A",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-10-28T13:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-10-28T15:00:00Z"
+    },
+    {
+      "id": "INS-1B-RP",
+      "name": "Rough plumbing 1B",
+      "unit": "1B",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-10-30T13:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-10-30T15:00:00Z"
+    },
+    {
+      "id": "INS-1C-RP",
+      "name": "Rough plumbing 1C",
+      "unit": "1C",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-09T13:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-09T15:20:00Z"
+    },
+    {
+      "id": "INS-1D-RP",
+      "name": "Rough plumbing 1D",
+      "unit": "1D",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-03T13:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-03T15:00:00Z"
+    },
+    {
+      "id": "INS-1E-RP",
+      "name": "Rough plumbing 1E",
+      "unit": "1E",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-04T09:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-04T11:00:00Z"
+    },
+    {
+      "id": "INS-1F-RP",
+      "name": "Rough plumbing 1F",
+      "unit": "1F",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-05T13:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-05T15:00:00Z"
+    },
+    {
+      "id": "INS-1G-RP",
+      "name": "Rough plumbing 1G",
+      "unit": "1G",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-06T14:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-06T16:00:00Z"
+    },
+    {
+      "id": "INS-1H-RP",
+      "name": "Rough plumbing 1H",
+      "unit": "1H",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-10T14:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-10T16:00:00Z"
+    },
+    {
+      "id": "INS-2A-RP",
+      "name": "Rough plumbing 2A",
+      "unit": "2A",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-12T13:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-2B-RP",
+      "name": "Rough plumbing 2B",
+      "unit": "2B",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-16T13:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-2C-RP",
+      "name": "Rough plumbing 2C",
+      "unit": "2C",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-11T10:00:00Z",
+      "status": "passed",
+      "signed_off_at": "2026-11-11T12:00:00Z"
+    },
+    {
+      "id": "INS-2D-RP",
+      "name": "Rough plumbing 2D",
+      "unit": "2D",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-13T09:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-2E-RP",
+      "name": "Rough plumbing 2E",
+      "unit": "2E",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-18T14:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-2F-RP",
+      "name": "Rough plumbing 2F",
+      "unit": "2F",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-19T10:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-2G-RP",
+      "name": "Rough plumbing 2G",
+      "unit": "2G",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-20T14:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-2H-RP",
+      "name": "Rough plumbing 2H",
+      "unit": "2H",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-23T10:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3A-RP",
+      "name": "Rough plumbing 3A",
+      "unit": "3A",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-24T14:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3B-RP",
+      "name": "Rough plumbing 3B",
+      "unit": "3B",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-17T09:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3C-RP",
+      "name": "Rough plumbing 3C",
+      "unit": "3C",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-25T10:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3D-RP",
+      "name": "Rough plumbing 3D",
+      "unit": "3D",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-26T09:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3E-RP",
+      "name": "Rough plumbing 3E",
+      "unit": "3E",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-27T10:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3F-RP",
+      "name": "Rough plumbing 3F",
+      "unit": "3F",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-11-30T10:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3G-RP",
+      "name": "Rough plumbing 3G",
+      "unit": "3G",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-12-01T10:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    },
+    {
+      "id": "INS-3H-RP",
+      "name": "Rough plumbing 3H",
+      "unit": "3H",
+      "inspector": "Plumbing inspector",
+      "scheduled_at": "2026-12-02T14:00:00Z",
+      "status": "scheduled",
+      "signed_off_at": null
+    }
+  ],
+  "resources": [
+    {
+      "id": "R-trucks",
+      "item": "Concrete trucks",
+      "kind": "delivery",
+      "date": "2026-11-13T06:00:00Z",
+      "planned": 3,
+      "actual": null,
+      "unit": "trucks",
+      "task": "T-040"
+    },
+    {
+      "id": "R-crane",
+      "item": "Mobile crane",
+      "kind": "equipment",
+      "date": "2026-11-13T07:00:00Z",
+      "planned": 1,
+      "actual": null,
+      "unit": "count",
+      "task": "T-050"
+    },
+    {
+      "id": "R-framing",
+      "item": "Framing crew",
+      "kind": "crew",
+      "date": "2026-11-13T06:00:00Z",
+      "planned": 6,
+      "actual": null,
+      "unit": "people",
+      "task": "T-031"
+    },
+    {
+      "id": "R-electrical",
+      "item": "Electrical crew",
+      "kind": "crew",
+      "date": "2026-11-13T06:00:00Z",
+      "planned": 4,
+      "actual": null,
+      "unit": "people",
+      "task": null
+    },
+    {
+      "id": "R-concrete",
+      "item": "Concrete crew",
+      "kind": "crew",
+      "date": "2026-11-13T06:00:00Z",
+      "planned": 8,
+      "actual": null,
+      "unit": "people",
+      "task": "T-040"
+    },
+    {
+      "id": "R-roofing",
+      "item": "Roofing crew",
+      "kind": "crew",
+      "date": "2026-11-13T07:00:00Z",
+      "planned": 6,
+      "actual": null,
+      "unit": "people",
+      "task": "T-050"
+    },
+    {
+      "id": "R-drywall",
+      "item": "Drywall crew",
+      "kind": "crew",
+      "date": "2026-11-13T07:00:00Z",
+      "planned": 6,
+      "actual": null,
+      "unit": "people",
+      "task": null
+    },
+    {
+      "id": "R-lift",
+      "item": "Scissor lift",
+      "kind": "equipment",
+      "date": "2026-11-16T06:00:00Z",
+      "planned": 2,
+      "actual": null,
+      "unit": "count",
+      "task": null
+    },
+    {
+      "id": "R-drywall-l3",
+      "item": "Drywall board level 3",
+      "kind": "delivery",
+      "date": "2026-11-16T07:00:00Z",
+      "planned": 420,
+      "actual": null,
+      "unit": "sheets",
+      "task": "T-262"
+    },
+    {
+      "id": "R-lumber-l3",
+      "item": "Framing lumber level 3",
+      "kind": "delivery",
+      "date": "2026-11-18T06:00:00Z",
+      "planned": 5,
+      "actual": null,
+      "unit": "loads",
+      "task": "T-260"
+    },
+    {
+      "id": "R-underlayment",
+      "item": "Roofing underlayment",
+      "kind": "delivery",
+      "date": "2026-11-18T07:00:00Z",
+      "planned": 40,
+      "actual": null,
+      "unit": "rolls",
+      "task": "T-070"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+.drawings { display: flex; flex-direction: column; gap: var(--s5); min-width: 0; }
+.drawings-eyebrow { font-size: var(--t-sm); color: var(--text-muted); margin-bottom: var(--s2); }
+.drawings-layout { display: grid; grid-template-columns: minmax(var(--w-thumb), .7fr) minmax(0, 2fr); gap: var(--s5); align-items: start; }
+.drawings-register { background: var(--surface); border: var(--border); border-radius: var(--r-lg); overflow: hidden; min-width: 0; }
+.drawings-register-head { display: grid; gap: var(--s4); padding: var(--s4); }
+.drawings-register-head h2 { display: flex; justify-content: space-between; font-size: var(--t-lg); }
+.drawings-search, .drawings-revision-select, .drawings-zoom { display: flex; flex-direction: column; gap: var(--s2); color: var(--text-muted); font-size: var(--t-md); }
+.drawings-search input, .drawings-revision-select select, .drawings-zoom select { width: 100%; min-width: 0; border: var(--border); background: var(--surface); color: var(--text); padding: var(--s2) var(--s3); border-radius: var(--r); font: inherit; min-height: var(--h-touch); }
+.drawings-list, .drawings-related, .drawings-history { margin: 0; padding: 0; list-style: none; }
+.drawings-sheet { width: 100%; text-align: left; display: flex; flex-direction: column; gap: var(--s2); padding: var(--s4); border: 0; border-top: var(--border); background: var(--surface); color: var(--text); font: inherit; cursor: pointer; overflow-wrap: anywhere; transition: background var(--normal) var(--ease); }
+.drawings-sheet:hover { background: var(--surface-2); }
+.drawings-sheet[aria-pressed="true"] { background: var(--accent-soft); box-shadow: inset var(--s1) 0 var(--accent); }
+.drawings-sheet-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s3); justify-content: space-between; width: 100%; }
+.drawings-revision-tag { color: var(--text-muted); font-size: var(--t-md); }
+.drawings-detail { min-width: 0; display: flex; flex-direction: column; gap: var(--s4); }
+.drawings-detail-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--s4); }
+.drawings-detail-head > div { min-width: 0; }
+.drawings-detail-head h2 { overflow-wrap: anywhere; font-size: var(--t-xl); }
+.drawings-detail-head h2 span { display: block; font-size: var(--t-lg); margin-top: var(--s2); font-weight: var(--w-regular); }
+.drawings-view-controls { display: flex; align-items: end; flex-wrap: wrap; gap: var(--s3); padding: var(--s3); background: var(--surface); }
+.drawings-file-link { margin-left: auto; padding-block: var(--s3); }
+.drawings-detail .immersive { border: var(--border); border-radius: var(--r-lg); overflow: hidden; }
+.drawings-detail .immersive-expanded { border: 0; border-radius: 0; }
+.drawings-preview { height: min(58vh, calc(var(--w-card) * 2)); min-height: var(--w-card); background: var(--sheet-shade); }
+.drawings-paper-scroll { height: 100%; width: 100%; overflow: auto; }
+.drawings-paper-scroll img { display: block; max-width: none; height: auto; min-height: 0; object-fit: contain; margin-inline: auto; }
+.drawings-pdf { width: 100%; height: 100%; border: 0; background: var(--sheet); color: var(--ink); }
+.drawings-geometry { height: 100%; width: 100%; touch-action: none; cursor: grab; background: var(--sheet); }
+.drawings-unavailable { padding: var(--s5); color: var(--text-muted); }
+.drawings-geometry-note { font-size: var(--t-md); }
+.drawings-context { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s5); }
+.drawings-context-section { padding-top: var(--s4); border-top: var(--border); min-width: 0; overflow-wrap: anywhere; display: flex; flex-direction: column; gap: var(--s3); }
+.drawings-context-section h3 { font-size: var(--t-lg); }
+.drawings-history { display: flex; flex-direction: column; gap: var(--s3); }
+.drawings-history li { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: var(--s2) var(--s3); }
+.drawings-history time { grid-column: 1 / -1; }
+.drawings-history button { font: inherit; color: var(--text); border: 0; background: transparent; padding: 0; text-decoration: underline; text-decoration-color: var(--accent); cursor: pointer; min-height: var(--h-control); }
+.drawings-history button[aria-current="true"] { font-weight: var(--w-strong); }
+.drawings-related { display: flex; flex-direction: column; gap: var(--s4); }
+.drawings-related li { display: flex; flex-direction: column; gap: var(--s2); }
+.drawings-confirmed { color: var(--success); }
+.drawings-pending { color: var(--warning); }
+@media (max-width: 900px) { .drawings-layout { grid-template-columns: 1fr; } .drawings-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--w-thumb), 1fr)); max-height: calc(var(--w-card) * 1.3); overflow: auto; } }
+@media (max-width: 600px) { .drawings-context { grid-template-columns: 1fr; } .drawings-file-link { margin-left: 0; } .drawings-preview { height: 55vh; } }
+@media (prefers-reduced-motion: reduce) { .drawings-sheet { transition: none; } }

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22000 13000" role="img" aria-label="A-201 Rev B to Rev C, red removed, green added, DEMO DATA">
+<rect x="0" y="0" width="22000" height="13000" fill="#ffffff"/>
+<line x1="2000" y1="2500" x2="3600" y2="2500" stroke="#252525" stroke-width="250"/>
+<line x1="5400" y1="2500" x2="13600" y2="2500" stroke="#252525" stroke-width="250"/>
+<line x1="15400" y1="2500" x2="20000" y2="2500" stroke="#252525" stroke-width="250"/>
+<line x1="3600" y1="2500" x2="5400" y2="2500" stroke="#777777" stroke-width="30"/>
+<line x1="13600" y1="2500" x2="15400" y2="2500" stroke="#777777" stroke-width="30"/>
+<line x1="20000" y1="2500" x2="20000" y2="10500" stroke="#252525" stroke-width="250"/>
+<line x1="2000" y1="10500" x2="3600" y2="10500" stroke="#252525" stroke-width="250"/>
+<line x1="5400" y1="10500" x2="13600" y2="10500" stroke="#252525" stroke-width="250"/>
+<line x1="15400" y1="10500" x2="20000" y2="10500" stroke="#252525" stroke-width="250"/>
+<line x1="3600" y1="10500" x2="5400" y2="10500" stroke="#777777" stroke-width="30"/>
+<line x1="13600" y1="10500" x2="15400" y2="10500" stroke="#777777" stroke-width="30"/>
+<line x1="2000" y1="2500" x2="2000" y2="10500" stroke="#252525" stroke-width="250"/>
+<line x1="11000" y1="2500" x2="11000" y2="6000" stroke="#252525" stroke-width="150"/>
+<line x1="11000" y1="7000" x2="11000" y2="10500" stroke="#252525" stroke-width="150"/>
+<line x1="2000" y1="6000" x2="3700" y2="6000" stroke="#252525" stroke-width="150"/>
+<line x1="4600" y1="6000" x2="13600" y2="6000" stroke="#252525" stroke-width="150"/>
+<line x1="14500" y1="6000" x2="20000" y2="6000" stroke="#252525" stroke-width="150"/>
+<line x1="3700" y1="6000" x2="3700" y2="6900" stroke="#252525" stroke-width="20"/>
+<path d="M 3700 6900 A 900 900 0 0 0 4600 6000" fill="none" stroke="#777777" stroke-width="10"/>
+<line x1="13600" y1="6000" x2="13600" y2="6900" stroke="#252525" stroke-width="20"/>
+<path d="M 13600 6900 A 900 900 0 0 0 14500 6000" fill="none" stroke="#777777" stroke-width="10"/>
+<line x1="2000" y1="7000" x2="3700" y2="7000" stroke="#252525" stroke-width="150"/>
+<line x1="4600" y1="7000" x2="13600" y2="7000" stroke="#252525" stroke-width="150"/>
+<line x1="14500" y1="7000" x2="20000" y2="7000" stroke="#252525" stroke-width="150"/>
+<line x1="3700" y1="7000" x2="3700" y2="7900" stroke="#252525" stroke-width="20"/>
+<path d="M 3700 7900 A 900 900 0 0 0 4600 7000" fill="none" stroke="#777777" stroke-width="10"/>
+<line x1="13600" y1="7000" x2="13600" y2="7900" stroke="#252525" stroke-width="20"/>
+<path d="M 13600 7900 A 900 900 0 0 0 14500 7000" fill="none" stroke="#777777" stroke-width="10"/>
+<line x1="6000" y1="2500" x2="6000" y2="4700" stroke="#252525" stroke-width="100"/>
+<line x1="11000" y1="3450" x2="11600" y2="3450" stroke="#1b7a3d" stroke-width="100"/>
+<line x1="12500" y1="3450" x2="20000" y2="3450" stroke="#1b7a3d" stroke-width="100"/>
+<line x1="11600" y1="3450" x2="11600" y2="4350" stroke="#1b7a3d" stroke-width="20"/>
+<path d="M 11600 4350 A 900 900 0 0 0 12500 3450" fill="none" stroke="#777777" stroke-width="10"/>
+<line x1="6000" y1="8300" x2="7500" y2="8300" stroke="#252525" stroke-width="100"/>
+<line x1="16000" y1="9000" x2="17500" y2="9000" stroke="#252525" stroke-width="100"/>
+<line x1="11000" y1="3750" x2="11600" y2="3750" stroke="#c62828" stroke-width="100" stroke-dasharray="300 200"/>
+<line x1="12500" y1="3750" x2="20000" y2="3750" stroke="#c62828" stroke-width="100" stroke-dasharray="300 200"/>
+<line x1="11600" y1="3750" x2="11600" y2="4650" stroke="#c62828" stroke-width="20"/>
+<path d="M 11600 4650 A 900 900 0 0 0 12500 3750" fill="none" stroke="#777777" stroke-width="10"/>
+<text x="7800" y="4900" font-family="Arial, sans-serif" font-size="300" fill="#5f5f5a" text-anchor="middle" dominant-baseline="middle">3A</text>
+<text x="15500" y="5300" font-family="Arial, sans-serif" font-size="300" fill="#5f5f5a" text-anchor="middle" dominant-baseline="middle">3B</text>
+<text x="7800" y="9700" font-family="Arial, sans-serif" font-size="300" fill="#5f5f5a" text-anchor="middle" dominant-baseline="middle">3C</text>
+<text x="15500" y="8100" font-family="Arial, sans-serif" font-size="300" fill="#5f5f5a" text-anchor="middle" dominant-baseline="middle">3D</text>
+<text x="10400" y="6500" font-family="Arial, sans-serif" font-size="200" fill="#5f5f5a" text-anchor="middle" dominant-baseline="middle">LEVEL 3 CORRIDOR</text>
+<rect x="9900" y="2350" width="11200" height="2500" rx="150" fill="none" stroke="#1d5bd8" stroke-width="40"/>
+<text x="300" y="12700" font-family="Arial, sans-serif" font-size="260" fill="#5f5f5a">A-201 Rev B to Rev C  /  DEMO DATA</text>
+</svg>

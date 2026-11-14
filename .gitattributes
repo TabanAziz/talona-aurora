@@ -1,0 +1,5 @@
+# scripts keep LF on Windows checkouts, otherwise bash fails on the carriage returns
+scripts/** text eol=lf
+*.sh text eol=lf
+# the kit's own evidence logs stay in the history, not in the zip that is copied into the hackathon repo
+kittests/logs export-ignore

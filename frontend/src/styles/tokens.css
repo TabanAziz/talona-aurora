@@ -1,0 +1,88 @@
+/* Project materials, typography and motion. Raw visual values live here. */
+:root {
+  color-scheme: light;
+  --bg: #f3f4f7; --surface: #ffffff; --surface-2: #eaecf1; --soft: #f8f9fb;
+  --text: #1b1d24; --text-muted: #626672; --text-faint: #737783; --line: #dfe2e9;
+  /* orange is too light for text on white, so accent fills carry ink text and links are ink with an orange underline */
+  --focus: #ba4c00; --accent: #ff6a00; --accent-text: #1c1c1a; --accent-soft: #ffe9d6;
+  --danger: #c62828; --warning: #7d5c00; --success: #1b7a3d;
+  --danger-soft: #fbeceb; --warning-soft: #fdf4c9; --success-soft: #e8f3eb;
+  --danger-line: #efc6c2; --warning-line: #e3cd78;
+  --danger-text: #ffffff;
+  --region: #ff6a00; --region-fill: rgb(255 106 0 / .10); --sheet: #ffffff;
+  /* drawings are ink on white paper in both themes, so these three do not change in the dark theme */
+  --ink: #1c1c1a; --ink-muted: #5a5a54; --sheet-shade: #e4e3de;
+  --model-wall: #b9b5a9; --model-wall-top: #5e635f;
+  --model-inner: #d2c3ae; --model-inner-top: #847560;
+  --model-partition: #9ebdc7; --model-partition-top: #365f6c;
+  --model-slab: #e2ddd1; --model-edge: #34434a; --model-glass: #6fa9c2;
+  --model-roof: #80929a; --model-ground: #e6e5df;
+  /* a printed QR code must stay black on white in both themes, or a phone camera cannot read it */
+  --qr-paper: #ffffff; --qr-ink: #000000;
+
+  /* the top bar stays dark in both themes */
+  --bar-bg: #1c1c1a; --bar-text: #ffffff; --bar-muted: #b9b9b2; --bar-icon: #9d9d96; --bar-line: #3d3d39;
+
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
+  --pad-panel: 20px; --pad-card: 28px; --pad-tab: 14px;
+
+  --font: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --t-xs: 12px; --t-sm: 14px; --t-md: 16px; --t-lg: 18px; --t-xl: 24px; --t-2xl: 32px; --t-3xl: 40px;
+  --lh-tight: 1.3; --lh: 1.45;
+  --w-regular: 400; --w-medium: 500; --w-strong: 600; --w-bold: 700;
+
+  /* Control and content radii share a nested, rounded hierarchy. */
+  --r-sm: 8px; --r: 16px; --r-lg: 24px; --r-full: 999px;
+  --shadow-1: 0 2px 8px rgb(24 31 48 / .04); --shadow-2: 0 8px 24px rgb(0 0 0 / .12);
+  --border: 1px solid var(--line);
+  --ring: 2px;
+  --underline: 2px;
+
+  --h-control: 44px; --h-touch: 44px; --h-bar: 24px; --h-top: 56px; --h-tab-line: 3px; --h-badge: 22px;
+  --icon: 16px; --icon-lg: 20px;
+  --w-page: 1600px; --w-phone: 420px; --w-side: 320px; --w-label: 260px; --w-thumb: 240px; --w-card: 260px; --w-read: 65ch;
+  --w-record: 352px; --w-rail: 312px;
+
+  --z-sticky: 10; --z-dropdown: 20; --z-overlay: 30; --z-modal: 40; --z-toast: 50;
+  --ease: cubic-bezier(.2, .7, .2, 1); --fast: 150ms; --normal: 200ms;
+}
+
+/* First pass only, so the toggle keeps working; the dark theme is finished in its own feature. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121210; --surface: #1c1c1a; --surface-2: #26261f; --soft: #20201d;
+  --text: #ecece8; --text-muted: #b0b0a8; --text-faint: #8c8c85; --line: #3d3d39;
+  --focus: #ff9b52; --accent: #ff7a1a; --accent-text: #1c1c1a; --accent-soft: #3d2410;
+  --danger: #ef6b6b; --warning: #e8c45a; --success: #4cc38a;
+  --danger-soft: #3a1d20; --warning-soft: #3a3010; --success-soft: #15301f;
+  --danger-line: #6b2b2b; --warning-line: #6b5a20;
+  --danger-text: #1c1c1a;
+  --region: #ff7a1a; --region-fill: rgb(255 122 26 / .16);
+  --bar-bg: #0b0b0a; --bar-line: #2e2e2a;
+  --shadow-2: 0 8px 24px rgb(0 0 0 / .5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+:root {
+  --glass-bg: rgb(255 255 255 / .78); --glass-solid: #fafbfe; --glass-border: rgb(255 255 255 / .9);
+  --glass-shadow: 0 8px 32px rgb(28 36 56 / .08), inset 0 1px 0 rgb(255 255 255 / .9);
+  --glass-highlight: rgb(255 255 255 / .95); --glass-blur: 24px;
+  --selection: rgb(255 106 0 / .10); --route-distance: 8px;
+  --motion-fast: 160ms; --motion-normal: 280ms; --motion-slow: 420ms;
+  --shell-max: 1480px; --shell-space: 18px; --shell-top: 64px;
+  --popover-width: 296px; --menu-shadow: 0 18px 64px rgb(28 36 56 / .16);
+}
+:root[data-theme="dark"] {
+  --bg: #11141b; --surface: #1b1f29; --surface-2: #252a36; --soft: #1e2330;
+  --text: #f2f3f8; --text-muted: #b1b7c6; --text-faint: #949dad; --line: #343c4e;
+  --glass-bg: rgb(31 37 50 / .85); --glass-solid: #252b38; --glass-border: rgb(255 255 255 / .13);
+  --glass-highlight: rgb(255 255 255 / .16); --glass-shadow: 0 8px 32px rgb(0 0 0 / .24), inset 0 1px 0 rgb(255 255 255 / .10);
+  --selection: rgb(255 122 26 / .16); --menu-shadow: 0 18px 64px rgb(0 0 0 / .4);
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  :root { --glass-bg: var(--surface); --glass-border: var(--line); --glass-blur: 0px; }
+}

@@ -1,0 +1,83 @@
+/* One band that says whether a printed label may still be built from. */
+.sheet-view { display: flex; flex-direction: column; gap: var(--s5); min-width: 0; }
+
+.sheet-band {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  width: 100%;
+  min-width: 0;
+  padding: var(--s5);
+  background: var(--surface);
+  border: var(--border);
+  border-inline-start: 6px solid var(--line);
+}
+.sheet-band-superseded { background: var(--danger-soft); border-inline-start-color: var(--danger); }
+.sheet-band-current { background: var(--success-soft); border-inline-start-color: var(--success); }
+.sheet-band-unreported { background: var(--surface-2); border-inline-start-color: var(--text-faint); }
+.sheet-band-unknown { background: var(--surface-2); border-inline-start-color: var(--warning); }
+
+.sheet-band-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s3); }
+.sheet-band-kicker { color: var(--text-muted); font-size: var(--t-sm); font-weight: var(--w-medium); overflow-wrap: anywhere; }
+.sheet-band h1 { font-size: var(--t-2xl); }
+.sheet-band-detail { max-width: var(--w-read); }
+.sheet-band-facts { display: flex; flex-wrap: wrap; gap: var(--s3) var(--s6); margin-top: var(--s2); }
+.sheet-band-facts > div { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; }
+.sheet-band-facts dd { margin: 0; font-size: var(--t-md); font-weight: var(--w-strong); }
+
+.sheet-body { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--s4); align-items: start; }
+.sheet-panel { gap: var(--s3); min-width: 0; }
+.sheet-shot { background: var(--sheet); border: var(--border); }
+.sheet-shot img { width: 100%; height: auto; }
+
+.sheet-crew-list { display: flex; flex-direction: column; gap: var(--s2); }
+.sheet-crew-list li { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; padding-bottom: var(--s2); border-bottom: var(--border); overflow-wrap: anywhere; }
+.sheet-crew-list li:last-child { padding-bottom: 0; border-bottom: 0; }
+
+.sheet-actions { display: flex; flex-wrap: wrap; gap: var(--s3); }
+
+/* The printed label: sheet id, revision and a QR code to the status page. */
+.sheet-label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  width: 100%;
+  max-width: var(--w-phone);
+  margin-inline: auto;
+  padding: var(--s5);
+  background: var(--surface);
+  border: var(--border);
+}
+.sheet-label-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--s1) var(--s3); }
+.sheet-label-brand { font-size: var(--t-lg); font-weight: var(--w-bold); }
+.sheet-label-kicker { color: var(--text-muted); font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 0.08em; }
+.sheet-label-id { font-size: var(--t-3xl); }
+.sheet-label-rev { font-size: var(--t-xl); font-weight: var(--w-bold); }
+.sheet-label-qr { width: min(240px, 100%); aspect-ratio: 1; background: var(--qr-paper); }
+.sheet-label-qr svg { display: block; width: 100%; height: 100%; }
+.sheet-qr-paper { fill: var(--qr-paper); }
+.sheet-qr-ink { fill: var(--qr-ink); }
+.sheet-label-scan { font-size: var(--t-lg); font-weight: var(--w-bold); }
+.sheet-label-url { color: var(--text-muted); font-size: var(--t-sm); overflow-wrap: anywhere; }
+.sheet-label-print { align-self: flex-start; }
+
+@media (max-width: 900px) {
+  .sheet-body { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media print {
+  /* The label goes on 105 by 148 mm card stock hung next to the work. A named page outranks the unnamed A4
+     rules of the notice and rework pages, so the bundle's file order cannot change the label's paper. */
+  @page label { size: 105mm 148mm; margin: 6mm; }
+  .sheet-label { page: label; max-width: none; padding: 0; border: 0; gap: var(--s1); }
+  .app:has(.sheet-label) .topbar, .sheet-label-print, .sheet-label-open, .sheet-label-note { display: none; }
+  .app:has(.sheet-label) { background: Canvas; color: CanvasText; }
+  .app:has(.sheet-label) .page { max-width: none; padding: 0; }
+  .sheet-label a, .sheet-label .muted { color: CanvasText; }
+  .sheet-label-id { font-size: var(--t-xl); }
+  .sheet-label-rev { font-size: var(--t-lg); }
+  .sheet-label-url { font-size: var(--t-xs); line-height: var(--lh-tight); }
+  /* Sized per module, not per box: a longer address needs more modules, and each must stay above 1.5 mm on paper.
+     The longest address the hosted app prints (49 modules with the clear margin) still fits one page at 1.55 mm. */
+  .sheet-label-qr { width: min(calc(var(--qr-size) * 1.55mm), 100%); }
+}

@@ -1,0 +1,26 @@
+{
+  "update_id": 910021,
+  "message": {
+    "message_id": 4221,
+    "from": {
+      "id": 7000003,
+      "is_bot": false,
+      "first_name": "Jonas",
+      "last_name": "Meyer",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794497400,
+    "voice": {
+      "duration": 7,
+      "mime_type": "audio/ogg",
+      "file_id": "AwACAgQAAyEF-demo-e44",
+      "file_unique_id": "AgAD-e44",
+      "file_size": 26877
+    }
+  }
+}

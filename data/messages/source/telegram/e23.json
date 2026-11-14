@@ -1,0 +1,20 @@
+{
+  "update_id": 910009,
+  "message": {
+    "message_id": 4209,
+    "from": {
+      "id": 7000009,
+      "is_bot": false,
+      "first_name": "Sam",
+      "last_name": "Okafor",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794208500,
+    "text": "Site walk is done, fencing and signage are checked."
+  }
+}

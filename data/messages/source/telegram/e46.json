@@ -1,0 +1,20 @@
+{
+  "update_id": 910025,
+  "message": {
+    "message_id": 4225,
+    "from": {
+      "id": 7000005,
+      "is_bot": false,
+      "first_name": "Marco",
+      "last_name": "Ruiz",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794506700,
+    "text": "Heads up, two of my crew are out sick tomorrow. We will be four people on the 3B framing, not six."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "pages": [
+    { "name": "drone", "path": "/drone", "wait": "[data-testid=drone-view]" },
+    { "name": "drone-empty", "path": "/drone?state=empty" },
+    { "name": "drone-error", "path": "/drone?state=error" }
+  ]
+}

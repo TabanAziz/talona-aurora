@@ -1,0 +1,20 @@
+{
+  "update_id": 910039,
+  "message": {
+    "message_id": 4239,
+    "from": {
+      "id": 7000002,
+      "is_bot": false,
+      "first_name": "Hannah",
+      "last_name": "Kowalski",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794297000,
+    "text": "We started rough electrical in 3A this morning."
+  }
+}

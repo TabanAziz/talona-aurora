@@ -1,0 +1,20 @@
+{
+  "update_id": 731400101,
+  "message": {
+    "message_id": 412,
+    "from": {
+      "id": 5550101,
+      "is_bot": false,
+      "first_name": "Lena",
+      "last_name": "Ortiz",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1002233445566,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794502920,
+    "text": "Heads up, the mobile crane gets to site Monday, not Friday. The transport permit slipped."
+  }
+}

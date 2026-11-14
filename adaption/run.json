@@ -1,0 +1,39 @@
+{
+  "source_dataset_id": "98020daa-04d6-4401-9a39-6dc9361cd83e",
+  "source_rows": 60,
+  "uploaded_at": "2026-11-13T19:39:26Z",
+  "estimates": [
+    {
+      "similar_rows": 80,
+      "credits": 1.0,
+      "at": "2026-11-13T19:39:29Z"
+    },
+    {
+      "similar_rows": 240,
+      "credits": 3.0,
+      "at": "2026-11-13T19:55:51Z"
+    }
+  ],
+  "runs": [
+    {
+      "similar_rows": 80,
+      "dataset_id": "94d08c60-97a3-4977-b02f-341eaab8eaa6",
+      "status": "succeeded",
+      "credits": 1.0,
+      "started_at": "2026-11-13T19:39:37Z",
+      "row_count": 140,
+      "finished_at": "2026-11-13T19:51:24Z",
+      "downloaded_rows": 140
+    },
+    {
+      "similar_rows": 240,
+      "dataset_id": "c6ebe9e6-da40-4ead-bed1-b729d73fd0b2",
+      "status": "succeeded",
+      "credits": 3.0,
+      "started_at": "2026-11-13T19:55:58Z",
+      "row_count": 298,
+      "finished_at": "2026-11-13T20:14:59Z",
+      "downloaded_rows": 298
+    }
+  ]
+}

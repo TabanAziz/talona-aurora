@@ -1,0 +1,24 @@
+.drone { display: flex; flex-direction: column; gap: var(--s4); min-width: 0; }
+.drone .page-head { flex-wrap: wrap; }
+.drone .page-head > div:first-child { flex: 1; min-width: min(100%, var(--w-side)); }
+.drone-grid { display: grid; grid-template-columns: minmax(0, 1fr) var(--w-side); gap: var(--s4); align-items: start; }
+.drone-stage, .drone-side, .drone-card { display: flex; flex-direction: column; gap: var(--s3); min-width: 0; }
+.drone-stage { background: var(--surface); border: var(--border); padding: var(--s4); }
+.drone-stage-title { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s2); }
+.drone-3d { position: relative; width: 100%; height: clamp(320px, 44vh, 480px); }
+.drone-3d canvas { display: block; }
+.drone-fallback { min-height: var(--w-thumb); display: flex; align-items: center; padding: var(--s4); background: var(--surface-2); }
+.drone-status { font-size: var(--t-lg); font-weight: var(--w-strong); }
+.drone-status-stopped, .drone-status-error, .drone-failure { color: var(--danger); }
+.drone-status-done, .drone-success { color: var(--success); }
+.drone-choice { display: flex; flex-direction: column; gap: var(--s2); font-weight: var(--w-medium); }
+.drone-choice select { min-height: var(--h-touch); width: 100%; min-width: 0; color: var(--text); background: var(--surface); border: var(--border); padding: var(--s2); font: inherit; }
+.drone-side .button { width: 100%; height: auto; min-height: var(--h-touch); white-space: normal; }
+.drone-check { display: flex; flex-direction: column; gap: var(--s2); }
+.drone-source { display: block; padding-block: var(--s1); overflow-wrap: anywhere; }
+.drone-reports { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--w-label)), 1fr)); gap: var(--s4); list-style: none; margin: 0; padding: 0; }
+.drone-reports li { display: flex; flex-direction: column; gap: var(--s1); border-inline-start: var(--ring) solid var(--line); padding-inline-start: var(--s3); overflow-wrap: anywhere; }
+.drone-evidence { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--w-label)), 1fr)); gap: var(--s4); }
+.drone-evidence blockquote { margin: 0; padding: var(--s3); background: var(--surface-2); border-inline-start: var(--ring) solid var(--warning); overflow-wrap: anywhere; }
+.drone a { min-height: var(--h-bar); display: inline-block; }
+@media (max-width: 1000px) { .drone-grid { grid-template-columns: minmax(0, 1fr); } }

@@ -1,0 +1,20 @@
+{
+  "update_id": 910035,
+  "message": {
+    "message_id": 4235,
+    "from": {
+      "id": 7000001,
+      "is_bot": false,
+      "first_name": "Dmitri",
+      "last_name": "Volkov",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": -1001234567890,
+      "title": "Maple Court site",
+      "type": "supergroup"
+    },
+    "date": 1794571800,
+    "text": "Pour is done and finishing is under way. The curing crew can start at one."
+  }
+}

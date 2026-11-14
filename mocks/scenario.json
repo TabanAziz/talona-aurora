@@ -1,0 +1,1260 @@
+{
+  "project": {
+    "id": "maple-court",
+    "name": "Maple Court",
+    "description": "24-unit multifamily building, wood frame over podium",
+    "units": [
+      "1C",
+      "2A",
+      "2B",
+      "3B"
+    ],
+    "sheets": [
+      "A-201"
+    ],
+    "crews": [
+      "Framing crew",
+      "Electrical crew",
+      "Concrete crew",
+      "Site labor",
+      "Roofing crew",
+      "Drywall crew"
+    ],
+    "demo_data": true
+  },
+  "baseline_record": [
+    {
+      "id": "r-b1",
+      "at": "2026-11-09T08:00:00Z",
+      "kind": "info",
+      "title": "Schedule for week 46 issued",
+      "detail": null,
+      "actor": "Superintendent",
+      "source_event_ids": [],
+      "refs": {}
+    },
+    {
+      "id": "r-b2",
+      "at": "2026-11-09T15:20:00Z",
+      "kind": "change",
+      "title": "1C rough plumbing inspection passed",
+      "detail": null,
+      "actor": "Plumbing inspector",
+      "source_event_ids": [],
+      "refs": {
+        "unit": "1C"
+      }
+    },
+    {
+      "id": "r-b3",
+      "at": "2026-11-10T07:30:00Z",
+      "kind": "info",
+      "title": "A-201 Rev B is the current level 3 floor plan",
+      "detail": null,
+      "actor": "Architect",
+      "source_event_ids": [],
+      "refs": {
+        "sheet": "A-201"
+      }
+    }
+  ],
+  "plan": {
+    "tasks": [
+      {
+        "id": "T-031",
+        "name": "Frame partitions 3B",
+        "unit": "3B",
+        "crew": "Framing crew",
+        "start": "2026-11-13T06:00:00Z",
+        "end": "2026-11-13T14:00:00Z",
+        "depends_on": [],
+        "requires_inspection": null,
+        "status": "planned"
+      },
+      {
+        "id": "T-032",
+        "name": "Rough electrical 3B",
+        "unit": "3B",
+        "crew": "Electrical crew",
+        "start": "2026-11-16T06:00:00Z",
+        "end": "2026-11-16T14:00:00Z",
+        "depends_on": [
+          "T-031"
+        ],
+        "requires_inspection": null,
+        "status": "planned"
+      },
+      {
+        "id": "T-040",
+        "name": "Podium topping pour",
+        "unit": null,
+        "crew": "Concrete crew",
+        "start": "2026-11-13T06:00:00Z",
+        "end": "2026-11-13T09:00:00Z",
+        "depends_on": [],
+        "requires_inspection": null,
+        "status": "planned"
+      },
+      {
+        "id": "T-041",
+        "name": "Curing protection",
+        "unit": null,
+        "crew": "Site labor",
+        "start": "2026-11-13T09:00:00Z",
+        "end": "2026-11-13T11:00:00Z",
+        "depends_on": [
+          "T-040"
+        ],
+        "requires_inspection": null,
+        "status": "planned"
+      },
+      {
+        "id": "T-050",
+        "name": "Roof truss lift",
+        "unit": null,
+        "crew": "Roofing crew",
+        "start": "2026-11-13T07:00:00Z",
+        "end": "2026-11-13T15:00:00Z",
+        "depends_on": [],
+        "requires_inspection": null,
+        "status": "planned"
+      },
+      {
+        "id": "T-051",
+        "name": "Roof sheathing",
+        "unit": null,
+        "crew": "Roofing crew",
+        "start": "2026-11-16T07:00:00Z",
+        "end": "2026-11-17T15:00:00Z",
+        "depends_on": [
+          "T-050"
+        ],
+        "requires_inspection": null,
+        "status": "planned"
+      },
+      {
+        "id": "T-060",
+        "name": "Close walls 2A",
+        "unit": "2A",
+        "crew": "Drywall crew",
+        "start": "2026-11-13T07:00:00Z",
+        "end": "2026-11-13T15:00:00Z",
+        "depends_on": [],
+        "requires_inspection": "Rough plumbing 2A",
+        "status": "planned"
+      },
+      {
+        "id": "T-061",
+        "name": "Close walls 1C",
+        "unit": "1C",
+        "crew": "Drywall crew",
+        "start": "2026-11-13T07:00:00Z",
+        "end": "2026-11-13T15:00:00Z",
+        "depends_on": [],
+        "requires_inspection": "Rough plumbing 1C",
+        "status": "planned"
+      }
+    ],
+    "resources": [
+      {
+        "id": "R-trucks",
+        "item": "Concrete trucks",
+        "kind": "delivery",
+        "date": "2026-11-13T06:00:00Z",
+        "planned": 3,
+        "actual": null,
+        "unit": "trucks"
+      },
+      {
+        "id": "R-crane",
+        "item": "Mobile crane",
+        "kind": "equipment",
+        "date": "2026-11-13T07:00:00Z",
+        "planned": 1,
+        "actual": null,
+        "unit": "count"
+      },
+      {
+        "id": "R-framing",
+        "item": "Framing crew",
+        "kind": "crew",
+        "date": "2026-11-13T06:00:00Z",
+        "planned": 6,
+        "actual": null,
+        "unit": "people"
+      }
+    ],
+    "handover": "2026-12-18T16:00:00Z"
+  },
+  "events": [
+    {
+      "id": "e01",
+      "channel": "email",
+      "sent_at": "2026-11-10T09:12:00Z",
+      "received_at": "2026-11-10T09:12:20Z",
+      "sender": "Dana Whitfield",
+      "sender_role": "Architect",
+      "thread": null,
+      "subject": "A-201 Rev C issued",
+      "text": "Attached A-201 Rev C. The partition between bedroom and living room in 3B shifts 300 mm north. Rev C replaces Rev B.",
+      "transcript": null,
+      "attachments": [
+        {
+          "kind": "pdf",
+          "name": "A-201-RevC.pdf",
+          "url": "/media/mock/a201-rev-c.svg",
+          "media_type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "id": "e02",
+      "channel": "telegram",
+      "sent_at": "2026-11-12T16:05:00Z",
+      "received_at": "2026-11-12T16:05:04Z",
+      "sender": "Marco Ruiz",
+      "sender_role": "Framing foreman",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "",
+      "transcript": null,
+      "attachments": [
+        {
+          "kind": "audio",
+          "name": "voice-note.ogg",
+          "url": null,
+          "media_type": "audio/ogg"
+        }
+      ]
+    },
+    {
+      "id": "e02-confirm",
+      "channel": "telegram",
+      "sent_at": "2026-11-12T16:06:00Z",
+      "received_at": "2026-11-12T16:06:02Z",
+      "sender": "Marco Ruiz",
+      "sender_role": "Framing foreman",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "Confirm",
+      "transcript": null,
+      "attachments": []
+    },
+    {
+      "id": "e03",
+      "channel": "email",
+      "sent_at": "2026-11-12T16:40:00Z",
+      "received_at": "2026-11-12T16:40:30Z",
+      "sender": "Ridgeline Concrete dispatch",
+      "sender_role": "Supplier",
+      "thread": null,
+      "subject": "Friday pour: 4 trucks",
+      "text": "Confirming Friday's podium topping pour. We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00.",
+      "transcript": null,
+      "attachments": []
+    },
+    {
+      "id": "e04",
+      "channel": "telegram",
+      "sent_at": "2026-11-12T17:02:00Z",
+      "received_at": "2026-11-12T17:02:03Z",
+      "sender": "Lena Ortiz",
+      "sender_role": "Crane operator",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "Heads up, the mobile crane gets to site Monday, not Friday. The transport permit slipped.",
+      "transcript": null,
+      "attachments": []
+    },
+    {
+      "id": "e05",
+      "channel": "schedule",
+      "sent_at": "2026-11-12T17:30:00Z",
+      "received_at": "2026-11-12T17:30:00Z",
+      "sender": "Schedule update",
+      "sender_role": null,
+      "thread": null,
+      "subject": null,
+      "text": "Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00.",
+      "transcript": null,
+      "attachments": []
+    },
+    {
+      "id": "e06",
+      "channel": "telegram",
+      "sent_at": "2026-11-13T06:40:00Z",
+      "received_at": "2026-11-13T06:40:03Z",
+      "sender": "Priya Shah",
+      "sender_role": "Drywall foreman",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "",
+      "transcript": null,
+      "attachments": [
+        {
+          "kind": "audio",
+          "name": "voice-note.ogg",
+          "url": null,
+          "media_type": "audio/ogg"
+        }
+      ]
+    },
+    {
+      "id": "e06-confirm",
+      "channel": "telegram",
+      "sent_at": "2026-11-13T06:41:00Z",
+      "received_at": "2026-11-13T06:41:02Z",
+      "sender": "Priya Shah",
+      "sender_role": "Drywall foreman",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "Confirm",
+      "transcript": null,
+      "attachments": []
+    },
+    {
+      "id": "e07",
+      "channel": "telegram",
+      "sent_at": "2026-11-13T07:15:00Z",
+      "received_at": "2026-11-13T07:15:02Z",
+      "sender": "Priya Shah",
+      "sender_role": "Drywall foreman",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "What about 2B, can we close those walls?",
+      "transcript": null,
+      "attachments": []
+    },
+    {
+      "id": "e08",
+      "channel": "telegram",
+      "sent_at": "2026-11-13T07:20:00Z",
+      "received_at": "2026-11-13T07:20:02Z",
+      "sender": "Priya Shah",
+      "sender_role": "Drywall foreman",
+      "thread": "Maple Court site",
+      "subject": null,
+      "text": "And 1C, can we close the walls there?",
+      "transcript": null,
+      "attachments": []
+    }
+  ],
+  "by_event": {
+    "e01": {
+      "facts": [
+        {
+          "id": "f-e01-1",
+          "event_id": "e01",
+          "type": "drawing_revision",
+          "subject": "A-201",
+          "data": {
+            "sheet": "A-201",
+            "revision": "C",
+            "replaces": "B",
+            "units": [
+              "3B"
+            ],
+            "change": "Partition in 3B moved 300 mm north"
+          },
+          "confidence": 0.97,
+          "quote": "Attached A-201 Rev C. The partition between bedroom and living room in 3B shifts 300 mm north. Rev C replaces Rev B."
+        }
+      ],
+      "record_update": {
+        "entries": [
+          {
+            "id": "r-e01",
+            "at": "2026-11-10T09:12:20Z",
+            "kind": "change",
+            "title": "A-201 Rev C issued, replaces Rev B",
+            "detail": "Partition in 3B moved 300 mm north.",
+            "actor": "Dana Whitfield (Architect)",
+            "source_event_ids": [
+              "e01"
+            ],
+            "refs": {
+              "sheet": "A-201",
+              "unit": "3B",
+              "diff": "d-a201-b-c"
+            }
+          }
+        ],
+        "waiting_open": [
+          {
+            "id": "w-ack-framing",
+            "on": "Framing crew",
+            "what": "Confirm A-201 Rev C",
+            "since": "2026-11-10T09:13:00Z",
+            "due": "2026-11-13T06:00:00Z",
+            "status": "open",
+            "source_event_ids": [
+              "e01"
+            ]
+          }
+        ],
+        "waiting_close": []
+      },
+      "diffs": [
+        {
+          "id": "d-a201-b-c",
+          "sheet": "A-201",
+          "title": "Level 3 floor plan",
+          "from_rev": "B",
+          "to_rev": "C",
+          "before_url": "/media/mock/a201-rev-b.svg",
+          "after_url": "/media/mock/a201-rev-c.svg",
+          "overlay_url": "/media/mock/a201-overlay.svg",
+          "regions": [
+            {
+              "x": 0.5,
+              "y": 0.29,
+              "w": 0.2,
+              "h": 0.12,
+              "kind": "moved",
+              "label": "Partition 3B, 300 mm north"
+            }
+          ],
+          "summary": "One wall moved in unit 3B.",
+          "before_geometry_url": "/media/mock/a201-rev-b.geometry.json",
+          "after_geometry_url": "/media/mock/a201-rev-c.geometry.json"
+        }
+      ],
+      "outbox": [
+        {
+          "id": "o-e01-framing",
+          "channel": "telegram",
+          "to": "Framing crew",
+          "text": "A-201 Rev C replaces Rev B. The partition in 3B moved 300 mm north. Please confirm you have Rev C.",
+          "media_url": "/media/mock/a201-crop.svg",
+          "buttons": [
+            "Confirmed",
+            "I have a question"
+          ],
+          "reason": "New revision changes planned framing work in 3B",
+          "in_reply_to": null,
+          "created_at": "2026-11-10T09:13:00Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "e02": {
+      "transcript": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+      "facts": [
+        {
+          "id": "f-e02-1",
+          "event_id": "e02",
+          "type": "work_planned",
+          "subject": "3B partitions",
+          "data": {
+            "unit": "3B",
+            "crew": "Framing crew",
+            "task": "T-031",
+            "sheet": "A-201",
+            "revision": "B",
+            "start": "2026-11-13T06:00:00Z"
+          },
+          "confidence": 0.93,
+          "quote": "Starting the 3B partitions tomorrow at seven, per A-201 rev B."
+        }
+      ],
+      "flags": {
+        "rules_drawings": [
+          {
+            "id": "f-stale-3b",
+            "type": "stale_drawing",
+            "severity": "high",
+            "title": "Framing plans to build 3B from an outdated drawing",
+            "summary": "Marco Ruiz announced the 3B partitions per A-201 Rev B. Rev C replaced Rev B on Tuesday and moved that partition 300 mm north. The framing crew has not confirmed Rev C.",
+            "status": "open",
+            "raised_at": "2026-11-12T16:05:10Z",
+            "work_starts_at": "2026-11-13T06:00:00Z",
+            "affected": {
+              "unit": "3B",
+              "crew": "Framing crew",
+              "task": "T-031",
+              "sheet": "A-201"
+            },
+            "evidence": [
+              {
+                "event_id": "e01",
+                "channel": "email",
+                "sender": "Dana Whitfield",
+                "at": "2026-11-10T09:12:00Z",
+                "quote": "Attached A-201 Rev C. The partition between bedroom and living room in 3B shifts 300 mm north. Rev C replaces Rev B.",
+                "attachment_url": "/media/mock/a201-rev-c.svg"
+              },
+              {
+                "event_id": "e02",
+                "channel": "telegram",
+                "sender": "Marco Ruiz",
+                "at": "2026-11-12T16:05:00Z",
+                "quote": "Starting the 3B partitions tomorrow at seven, per A-201 rev B.",
+                "attachment_url": null
+              }
+            ],
+            "numbers": null,
+            "diff_id": "d-a201-b-c",
+            "proposal_id": null
+          }
+        ]
+      }
+    },
+    "e03": {
+      "facts": [
+        {
+          "id": "f-e03-1",
+          "event_id": "e03",
+          "type": "delivery_actual",
+          "subject": "Concrete trucks",
+          "data": {
+            "item": "Concrete trucks",
+            "planned": 3,
+            "actual": 4,
+            "date": "2026-11-13"
+          },
+          "confidence": 0.95,
+          "quote": "We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00."
+        }
+      ],
+      "record_update": {
+        "entries": [
+          {
+            "id": "r-e03",
+            "at": "2026-11-12T16:40:30Z",
+            "kind": "change",
+            "title": "Concrete delivery changed: 4 trucks instead of 3",
+            "detail": "Friday podium topping pour.",
+            "actor": "Ridgeline Concrete dispatch (Supplier)",
+            "source_event_ids": [
+              "e03"
+            ],
+            "refs": {
+              "task": "T-040"
+            }
+          }
+        ],
+        "waiting_open": [],
+        "waiting_close": []
+      },
+      "flags": {
+        "rules_resources": [
+          {
+            "id": "f-trucks",
+            "type": "plan_deviation",
+            "severity": "medium",
+            "title": "Concrete delivery is 4 trucks, the plan has 3",
+            "summary": "The pour takes about 45 minutes longer than planned (ASSUMED: 45 minutes per truck). The task after the pour starts later.",
+            "status": "open",
+            "raised_at": "2026-11-12T16:40:40Z",
+            "work_starts_at": "2026-11-13T06:00:00Z",
+            "affected": {
+              "task": "T-040",
+              "crew": "Concrete crew"
+            },
+            "evidence": [
+              {
+                "event_id": "e03",
+                "channel": "email",
+                "sender": "Ridgeline Concrete dispatch",
+                "at": "2026-11-12T16:40:00Z",
+                "quote": "We are sending 4 trucks instead of 3, the mix volume was revised. First truck on site 7:00.",
+                "attachment_url": null
+              }
+            ],
+            "numbers": {
+              "planned": 3,
+              "actual": 4
+            },
+            "diff_id": null,
+            "proposal_id": null
+          }
+        ]
+      }
+    },
+    "e04": {
+      "facts": [
+        {
+          "id": "f-e04-1",
+          "event_id": "e04",
+          "type": "equipment_actual",
+          "subject": "Mobile crane",
+          "data": {
+            "item": "Mobile crane",
+            "planned_date": "2026-11-13",
+            "actual_date": "2026-11-16"
+          },
+          "confidence": 0.94,
+          "quote": "Heads up, the mobile crane gets to site Monday, not Friday. The transport permit slipped."
+        }
+      ],
+      "record_update": {
+        "entries": [
+          {
+            "id": "r-e04",
+            "at": "2026-11-12T17:02:03Z",
+            "kind": "change",
+            "title": "Mobile crane arrives Monday, not Friday",
+            "detail": "Transport permit slipped.",
+            "actor": "Lena Ortiz (Crane operator)",
+            "source_event_ids": [
+              "e04"
+            ],
+            "refs": {
+              "task": "T-050"
+            }
+          }
+        ],
+        "waiting_open": [],
+        "waiting_close": []
+      },
+      "flags": {
+        "rules_resources": [
+          {
+            "id": "f-crane",
+            "type": "plan_deviation",
+            "severity": "high",
+            "title": "Mobile crane arrives Monday, the truss lift is planned for Friday",
+            "summary": "The roof truss lift can not happen on Friday. Roof sheathing depends on it.",
+            "status": "open",
+            "raised_at": "2026-11-12T17:02:10Z",
+            "work_starts_at": "2026-11-13T07:00:00Z",
+            "affected": {
+              "task": "T-050",
+              "crew": "Roofing crew"
+            },
+            "evidence": [
+              {
+                "event_id": "e04",
+                "channel": "telegram",
+                "sender": "Lena Ortiz",
+                "at": "2026-11-12T17:02:00Z",
+                "quote": "Heads up, the mobile crane gets to site Monday, not Friday. The transport permit slipped.",
+                "attachment_url": null
+              }
+            ],
+            "numbers": {
+              "planned": 1,
+              "actual": 0
+            },
+            "diff_id": null,
+            "proposal_id": null
+          }
+        ]
+      }
+    },
+    "e05": {
+      "facts": [
+        {
+          "id": "f-e05-1",
+          "event_id": "e05",
+          "type": "inspection_moved",
+          "subject": "Rough plumbing 2A",
+          "data": {
+            "unit": "2A",
+            "inspection": "Rough plumbing",
+            "new_time": "2026-11-13T13:00:00Z"
+          },
+          "confidence": 0.99,
+          "quote": "Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00."
+        }
+      ],
+      "record_update": {
+        "entries": [
+          {
+            "id": "r-e05",
+            "at": "2026-11-12T17:30:00Z",
+            "kind": "change",
+            "title": "2A rough plumbing inspection moved to Friday 14:00",
+            "detail": null,
+            "actor": "Schedule update",
+            "source_event_ids": [
+              "e05"
+            ],
+            "refs": {
+              "unit": "2A"
+            }
+          }
+        ],
+        "waiting_open": [
+          {
+            "id": "w-insp-2a",
+            "on": "Plumbing inspector",
+            "what": "Sign off rough plumbing 2A",
+            "since": "2026-11-12T17:30:00Z",
+            "due": "2026-11-13T13:00:00Z",
+            "status": "open",
+            "source_event_ids": [
+              "e05"
+            ]
+          }
+        ],
+        "waiting_close": []
+      }
+    },
+    "e06": {
+      "transcript": "Can we close the walls in 2A this morning?",
+      "facts": [
+        {
+          "id": "f-e06-1",
+          "event_id": "e06",
+          "type": "question",
+          "subject": "Close walls 2A",
+          "data": {
+            "unit": "2A",
+            "topic": "close walls"
+          },
+          "confidence": 0.92,
+          "quote": "Can we close the walls in 2A this morning?"
+        }
+      ],
+      "answer": {
+        "id": "a-e06",
+        "event_id": "e06",
+        "question": "Can we close the walls in 2A this morning?",
+        "text": "Not yet. The rough plumbing inspection for 2A moved to today 14:00 and has no sign-off. I sent this to the superintendent.",
+        "basis": "record",
+        "sources": [
+          {
+            "event_id": "e05",
+            "channel": "schedule",
+            "sender": "Schedule update",
+            "at": "2026-11-12T17:30:00Z",
+            "quote": "Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00.",
+            "attachment_url": null
+          }
+        ],
+        "escalated": true,
+        "created_at": "2026-11-13T06:40:06Z"
+      },
+      "flags": {
+        "rules_sequence": [
+          {
+            "id": "f-seq-2a",
+            "type": "out_of_sequence",
+            "severity": "high",
+            "title": "Drywall wants to close walls in 2A before the plumbing inspection",
+            "summary": "The rough plumbing inspection for 2A is scheduled for today 14:00 and is not signed off. Closing the walls first would hide the work.",
+            "status": "open",
+            "raised_at": "2026-11-13T06:40:08Z",
+            "work_starts_at": "2026-11-13T07:00:00Z",
+            "affected": {
+              "unit": "2A",
+              "crew": "Drywall crew",
+              "task": "T-060"
+            },
+            "evidence": [
+              {
+                "event_id": "e05",
+                "channel": "schedule",
+                "sender": "Schedule update",
+                "at": "2026-11-12T17:30:00Z",
+                "quote": "Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00.",
+                "attachment_url": null
+              },
+              {
+                "event_id": "e06",
+                "channel": "telegram",
+                "sender": "Priya Shah",
+                "at": "2026-11-13T06:40:00Z",
+                "quote": "Can we close the walls in 2A this morning?",
+                "attachment_url": null
+              }
+            ],
+            "numbers": null,
+            "diff_id": null,
+            "proposal_id": null
+          }
+        ]
+      },
+      "outbox": [
+        {
+          "id": "o-e06-reply",
+          "channel": "telegram",
+          "to": "Priya Shah",
+          "text": "Not yet. The rough plumbing inspection for 2A moved to today 14:00 and has no sign-off. I sent this to the superintendent.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Answer to a crew question",
+          "in_reply_to": "e06",
+          "created_at": "2026-11-13T06:40:07Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "e07": {
+      "facts": [
+        {
+          "id": "f-e07-1",
+          "event_id": "e07",
+          "type": "question",
+          "subject": "Close walls 2B",
+          "data": {
+            "unit": "2B",
+            "topic": "close walls"
+          },
+          "confidence": 0.9,
+          "quote": "What about 2B, can we close those walls?"
+        }
+      ],
+      "answer": {
+        "id": "a-e07",
+        "event_id": "e07",
+        "question": "What about 2B, can we close those walls?",
+        "text": "Not yet. 2B has no rough plumbing sign-off. The superintendent decided this morning: no wall closing before the inspection sign-off is in the record.",
+        "basis": "standing_rule",
+        "sources": [],
+        "escalated": false,
+        "created_at": "2026-11-13T07:15:05Z"
+      },
+      "outbox": [
+        {
+          "id": "o-e07-reply",
+          "channel": "telegram",
+          "to": "Priya Shah",
+          "text": "Not yet. 2B has no rough plumbing sign-off. The superintendent decided this morning: no wall closing before the inspection sign-off is in the record.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Answer to a crew question",
+          "in_reply_to": "e07",
+          "created_at": "2026-11-13T07:15:06Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "e08": {
+      "facts": [
+        {
+          "id": "f-e08-1",
+          "event_id": "e08",
+          "type": "question",
+          "subject": "Close walls 1C",
+          "data": {
+            "unit": "1C",
+            "topic": "close walls"
+          },
+          "confidence": 0.9,
+          "quote": "And 1C, can we close the walls there?"
+        }
+      ],
+      "answer": {
+        "id": "a-e08",
+        "event_id": "e08",
+        "question": "And 1C, can we close the walls there?",
+        "text": "Yes. The rough plumbing inspection for 1C passed on Monday.",
+        "basis": "record",
+        "sources": [],
+        "escalated": false,
+        "created_at": "2026-11-13T07:20:05Z"
+      },
+      "outbox": [
+        {
+          "id": "o-e08-reply",
+          "channel": "telegram",
+          "to": "Priya Shah",
+          "text": "Yes. The rough plumbing inspection for 1C passed on Monday.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Answer to a crew question",
+          "in_reply_to": "e08",
+          "created_at": "2026-11-13T07:20:06Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "e14": {
+      "transcript": "Drywall crew is four people today, two of us are at the other site until noon."
+    },
+    "e18": {
+      "transcript": "Morning. We are framing the level two corridor walls today, should be done by noon."
+    },
+    "e34": {
+      "transcript": "The truss lift is planned for the day after tomorrow at seven with the mobile crane. Crew of six, same as last week."
+    },
+    "e41": {
+      "transcript": "We finish the home runs in 2E tomorrow, then after the weekend we move to 3B for the rough electrical."
+    },
+    "e44": {
+      "transcript": "Roof sheathing follows the truss lift and takes two days, same crew."
+    },
+    "e51": {
+      "transcript": "2D, the plumbing inspector is coming at nine, so we wait on the walls there."
+    },
+    "e53": {
+      "transcript": "On the next working day we start rough electrical in 3B. The wire is cut to length from E-201 rev A."
+    }
+  },
+  "proposals": {
+    "f-stale-3b": {
+      "id": "p-hold-3b",
+      "flag_id": "f-stale-3b",
+      "action": "hold_work",
+      "summary": "Hold framing in 3B until the crew confirms A-201 Rev C.",
+      "params": {
+        "task": "T-031",
+        "unit": "3B"
+      },
+      "shifts": [],
+      "handover_old": null,
+      "handover_new": null,
+      "basis": "rule",
+      "requires_human": true,
+      "status": "proposed"
+    },
+    "f-trucks": {
+      "id": "p-resched-pour",
+      "flag_id": "f-trucks",
+      "action": "reschedule",
+      "summary": "Extend the pour by 45 minutes and start curing protection one hour later.",
+      "params": {
+        "minutes_per_truck": 45
+      },
+      "shifts": [
+        {
+          "task_id": "T-040",
+          "name": "Podium topping pour",
+          "crew": "Concrete crew",
+          "old_start": "2026-11-13T06:00:00Z",
+          "old_end": "2026-11-13T09:00:00Z",
+          "new_start": "2026-11-13T06:00:00Z",
+          "new_end": "2026-11-13T09:45:00Z"
+        },
+        {
+          "task_id": "T-041",
+          "name": "Curing protection",
+          "crew": "Site labor",
+          "old_start": "2026-11-13T09:00:00Z",
+          "old_end": "2026-11-13T11:00:00Z",
+          "new_start": "2026-11-13T10:00:00Z",
+          "new_end": "2026-11-13T12:00:00Z"
+        }
+      ],
+      "handover_old": "2026-12-18T16:00:00Z",
+      "handover_new": "2026-12-18T16:00:00Z",
+      "basis": "calculated",
+      "requires_human": true,
+      "status": "proposed"
+    },
+    "f-crane": {
+      "id": "p-resched-truss",
+      "flag_id": "f-crane",
+      "action": "reschedule",
+      "summary": "Move the roof truss lift to Monday and roof sheathing one working day later. Handover moves by one working day.",
+      "params": {},
+      "shifts": [
+        {
+          "task_id": "T-050",
+          "name": "Roof truss lift",
+          "crew": "Roofing crew",
+          "old_start": "2026-11-13T07:00:00Z",
+          "old_end": "2026-11-13T15:00:00Z",
+          "new_start": "2026-11-16T07:00:00Z",
+          "new_end": "2026-11-16T15:00:00Z"
+        },
+        {
+          "task_id": "T-051",
+          "name": "Roof sheathing",
+          "crew": "Roofing crew",
+          "old_start": "2026-11-16T07:00:00Z",
+          "old_end": "2026-11-17T15:00:00Z",
+          "new_start": "2026-11-17T07:00:00Z",
+          "new_end": "2026-11-18T15:00:00Z"
+        }
+      ],
+      "handover_old": "2026-12-18T16:00:00Z",
+      "handover_new": "2026-12-21T16:00:00Z",
+      "basis": "calculated",
+      "requires_human": true,
+      "status": "proposed"
+    },
+    "f-seq-2a": {
+      "id": "p-hold-2a",
+      "flag_id": "f-seq-2a",
+      "action": "hold_work",
+      "summary": "Hold drywall in 2A until the rough plumbing inspection is signed off.",
+      "params": {
+        "task": "T-060",
+        "unit": "2A"
+      },
+      "shifts": [],
+      "handover_old": null,
+      "handover_new": null,
+      "basis": "rule",
+      "requires_human": true,
+      "status": "proposed"
+    }
+  },
+  "by_decision": {
+    "f-stale-3b:hold_work": {
+      "flag_status": "held",
+      "task_status": {
+        "T-031": "on_hold"
+      },
+      "outbox": [
+        {
+          "id": "o-hold-3b",
+          "channel": "telegram",
+          "to": "Framing crew",
+          "text": "Hold on 3B. You are on A-201 Rev B. Rev C moved the partition 300 mm north. Do not start until you confirm Rev C.",
+          "media_url": "/media/mock/a201-crop.svg",
+          "buttons": [
+            "Confirmed"
+          ],
+          "reason": "Superintendent held work in 3B",
+          "in_reply_to": null,
+          "created_at": "2026-11-12T16:10:00Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "f-stale-3b:dismiss": {
+      "flag_status": "dismissed"
+    },
+    "f-trucks:reschedule": {
+      "flag_status": "resolved",
+      "resource_actual": {
+        "R-trucks": 4
+      },
+      "outbox": [
+        {
+          "id": "o-pour-concrete",
+          "channel": "telegram",
+          "to": "Concrete crew",
+          "text": "Friday pour runs until 10:45. 4 trucks instead of 3.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Superintendent accepted the changed plan",
+          "in_reply_to": null,
+          "created_at": "2026-11-12T16:45:00Z",
+          "status": "simulated"
+        },
+        {
+          "id": "o-pour-labor",
+          "channel": "telegram",
+          "to": "Site labor",
+          "text": "Curing protection starts at 11:00 on Friday, one hour later.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Superintendent accepted the changed plan",
+          "in_reply_to": null,
+          "created_at": "2026-11-12T16:45:01Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "f-crane:reschedule": {
+      "flag_status": "resolved",
+      "resource_actual": {
+        "R-crane": 0
+      },
+      "outbox": [
+        {
+          "id": "o-truss-roofing",
+          "channel": "telegram",
+          "to": "Roofing crew",
+          "text": "Truss lift moves to Monday, the crane is late. Sheathing starts Tuesday.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Superintendent accepted the changed plan",
+          "in_reply_to": null,
+          "created_at": "2026-11-12T17:10:00Z",
+          "status": "simulated"
+        }
+      ]
+    },
+    "f-seq-2a:hold_work": {
+      "flag_status": "held",
+      "task_status": {
+        "T-060": "on_hold"
+      },
+      "outbox": [
+        {
+          "id": "o-hold-2a",
+          "channel": "telegram",
+          "to": "Drywall crew",
+          "text": "Hold on the 2A walls until the plumbing inspection is signed off.",
+          "media_url": null,
+          "buttons": [],
+          "reason": "Superintendent held work in 2A",
+          "in_reply_to": null,
+          "created_at": "2026-11-13T06:45:00Z",
+          "status": "simulated"
+        }
+      ]
+    }
+  },
+  "commands": {
+    "truss": {
+      "message": "I can move the truss lift to Monday. Confirm to apply it.",
+      "proposal": {
+        "id": "p-resched-truss",
+        "flag_id": "f-crane",
+        "action": "reschedule",
+        "summary": "Move the roof truss lift to Monday and roof sheathing one working day later. Handover moves by one working day.",
+        "params": {},
+        "shifts": [
+          {
+            "task_id": "T-050",
+            "name": "Roof truss lift",
+            "crew": "Roofing crew",
+            "old_start": "2026-11-13T07:00:00Z",
+            "old_end": "2026-11-13T15:00:00Z",
+            "new_start": "2026-11-16T07:00:00Z",
+            "new_end": "2026-11-16T15:00:00Z"
+          },
+          {
+            "task_id": "T-051",
+            "name": "Roof sheathing",
+            "crew": "Roofing crew",
+            "old_start": "2026-11-16T07:00:00Z",
+            "old_end": "2026-11-17T15:00:00Z",
+            "new_start": "2026-11-17T07:00:00Z",
+            "new_end": "2026-11-18T15:00:00Z"
+          }
+        ],
+        "handover_old": "2026-12-18T16:00:00Z",
+        "handover_new": "2026-12-21T16:00:00Z",
+        "basis": "calculated",
+        "requires_human": true,
+        "status": "proposed"
+      }
+    }
+  },
+  "start_checks": {
+    "t-060": {
+      "task_id": "T-060",
+      "unit": "2A",
+      "allowed": "no",
+      "summary": "Not yet. The rough plumbing inspection for 2A is scheduled for today 14:00 and has no sign-off.",
+      "reasons": [
+        {
+          "kind": "inspection_open",
+          "text": "The rough plumbing inspection for 2A moved to today 14:00 and is not signed off.",
+          "blocking": true,
+          "sources": [
+            {
+              "event_id": "e05",
+              "channel": "schedule",
+              "sender": "Schedule update",
+              "at": "2026-11-12T17:30:00Z",
+              "quote": "Unit 2A rough plumbing inspection moved from Thursday to Friday 14:00.",
+              "attachment_url": null
+            },
+            {
+              "event_id": "e06",
+              "channel": "telegram",
+              "sender": "Priya Shah",
+              "at": "2026-11-13T06:40:00Z",
+              "quote": "Can we close the walls in 2A this morning?",
+              "attachment_url": null
+            }
+          ],
+          "flag_id": "f-seq-2a"
+        }
+      ]
+    },
+    "t-061": {
+      "task_id": "T-061",
+      "unit": "1C",
+      "allowed": "yes",
+      "summary": "Yes. The rough plumbing inspection for 1C passed on Monday, before the work starts.",
+      "reasons": []
+    }
+  },
+  "readiness": {
+    "all_clear": "All clear for tomorrow. Nothing needs your attention before you start.",
+    "got_it": "Got it"
+  },
+  "insights": {
+    "rule_texts": {
+      "f-seq-2a": "No wall closing before the inspection sign-off is in the record."
+    },
+    "patterns": [
+      {
+        "id": "p-late-change",
+        "kind": "late_change",
+        "statement": "2 of 3 changes arrived less than 24 hours before the work they affect.",
+        "count": 2,
+        "total": 3,
+        "examples": [
+          "r-e01",
+          "r-e05"
+        ],
+        "suggestion": "Ask the architect to issue revisions before 14:00."
+      },
+      {
+        "id": "p-late-confirmation",
+        "kind": "late_confirmation",
+        "statement": "The framing crew left 2 of 4 changes unconfirmed before their work started.",
+        "count": 2,
+        "total": 4,
+        "examples": [
+          "r-e01",
+          "r-e03"
+        ],
+        "suggestion": "Ask the crew for a confirmation the same day the change arrives."
+      }
+    ]
+  },
+  "autonomy": {
+    "suggestions": [
+      {
+        "id": "sug-4b7e2a91c6d3",
+        "action": "hold_work",
+        "flag_type": "out_of_sequence",
+        "scope": {
+          "flag_type": "out_of_sequence",
+          "units": "all",
+          "work": "Close walls",
+          "crew": "Drywall crew",
+          "inspection": "Rough plumbing"
+        },
+        "statement": "Hold close walls in every unit until the rough plumbing is signed off.",
+        "evidence_decision_ids": [
+          "d-f-seq-2a-hold_work",
+          "d-f-seq-2b-hold_work",
+          "d-f-seq-1c-hold_work"
+        ],
+        "evidence_flag_ids": [
+          "f-seq-2a",
+          "f-seq-2b",
+          "f-seq-1c"
+        ],
+        "last_decided_at": "2026-11-12T15:40:00Z"
+      }
+    ],
+    "authorizations": [
+      {
+        "id": "auth-8f3c1d2e9a40",
+        "action": "hold_work",
+        "flag_type": "stale_drawing",
+        "scope": {
+          "flag_type": "stale_drawing",
+          "units": "all",
+          "crew": "Framing crew",
+          "sheet": "A-201"
+        },
+        "statement": "Hold work on A-201 Rev B in every unit until the crew confirms Rev C.",
+        "rule_id": "rule-d-f-stale-3b-hold_work",
+        "evidence_decision_ids": [
+          "d-f-stale-3b-hold_work",
+          "d-f-stale-2a-hold_work",
+          "d-f-stale-1c-hold_work"
+        ],
+        "evidence_flag_ids": [
+          "f-stale-3b",
+          "f-stale-2a",
+          "f-stale-1c"
+        ],
+        "granted_by": "superintendent",
+        "granted_at": "2026-11-12T16:05:00Z",
+        "status": "active",
+        "applications": []
+      }
+    ]
+  },
+  "machines": [
+    {"id": "layout-robot-1", "kind": "robot", "name": "Layout robot", "units": ["3B"], "sheets": ["A-201"], "simulated": true},
+    {"id": "survey-drone-1", "kind": "drone", "name": "Survey drone", "units": ["3B"], "sheets": ["A-201"], "simulated": true},
+    {"id": "gate-sensor-1", "kind": "sensor", "name": "Gate sensor", "units": [], "sheets": [], "simulated": true}
+  ]
+}
